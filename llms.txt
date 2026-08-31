@@ -1,0 +1,41 @@
+# Golden Crest Facilities
+
+> Women-owned commercial janitorial and facility-care company in Mount Holly, North Carolina,
+> serving offices, public buildings, schools, and institutional facilities across Gaston and
+> western Mecklenburg counties. NAICS 561720, PSC S201.
+
+## Vendor summary
+
+- Business type: Women-owned small business, independently owned and operated
+- Primary NAICS: 561720 (Janitorial Services)
+- Secondary NAICS: 561790 (Other Services to Buildings and Dwellings)
+- Product Service Code: S201 (Housekeeping - Custodial and Janitorial)
+- Location: Mount Holly, North Carolina
+- Service area: Gaston and western Mecklenburg counties - Mount Holly, Belmont, Gastonia,
+  Cramerton, McAdenville, Lowell, Stanley, and west Charlotte
+- Status: North Carolina company in formation. SAM.gov registration in progress. No UEI, CAGE,
+  or set-aside certification has been issued to date. Nothing is represented as active until
+  it is issued.
+
+## Services
+
+- Recurring janitorial service for offices, work areas, and common spaces
+- Restroom and breakroom cleaning, sanitizing, and consumable restocking
+- Lobby and public-area opening and closing readiness
+- Floor care, interior glass, high-dusting, and fixture detail
+- Turnover and move-out cleaning
+- Event reset cleaning
+
+Not offered: medical or infection-control sanitation, hard-floor stripping and waxing, carpet
+extraction, exterior or above-ground-level window work, regional multi-site contracts.
+
+## Pages
+
+- [Home](https://golden-crest.76-13-25-117.sslip.io/): services, facilities served, how we work, quote request with photo upload
+- [Government and institutional buyers](https://golden-crest.76-13-25-117.sslip.io/government.html): vendor data, classification codes, documents provided, buyer forms completed, registration status
+- [Capability statement](https://golden-crest.76-13-25-117.sslip.io/capability-statement.html): printable one-page capability profile
+
+## Contact
+
+Quote requests and procurement inquiries are submitted through the form on the home page.
+A monitored business email and phone line are being established at formation.

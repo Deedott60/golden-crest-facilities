@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://golden-crest.76-13-25-117.sslip.io/sitemap.xml
