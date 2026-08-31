@@ -1,437 +1,827 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Golden Crest provides founder-led commercial janitorial and facility care shaped by high-volume casino and resort operations.">
-  <title>Golden Crest | Commercial Janitorial & Facility Care</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <style>
-    :root{
-      --ink:#111820;
-      --ink-2:#202a35;
-      --paper:#fbfaf6;
-      --white:#fff;
-      --soft:#f1f0ea;
-      --line:#d8d7d1;
-      --muted:#5d6670;
-      --gold:#52c7b8;
-      --gold-dark:#11776e;
-      --teal:#11776e;
-      --success:#26734d;
-      --warning:#8a5b13;
-      --max:1240px;
-    }
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth;max-width:100%;overflow-x:hidden}
-    body{margin:0;max-width:100%;overflow-x:hidden;background:var(--paper);color:var(--ink);font-family:"IBM Plex Sans",system-ui,sans-serif;line-height:1.55}
-    img{display:block;max-width:100%}
-    a{color:inherit}
-    button,a{touch-action:manipulation}
-    :focus-visible{outline:3px solid #0f62fe;outline-offset:3px}
-    .shell{width:min(var(--max),calc(100% - 48px));margin:0 auto}
-    .eyebrow{margin:0 0 16px;font:500 12px/1.3 "IBM Plex Mono",monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--gold-dark)}
-    .section{padding:88px 0}
-    .section-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(280px,520px);gap:40px;align-items:end;margin-bottom:48px}
-    .section-head h2{margin:0;font-size:clamp(34px,5vw,56px);line-height:1.04;font-weight:300;letter-spacing:-.035em}
-    .section-head p{margin:0;color:var(--muted);font-size:17px}
-    .topline{background:var(--ink);color:#d9dde2;font:400 12px/1.2 "IBM Plex Mono",monospace}
-    .topline .shell{min-height:40px;display:flex;align-items:center;justify-content:space-between;gap:20px}
-    .topline strong{color:#fff;font-weight:500}
-    .topline span:last-child{color:#8edfd4}
-    header{position:sticky;top:0;z-index:20;background:rgba(251,250,246,.96);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
-    nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:28px}
-    .brand{min-width:0;text-decoration:none;display:flex;align-items:center;gap:14px}
-    .mark{width:42px;height:42px;display:grid;place-items:center;background:var(--ink);color:#8edfd4;font:500 15px "IBM Plex Mono",monospace}
-    .brand-copy strong{display:block;font-size:20px;font-weight:600;letter-spacing:-.02em}
-    .brand-copy span{display:block;color:var(--muted);font:400 10px/1.3 "IBM Plex Mono",monospace;text-transform:uppercase;letter-spacing:.08em}
-    .nav-links{display:flex;align-items:center;gap:28px}
-    .nav-links a{text-decoration:none;font-size:14px;color:#424b55}
-    .nav-links a:hover{text-decoration:underline;text-underline-offset:5px}
-    .button{min-height:48px;display:inline-flex;align-items:center;justify-content:space-between;gap:26px;padding:13px 18px;text-decoration:none;border:1px solid transparent;font-weight:600;font-size:14px;cursor:pointer}
-    .button.primary{background:var(--gold);color:#111}
-    .button.primary:hover{background:#c59a4b}
-    .button.dark{background:var(--ink);color:#fff}
-    .button.dark:hover{background:#2a3541}
-    .button.ghost{background:transparent;border-color:var(--ink);color:var(--ink)}
-    .hero .eyebrow{color:#8edfd4}
-    .hero .button.ghost{border-color:rgba(255,255,255,.68);color:#fff;background:rgba(17,24,32,.28)}
-    .hero{position:relative;overflow:hidden;background:var(--ink);color:#fff;border-bottom:1px solid #2d3944}
-    .hero-grid{position:relative;display:block;min-height:720px}
-    .hero-grid>*{min-width:0}
-    .hero-copy{position:relative;z-index:2;min-width:0;max-width:780px;min-height:720px;padding:92px 64px 80px max(24px,calc((100vw - var(--max))/2));display:flex;flex-direction:column;justify-content:center}
-    .hero h1{max-width:760px;margin:0;font-size:clamp(48px,6.3vw,86px);line-height:.98;font-weight:300;letter-spacing:-.055em}
-    .hero h1 em{font-style:normal;color:#8edfd4}
-    .hero .lead{max-width:650px;margin:28px 0 0;color:#d1d9df;font-size:clamp(17px,2vw,20px);line-height:1.55}
-    .hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:36px}
-    .trust-row{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.16);margin-top:48px;max-width:720px}
-    .trust-row div{background:rgba(17,24,32,.82);padding:18px}
-    .trust-row strong{display:block;font-size:14px;font-weight:600}
-    .trust-row span{display:block;color:#aeb9c2;font-size:12px;margin-top:4px}
-    .hero-media{position:absolute;inset:0;z-index:0;min-height:720px;background:var(--ink);overflow:hidden}
-    .hero-media:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#111820 0%,rgba(17,24,32,.98) 24%,rgba(17,24,32,.88) 46%,rgba(17,24,32,.28) 76%,rgba(17,24,32,.08) 100%)}
-    .hero-media img{width:100%;height:100%;object-fit:cover;object-position:76% center;opacity:.9}
-    .hero-note{position:absolute;z-index:2;right:0;bottom:0;width:min(420px,92%);padding:24px 28px;background:rgba(10,17,23,.94);color:#fff;border-top:3px solid var(--gold)}
-    .hero-note .mono{font:400 11px/1.4 "IBM Plex Mono",monospace;color:#8edfd4;text-transform:uppercase;letter-spacing:.07em}
-    .hero-note strong{display:block;font-size:20px;font-weight:500;margin-top:7px}
-    .services{background:var(--paper)}
-    .service-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
-    .service-card{min-height:290px;background:var(--white);padding:28px;display:flex;flex-direction:column}
-    .service-card .num{font:400 12px "IBM Plex Mono",monospace;color:var(--gold-dark)}
-    .service-card h3{margin:46px 0 12px;font-size:22px;line-height:1.2;font-weight:500}
-    .service-card p{margin:0;color:var(--muted);font-size:14px}
-    .service-card .fit{margin-top:auto;padding-top:24px;color:var(--teal);font:500 11px "IBM Plex Mono",monospace;text-transform:uppercase;letter-spacing:.04em}
-    .founders{background:var(--ink);color:#fff}
-    .founders .section-head p{color:#c4cbd2}
-    .founders .eyebrow{color:#8edfd4}
-    .founder-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:#3a434c;border:1px solid #3a434c}
-    .founder{background:var(--ink-2);padding:36px;min-height:300px}
-    .founder .role{font:400 11px "IBM Plex Mono",monospace;color:#8edfd4;text-transform:uppercase;letter-spacing:.07em}
-    .founder h3{font-size:34px;font-weight:300;margin:18px 0 12px}
-    .founder p{color:#c4cbd2;margin:0;max-width:560px}
-    .founder ul{list-style:none;padding:0;margin:28px 0 0;display:grid;gap:10px;color:#e9edf0;font-size:14px}
-    .founder li{padding-left:22px;position:relative}
-    .founder li:before{content:"";position:absolute;left:0;top:.65em;width:8px;height:1px;background:#8edfd4}
-    .standards{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
-    .standards h2{margin:0;font-size:clamp(38px,5vw,62px);font-weight:300;line-height:1.02;letter-spacing:-.04em}
-    .standard-list{border-top:1px solid var(--ink)}
-    .standard{display:grid;grid-template-columns:60px 1fr;gap:16px;padding:22px 0;border-bottom:1px solid var(--line)}
-    .standard .index{font:400 12px "IBM Plex Mono",monospace;color:var(--gold-dark)}
-    .standard strong{display:block;font-size:18px;font-weight:500}
-    .standard p{margin:6px 0 0;color:var(--muted);font-size:14px}
-    .government{background:#f3f0e7;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-    .gov-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:72px;align-items:start}
-    .government h2{margin:0;font-size:clamp(38px,5vw,62px);line-height:1.03;font-weight:300;letter-spacing:-.04em}
-    .government .intro{color:var(--muted);font-size:17px;margin:24px 0 0}
-    .status-table{background:var(--white);border-top:3px solid var(--ink)}
-    .status-row{display:grid;grid-template-columns:1fr 150px;gap:20px;padding:19px 22px;border-bottom:1px solid var(--line);align-items:center}
-    .status-row strong{display:block;font-size:14px;font-weight:500}
-    .status-row small{display:block;color:var(--muted);font-size:12px;margin-top:3px}
-    .status{justify-self:end;font:500 11px "IBM Plex Mono",monospace;text-transform:uppercase;padding:6px 8px;background:#f0eee7;color:var(--warning)}
-    .status.defined{background:#e7f2ec;color:var(--success)}
-    .gov-note{margin-top:18px;padding:18px 20px;border-left:3px solid var(--gold);background:rgba(255,255,255,.65);font-size:13px;color:#4f5963}
-    .process{background:var(--white)}
-    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
-    .step{background:var(--white);padding:30px;min-height:230px}
-    .step .mono{font:400 12px "IBM Plex Mono",monospace;color:var(--gold-dark)}
-    .step h3{margin:42px 0 10px;font-size:21px;font-weight:500}
-    .step p{margin:0;color:var(--muted);font-size:14px}
-    .scope-review{background:#eaf5f3;border-top:1px solid #cce3df;border-bottom:1px solid #cce3df}
-    .review-layout{display:grid;grid-template-columns:.78fr 1.22fr;gap:64px;align-items:start}
-    .review-copy h2{margin:0;font-size:clamp(40px,5vw,64px);font-weight:300;line-height:1.02;letter-spacing:-.045em}
-    .review-copy>p{color:var(--muted);font-size:17px;margin:24px 0 0}
-    .review-points{display:grid;gap:1px;background:#bdd8d3;border:1px solid #bdd8d3;margin-top:32px}
-    .review-point{background:rgba(255,255,255,.7);padding:18px}
-    .review-point strong{display:block;font-size:14px;font-weight:600}
-    .review-point span{display:block;color:var(--muted);font-size:12px;margin-top:4px}
-    .review-form{background:var(--white);border-top:4px solid var(--teal);padding:30px}
-    .preview-label{display:inline-block;margin-bottom:22px;padding:6px 8px;background:#dff1ee;color:#0c665e;font:500 10px "IBM Plex Mono",monospace;text-transform:uppercase;letter-spacing:.06em}
-    .choice-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:24px}
-    .choice{position:relative;display:block}
-    .choice input{position:absolute;opacity:0;pointer-events:none}
-    .choice span{display:block;min-height:94px;padding:14px;border:1px solid var(--line);background:var(--paper);font-size:12px;cursor:pointer}
-    .choice span strong{display:block;color:var(--ink);font-size:13px;margin-bottom:5px}
-    .choice input:checked+span{border:2px solid var(--teal);background:#eaf5f3;padding:13px}
-    .choice input:focus-visible+span{outline:3px solid #0f62fe;outline-offset:2px}
-    .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-    .field{display:grid;gap:7px}
-    .field.full{grid-column:1/-1}
-    .field label{font:500 11px "IBM Plex Mono",monospace;text-transform:uppercase;letter-spacing:.04em;color:#4f5963}
-    .field input,.field select,.field textarea{width:100%;min-height:48px;border:0;border-bottom:2px solid #8c959d;background:#f4f4f4;padding:12px 14px;border-radius:0;color:var(--ink);font:400 14px "IBM Plex Sans",sans-serif}
-    .field textarea{min-height:112px;resize:vertical}
-    .field input:focus,.field select:focus,.field textarea:focus{outline:2px solid var(--teal);outline-offset:0;border-bottom-color:var(--teal)}
-    .upload-box{display:block;padding:22px;border:2px dashed #8bbdb6;background:#f6fbfa;text-align:center;cursor:pointer}
-    .upload-box strong{display:block;font-size:15px}
-    .upload-box span{display:block;margin-top:5px;color:var(--muted);font-size:12px}
-    .upload-box input{position:absolute;width:1px;height:1px;opacity:0;overflow:hidden}
-    .file-list{display:grid;gap:6px;margin-top:10px;font:400 11px "IBM Plex Mono",monospace;color:#4f5963}
-    .security-note{margin:18px 0;padding:14px 16px;background:#f4f4f4;border-left:3px solid var(--teal);color:#505a64;font-size:12px}
-    .consent{display:flex;gap:10px;align-items:flex-start;font-size:12px;color:#4f5963;margin:16px 0}
-    .consent input{margin-top:3px}
-    .form-status{display:none;margin-top:14px;padding:13px 15px;background:#e7f2ec;color:#175d3c;font-size:13px}
-    .form-status.show{display:block}
-    .contact{background:var(--ink);color:#fff;padding:88px 0}
-    .contact-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:64px;align-items:end}
-    .contact h2{font-size:clamp(42px,6vw,72px);line-height:1;font-weight:300;letter-spacing:-.045em;margin:0}
-    .contact p{color:#c4cbd2;font-size:17px;margin:22px 0 0;max-width:650px}
-    .contact-card{border-top:3px solid var(--gold);background:var(--ink-2);padding:28px}
-    .contact-card strong{display:block;font-size:20px;font-weight:500}
-    .contact-card p{font-size:14px;margin:10px 0 0;color:#c4cbd2}
-    .contact-card .pending{display:inline-block;margin-top:20px;padding:7px 9px;background:#173c39;color:#9fe4da;font:400 11px "IBM Plex Mono",monospace;text-transform:uppercase}
-    footer{background:#0b1016;color:#929ba5;padding:30px 0;border-top:1px solid #27313b;font-size:12px}
-    footer .shell{display:flex;justify-content:space-between;gap:24px;align-items:center}
-    footer a{color:#d7dde2}
-    .mobile-toggle{display:none;background:transparent;border:1px solid var(--line);width:44px;height:44px;font-size:20px}
-    @media (max-width:980px){
-      .shell{width:min(100% - 32px,var(--max))}
-      .nav-links{display:none}
-      .mobile-toggle{display:block}
-      nav>.button{display:none}
-      .hero-grid{min-height:700px}
-      .hero-copy{min-height:700px;padding:72px 24px}
-      .hero-media{min-height:700px}
-      .hero-media:after{background:linear-gradient(90deg,#111820 0%,rgba(17,24,32,.97) 38%,rgba(17,24,32,.7) 72%,rgba(17,24,32,.3) 100%)}
-      .service-grid{grid-template-columns:repeat(2,1fr)}
-      .section-head,.gov-grid,.contact-grid,.review-layout{grid-template-columns:1fr}
-      .founder-grid,.standards{grid-template-columns:1fr}
-      .gov-grid{gap:40px}
-      .contact-grid{align-items:start}
-    }
-    @media (max-width:640px){
-      .topline .shell{justify-content:center;text-align:center;min-height:48px}
-      .topline span:last-child{display:none}
-      .brand-copy span{display:none}
-      .section{padding:64px 0}
-      .section-head{gap:18px;margin-bottom:32px}
-      .hero-grid,.hero-copy,.hero-media{min-height:760px}
-      .hero-copy{padding:58px 20px 46px;justify-content:flex-start}
-      .hero h1{max-width:100%;font-size:45px;overflow-wrap:normal;word-break:normal}
-      .hero .lead{max-width:100%;font-size:16px;overflow-wrap:break-word}
-      .hero-actions{display:grid}
-      .button{width:100%}
-      .trust-row{grid-template-columns:1fr;margin-top:38px}
-      .hero-media img{object-position:70% center;opacity:.66}
-      .hero-media:after{background:linear-gradient(180deg,rgba(17,24,32,.98) 0%,rgba(17,24,32,.93) 56%,rgba(17,24,32,.58) 100%)}
-      .hero-note{display:none}
-      .service-grid,.founder-grid,.steps{grid-template-columns:1fr}
-      .choice-grid,.form-grid{grid-template-columns:1fr}
-      .field.full{grid-column:auto}
-      .review-form{padding:22px}
-      .service-card{min-height:240px}
-      .founder{padding:28px;min-height:0}
-      .standards{gap:38px}
-      .status-row{grid-template-columns:1fr;gap:10px}
-      .status{justify-self:start}
-      footer .shell{display:grid}
-    }
-    @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Golden Crest Facilities | Custodial &amp; Janitorial Services | NAICS 561720 | Gaston County, NC</title>
+<meta name="description" content="Golden Crest Facilities is a women-owned custodial and janitorial services company forming in Mount Holly, North Carolina, serving public agencies, institutions, and prime contractors in Gaston and western Mecklenburg counties. NAICS 561720 / PSC S201.">
+<meta name="robots" content="index,follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#fbfaf7;
+  --paper-2:#f4f3ee;
+  --white:#fff;
+  --ink:#111820;
+  --ink-2:#18212b;
+  --ink-3:#26313d;
+  --text:#222a33;
+  --muted:#5c646e;
+  --muted-2:#818992;
+  --line:#e2e0d9;
+  --line-2:#eeece6;
+  --line-dark:#313d4a;
+  --teal:#11776e;
+  --teal-2:#0e6259;
+  --teal-lt:#4ec9ba;
+  --teal-soft:#e7f2f0;
+  --ok:#26734d;
+  --ok-soft:#e8f1ec;
+  --hold:#8a5b13;
+  --hold-soft:#f7efe1;
+  --off:#6a6f76;
+  --off-soft:#edecE8;
+  --max:1200px;
+  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  --r:8px;
+  --shadow:0 1px 2px rgba(17,24,32,.04), 0 14px 34px -22px rgba(17,24,32,.30);
+  --shadow-lg:0 2px 4px rgba(17,24,32,.04), 0 30px 60px -30px rgba(17,24,32,.38);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--text);font-family:"IBM Plex Sans",system-ui,-apple-system,sans-serif;font-size:16px;line-height:1.6;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3,h4{margin:0;letter-spacing:-.022em;color:var(--ink)}
+p{margin:0}
+ul{margin:0;padding:0;list-style:none}
+:focus-visible{outline:3px solid #0f62fe;outline-offset:3px}
+.shell{width:min(var(--max),calc(100% - 48px));margin:0 auto}
+.skip{position:absolute;left:-9999px;top:0;background:var(--ink);color:#fff;padding:12px 18px;z-index:100}
+.skip:focus{left:12px;top:12px}
+
+/* ---------- data strip ---------- */
+.strip{background:var(--ink);color:#aab4bf;font:400 11.5px/1.4 var(--mono);letter-spacing:.02em}
+.strip .shell{min-height:38px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:6px 22px;padding:8px 0}
+.strip b{color:#fff;font-weight:500}
+.strip .sep{color:#4b5764;padding:0 8px}
+
+/* ---------- header ---------- */
+header{position:sticky;top:0;z-index:30;background:rgba(251,250,247,.94);backdrop-filter:blur(14px);border-bottom:1px solid var(--line-2)}
+nav.bar{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:13px;text-decoration:none;min-width:0}
+.mark{width:42px;height:42px;flex:none;display:grid;place-items:center;background:var(--ink);color:var(--teal-lt);font:600 14px var(--mono);letter-spacing:.04em;border-radius:6px}
+.brand strong{display:block;font-size:18.5px;font-weight:600;letter-spacing:-.025em;line-height:1.15;color:var(--ink)}
+.brand span{display:block;font:400 10px/1.35 var(--mono);text-transform:uppercase;letter-spacing:.09em;color:var(--muted-2)}
+.navlinks{display:flex;align-items:center;gap:26px}
+.navlinks a{text-decoration:none;font-size:14.5px;color:var(--text);white-space:nowrap}
+.navlinks a:hover{color:var(--teal)}
+.navcta{display:flex;align-items:center;gap:12px}
+.menu-btn{display:none;width:46px;height:46px;border:1px solid var(--line);border-radius:6px;background:transparent;font-size:18px;cursor:pointer;color:var(--ink)}
+
+/* ---------- buttons ---------- */
+.btn{min-height:50px;display:inline-flex;align-items:center;gap:10px;padding:13px 22px;border-radius:6px;font:600 14.5px/1.2 "IBM Plex Sans",sans-serif;text-decoration:none;border:1px solid transparent;cursor:pointer;transition:background .18s,color .18s,border-color .18s,transform .18s}
+.btn-teal{background:var(--teal);color:#fff}
+.btn-teal:hover{background:var(--teal-2)}
+.btn-ink{background:var(--ink);color:#fff}
+.btn-ink:hover{background:var(--ink-3)}
+.btn-line{background:transparent;border-color:var(--line);color:var(--ink)}
+.btn-line:hover{border-color:var(--ink)}
+.btn-glass{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.34);color:#fff;backdrop-filter:blur(6px)}
+.btn-glass:hover{background:#fff;color:var(--ink);border-color:#fff}
+
+/* ---------- section furniture ---------- */
+.eyebrow{font:500 11.5px/1.3 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--teal)}
+.section{padding:92px 0}
+.section+.section{border-top:1px solid var(--line-2)}
+.section h2{font-size:clamp(29px,3.7vw,43px);line-height:1.08;font-weight:300;letter-spacing:-.03em}
+.section h2 b{font-weight:500}
+.section-head{max-width:770px;margin-bottom:52px}
+.section-head .eyebrow{margin-bottom:16px}
+.section-head p{margin-top:18px;color:var(--muted);font-size:17.5px;line-height:1.65}
+
+/* ---------- hero ---------- */
+.hero{position:relative;background:var(--ink);color:#e9edf1;overflow:hidden}
+.hero-media{position:absolute;inset:0;z-index:0}
+.hero-media img{width:100%;height:100%;object-fit:cover;object-position:72% 42%}
+.hero-scrim{position:absolute;inset:0;background:
+  linear-gradient(100deg, rgba(17,24,32,.97) 0%, rgba(17,24,32,.93) 34%, rgba(17,24,32,.62) 56%, rgba(17,24,32,.30) 78%, rgba(17,24,32,.42) 100%),
+  linear-gradient(to top, rgba(17,24,32,.85) 0%, rgba(17,24,32,0) 45%)}
+.hero .shell{position:relative;z-index:2}
+.hero-inner{padding:104px 0 96px;max-width:660px}
+.hero .eyebrow{color:var(--teal-lt)}
+.hero h1{margin:20px 0 24px;color:#fff;font-size:clamp(34px,4.9vw,58px);line-height:1.03;font-weight:200;letter-spacing:-.035em}
+.hero h1 b{font-weight:500;color:#fff}
+.hero h1 em{font-style:normal;color:var(--teal-lt)}
+.hero .lead{color:#bcc5ce;font-size:18px;line-height:1.65;max-width:56ch}
+.hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:36px}
+.hero-cap{position:absolute;right:0;bottom:14px;z-index:2;font:400 10.5px/1.4 var(--mono);letter-spacing:.06em;color:rgba(255,255,255,.5)}
+
+/* vendor rail */
+.rail{position:relative;z-index:2;background:rgba(10,15,21,.72);backdrop-filter:blur(8px);border-top:1px solid rgba(255,255,255,.10)}
+.rail-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:0}
+.rail-cell{padding:24px 26px 24px 0;border-right:1px solid rgba(255,255,255,.10)}
+.rail-cell:last-child{border-right:0}
+.rail-cell+.rail-cell{padding-left:26px}
+.rail-cell dt{font:500 10px/1.3 var(--mono);letter-spacing:.11em;text-transform:uppercase;color:var(--teal-lt);margin-bottom:8px}
+.rail-cell dd{margin:0;color:#fff;font-size:15px;font-weight:500;line-height:1.35}
+.rail-cell dd small{display:block;font-weight:400;font-size:12px;color:#98a2ad;margin-top:5px;line-height:1.5}
+
+/* ---------- buyer lanes ---------- */
+.lanes{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px}
+.lane{background:var(--white);border:1px solid var(--line-2);border-radius:var(--r);padding:30px 26px 26px;box-shadow:var(--shadow);display:flex;flex-direction:column;transition:box-shadow .2s,transform .2s}
+.lane:hover{box-shadow:var(--shadow-lg);transform:translateY(-2px)}
+.lane .num{font:500 11px/1 var(--mono);color:var(--teal);letter-spacing:.12em}
+.lane h3{margin:16px 0 12px;font-size:19.5px;font-weight:500;line-height:1.25}
+.lane p{font-size:14.5px;color:var(--muted);line-height:1.6}
+.lane .how{margin-top:auto;padding-top:20px;font:400 12px/1.55 var(--mono);color:var(--teal)}
+
+/* ---------- capabilities ---------- */
+.cap-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:56px}
+.cap-col h3{display:flex;align-items:center;gap:12px;font-size:12.5px;font-weight:600;letter-spacing:.11em;text-transform:uppercase;font-family:var(--mono);color:var(--muted);padding-bottom:16px;border-bottom:2px solid var(--teal)}
+.cap-col.excl h3{border-bottom-color:var(--line)}
+.cap-col ul{margin-top:8px}
+.cap-col li{padding:20px 0 20px 30px;border-bottom:1px solid var(--line-2);font-size:15.5px;position:relative;line-height:1.5;color:var(--ink)}
+.cap-col li:last-child{border-bottom:0}
+.cap-col li::before{content:"";position:absolute;left:0;top:28px;width:14px;height:2px;background:var(--teal);border-radius:2px}
+.cap-col.excl li::before{background:var(--line);top:28px}
+.cap-col li small{display:block;color:var(--muted);font-size:13.5px;margin-top:6px;font-weight:400;line-height:1.55}
+.cap-note{margin-top:44px;padding-top:24px;border-top:1px solid var(--line-2);font-size:14.5px;color:var(--muted);max-width:84ch;line-height:1.65}
+
+/* ---------- standard ---------- */
+.std{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.std article{background:var(--white);border:1px solid var(--line-2);border-radius:var(--r);padding:32px 30px;box-shadow:var(--shadow)}
+.std .k{font:500 11px/1 var(--mono);letter-spacing:.12em;color:var(--teal)}
+.std h3{margin:16px 0 12px;font-size:20px;font-weight:500}
+.std p{font-size:15px;color:var(--muted);line-height:1.65}
+.std .deliv{margin-top:20px;padding-top:16px;border-top:1px solid var(--line-2);font:400 12.5px/1.5 var(--mono);color:var(--ink)}
+
+/* ---------- personnel ---------- */
+.personnel{background:var(--ink-2);color:#e5e9ee;border-top:0}
+.personnel h2{color:#fff}
+.personnel .eyebrow{color:var(--teal-lt)}
+.personnel .section-head p{color:#a9b3bd}
+.people{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.person{background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.09);border-radius:var(--r);padding:34px 32px}
+.person .role{font:500 10.5px/1.3 var(--mono);letter-spacing:.11em;text-transform:uppercase;color:var(--teal-lt)}
+.person h3{margin:14px 0 5px;color:#fff;font-size:26px;font-weight:300;letter-spacing:-.02em}
+.person .title{font-size:13px;color:#94a0ad;font-family:var(--mono);letter-spacing:.04em}
+.person p.bio{margin-top:20px;font-size:15px;color:#bfc8d1;line-height:1.7}
+.person ul{margin-top:22px;padding-top:8px;border-top:1px solid rgba(255,255,255,.09)}
+.person li{padding:11px 0 11px 22px;font-size:13.5px;color:#dbe1e8;position:relative}
+.person li::before{content:"";position:absolute;left:0;top:20px;width:11px;height:2px;background:var(--teal-lt);border-radius:2px}
+.disclaimer{margin-top:30px;padding:22px 26px;border-radius:var(--r);border:1px solid rgba(255,255,255,.09);background:rgba(255,255,255,.03);font-size:14.5px;color:#b3bdc7;max-width:94ch;line-height:1.7}
+.disclaimer b{color:#fff;font-weight:500}
+
+/* ---------- how to buy ---------- */
+.buy{display:grid;grid-template-columns:minmax(0,320px) minmax(0,1fr);gap:56px;align-items:start}
+.sidenote{padding:0 0 26px 22px;border-left:2px solid var(--teal);font-size:14.5px;color:var(--muted);line-height:1.7}
+.sidenote:last-child{padding-bottom:0}
+.sidenote.mute{border-left-color:var(--line)}
+.sidenote strong{display:block;color:var(--ink);font-weight:600;font-size:11.5px;font-family:var(--mono);letter-spacing:.1em;text-transform:uppercase;margin-bottom:10px}
+.buy-list{display:grid;gap:20px}
+.buy-item{background:var(--white);border:1px solid var(--line-2);border-radius:var(--r);padding:28px 30px;box-shadow:var(--shadow)}
+.buy-top{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:8px 20px}
+.buy-item h3{font-size:19px;font-weight:500}
+.buy-item .thr{font:500 11.5px/1.5 var(--mono);letter-spacing:.05em;color:var(--teal);white-space:nowrap}
+.buy-item p{font-size:14.5px;color:var(--muted);line-height:1.65;margin-top:12px}
+
+/* ---------- status table ---------- */
+.status-table{background:var(--white);border:1px solid var(--line-2);border-radius:var(--r);box-shadow:var(--shadow);overflow:hidden}
+.st-head,.st-row{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,2.2fr) minmax(0,160px);gap:24px;padding:18px 28px;align-items:start}
+.st-head{background:var(--paper-2);border-bottom:1px solid var(--line-2);font:500 10.5px/1.3 var(--mono);letter-spacing:.11em;text-transform:uppercase;color:var(--muted-2)}
+.st-row{border-bottom:1px solid var(--line-2)}
+.st-row:last-child{border-bottom:0}
+.st-row strong{font-size:15.5px;font-weight:600;color:var(--ink)}
+.st-row p{font-size:14px;color:var(--muted);line-height:1.6}
+.st-row .st-status{text-align:right}
+.chip{display:inline-block;padding:4px 11px;border-radius:100px;font:500 10.5px/1.5 var(--mono);letter-spacing:.07em;text-transform:uppercase;border:1px solid transparent}
+.chip-ok{background:var(--ok-soft);color:var(--ok);border-color:#cfe2d6}
+.chip-hold{background:var(--hold-soft);color:var(--hold);border-color:#ecdcc2}
+.chip-off{background:var(--off-soft);color:var(--off);border-color:#dedbd4}
+.chip-teal{background:var(--teal-soft);color:var(--teal);border-color:#c6e0dc}
+.legend{margin-top:24px;font-size:13.5px;color:var(--muted-2);line-height:1.7;max-width:92ch}
+
+/* ---------- contact ---------- */
+.contact{background:var(--paper-2);border-top:1px solid var(--line-2)}
+.c-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.08fr);gap:56px;align-items:start}
+.c-intro{margin-top:18px;color:var(--muted);font-size:17.5px;line-height:1.65}
+.c-channels{margin-top:34px}
+.c-channel{padding:22px 0;border-top:1px solid var(--line)}
+.c-channel:last-child{border-bottom:1px solid var(--line)}
+.c-channel span{font:500 10.5px/1.3 var(--mono);letter-spacing:.11em;text-transform:uppercase;color:var(--teal)}
+.c-channel strong{display:block;margin-top:9px;font-size:16.5px;color:var(--ink);font-weight:600}
+.c-channel p{font-size:14px;color:var(--muted);margin-top:6px;line-height:1.6}
+form{background:var(--white);border:1px solid var(--line-2);border-radius:var(--r);padding:34px 32px;box-shadow:var(--shadow)}
+form h3{font-size:21px;font-weight:500}
+form>p.fintro{font-size:14.5px;color:var(--muted);margin-top:12px;line-height:1.6}
+.fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin-top:28px}
+.field{display:flex;flex-direction:column;gap:8px;min-width:0}
+.field.full{grid-column:1/-1}
+.field label{font:500 10.5px/1.3 var(--mono);letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}
+.field label .req{color:var(--teal)}
+.field input,.field select,.field textarea{font:400 15px/1.4 "IBM Plex Sans",sans-serif;color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:13px 14px;min-height:50px;width:100%}
+.field textarea{min-height:124px;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--teal);background:#fff}
+.consent{display:flex;gap:13px;align-items:flex-start;margin-top:24px;font-size:13.5px;color:var(--muted);line-height:1.6}
+.consent input{margin-top:3px;width:18px;height:18px;flex:none;accent-color:var(--teal)}
+.form-foot{margin-top:26px;display:flex;flex-wrap:wrap;gap:16px;align-items:center}
+.fstatus{font-size:14px;line-height:1.5}
+.fstatus.err{color:#a3341f}
+.fstatus.ok{color:var(--ok)}
+.pending-box{background:var(--white);border:1px solid var(--line-2);border-left:3px solid var(--teal);border-radius:var(--r);padding:28px 30px;font-size:15px;color:var(--muted);line-height:1.7;box-shadow:var(--shadow)}
+.pending-box strong{display:block;font:600 11px/1.3 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--teal);margin-bottom:10px}
+
+/* ---------- footer ---------- */
+footer{background:var(--ink);color:#939da9;padding:56px 0 44px;font-size:13.5px}
+.f-grid{display:grid;grid-template-columns:minmax(0,1.5fr) repeat(2,minmax(0,1fr));gap:40px;align-items:start}
+footer strong{display:block;color:#fff;font-size:16px;font-weight:600;margin-bottom:12px;letter-spacing:-.02em}
+footer p{line-height:1.65}
+footer .fh{font:500 10.5px/1.3 var(--mono);letter-spacing:.11em;text-transform:uppercase;color:var(--teal-lt);margin-bottom:14px}
+footer ul li{padding:6px 0}
+footer a{color:#c0c9d2;text-decoration:none}
+footer a:hover{color:#fff}
+.f-codes{margin-top:16px;font-family:var(--mono);font-size:12px;letter-spacing:.05em;color:var(--teal-lt)}
+.f-legal{margin-top:40px;padding-top:24px;border-top:1px solid var(--line-dark);font-size:12.5px;color:#78838f;line-height:1.7}
+
+/* ---------- responsive ---------- */
+@media (max-width:1120px){
+  .navlinks{gap:19px}
+  .navlinks a{font-size:13.5px}
+  .rail-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .rail-cell{border-bottom:1px solid rgba(255,255,255,.10)}
+  .rail-cell:nth-child(3n){border-right:0}
+  .rail-cell:nth-last-child(-n+2){border-bottom:0}
+  .rail-cell:nth-child(3n+1){padding-left:0}
+  .lanes{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:1000px){
+  .cap-grid{gap:44px}
+  .buy{grid-template-columns:1fr;gap:38px}
+  .c-grid{grid-template-columns:1fr;gap:40px}
+  .hero-inner{padding:88px 0 80px;max-width:none}
+  .hero-media img{object-position:70% 30%}
+  .hero-scrim{background:linear-gradient(to top, rgba(17,24,32,.99) 34%, rgba(17,24,32,.94) 66%, rgba(17,24,32,.80) 100%)}
+}
+@media (max-width:900px){
+  .navlinks{display:none;position:absolute;left:0;right:0;top:100%;flex-direction:column;align-items:stretch;gap:0;background:var(--paper);border-bottom:1px solid var(--line);padding:6px 24px 20px;box-shadow:var(--shadow)}
+  .navlinks.open{display:flex}
+  .navlinks a{padding:15px 0;border-bottom:1px solid var(--line-2);font-size:15.5px}
+  .menu-btn{display:block}
+  .navcta .btn{display:none}
+  header nav.bar{position:relative}
+  .section{padding:64px 0}
+  .cap-grid{grid-template-columns:1fr}
+  .std{grid-template-columns:1fr}
+  .people{grid-template-columns:1fr}
+  .st-head{display:none}
+  .st-row{grid-template-columns:1fr;gap:10px;padding:22px 24px}
+  .st-row .st-status{text-align:left}
+  .f-grid{grid-template-columns:1fr;gap:32px}
+}
+@media (max-width:640px){
+  .shell{width:calc(100% - 34px)}
+  .lanes{grid-template-columns:1fr}
+  .fields{grid-template-columns:1fr}
+  .hero-inner{padding:64px 0 60px}
+  .hero-actions .btn{width:100%;justify-content:center}
+  .hero-cap{position:static;display:block;padding:0 0 14px}
+  .rail-grid{grid-template-columns:1fr}
+  .rail-cell{padding:18px 0;border-right:0;border-bottom:1px solid rgba(255,255,255,.10)}
+  .rail-cell+.rail-cell{padding-left:0}
+  .rail-cell:last-child{border-bottom:0}
+  .strip .shell span:last-child{display:none}
+  .strip .shell{justify-content:flex-start}
+  form{padding:26px 22px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{animation:none!important;transition:none!important}
+  .lane:hover{transform:none}
+}
+@media print{
+  header,.strip,form,footer,.hero-actions{display:none}
+  body{background:#fff}
+  .hero,.personnel{background:#fff;color:#000}
+  .hero-media,.hero-scrim,.rail{display:none}
+  .hero h1,.personnel h2,.person h3{color:#000}
+}
+</style>
 </head>
 <body>
-  <div class="topline">
-    <div class="shell">
-      <span><strong>Mount Holly, NC</strong> | Gaston and greater Charlotte</span>
-      <span>Commercial janitorial | Public-sector readiness in progress</span>
+<a class="skip" href="#main">Skip to main content</a>
+
+<div class="strip">
+  <div class="shell">
+    <span><b>NAICS 561720</b> Janitorial Services<span class="sep">|</span><b>PSC S201</b> Custodial &amp; Janitorial</span>
+    <span>Mount Holly, NC<span class="sep">|</span>Gaston &amp; western Mecklenburg counties<span class="sep">|</span><b>Pre-award vendor</b> &mdash; registrations in progress</span>
+  </div>
+</div>
+
+<header>
+  <nav class="bar shell" aria-label="Primary">
+    <a class="brand" href="#top">
+      <span class="mark" aria-hidden="true">GC</span>
+      <span>
+        <strong>Golden Crest Facilities</strong>
+        <span>Custodial &amp; Facility Services</span>
+      </span>
+    </a>
+    <div class="navlinks" id="navlinks">
+      <a href="#buyers">Who we serve</a>
+      <a href="#capabilities">Capabilities</a>
+      <a href="#standard">Performance</a>
+      <a href="#personnel">Key personnel</a>
+      <a href="#howtobuy">How to buy</a>
+      <a href="#status">Vendor status</a>
+      <a href="#contact">Contact</a>
     </div>
+    <div class="navcta">
+      <a class="btn btn-ink" href="#contact">Capability statement</a>
+      <button class="menu-btn" type="button" id="menuBtn" aria-controls="navlinks" aria-expanded="false" aria-label="Open navigation menu">&#9776;</button>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+<section class="hero" id="top" aria-labelledby="h1">
+  <div class="hero-media" aria-hidden="true">
+    <img src="assets/golden-crest-facilities-hero.png" width="1672" height="941" alt="">
+  </div>
+  <div class="hero-scrim" aria-hidden="true"></div>
+
+  <div class="shell">
+    <div class="hero-inner">
+      <p class="eyebrow">Women-owned &middot; Small business in formation &middot; North Carolina</p>
+      <h1 id="h1">Custodial services for <em>agencies, institutions,</em> and prime contractors.</h1>
+      <p class="lead">Golden Crest Facilities is a women-owned janitorial and facility-care company forming in Mount Holly, North Carolina. We are built for the scoped custodial work public and institutional buyers actually place with small vendors: recurring service at single facilities, turnover and event resets, and subcontract coverage under established primes across Gaston and western Mecklenburg counties.</p>
+      <div class="hero-actions">
+        <a class="btn btn-teal" href="#contact">Request capability statement</a>
+        <a class="btn btn-glass" href="#howtobuy">How to place work with us</a>
+      </div>
+    </div>
+    <p class="hero-cap">Representative image &mdash; founder photography to follow</p>
   </div>
 
-  <header>
-    <nav class="shell" aria-label="Primary navigation">
-      <a class="brand" href="#top" aria-label="Golden Crest home">
-        <span class="mark" aria-hidden="true">GC</span>
-        <span class="brand-copy"><strong>Golden Crest</strong><span>Commercial Janitorial & Facility Care</span></span>
-      </a>
-      <div class="nav-links">
-        <a href="#services">Services</a>
-        <a href="#leadership">Leadership</a>
-        <a href="#standards">Standards</a>
-        <a href="#government">Government readiness</a>
-      </div>
-      <a class="button dark" href="#scope-review">Start a facility review <span aria-hidden="true">↗</span></a>
-      <button class="mobile-toggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
-    </nav>
-  </header>
+  <div class="rail">
+    <div class="shell">
+      <dl class="rail-grid">
+        <div class="rail-cell"><dt>Classification</dt><dd>NAICS 561720 / PSC S201<small>Janitorial Services &middot; Custodial &amp; Janitorial</small></dd></div>
+        <div class="rail-cell"><dt>Ownership</dt><dd>100% women-owned (planned)<small>Two managing members. Documented at formation.</small></dd></div>
+        <div class="rail-cell"><dt>Service area</dt><dd>Gaston &amp; W. Mecklenburg, NC<small>Based in Mount Holly.</small></dd></div>
+        <div class="rail-cell"><dt>UEI / CAGE</dt><dd>Not yet registered<small>SAM.gov follows formation, EIN, and banking.</small></dd></div>
+        <div class="rail-cell"><dt>Set-asides</dt><dd>None active<small>WOSB / EDWOSB eligibility under review.</small></dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
 
-  <main id="top">
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow">Founder-led commercial facility care</p>
-          <h1 id="hero-title">Hospitality discipline for the spaces <em>people depend on.</em></h1>
-          <p class="lead">Commercial janitorial and facility care shaped by high-volume casino and resort operations. Golden Crest is being built for offices, public-facing facilities, hospitality environments, and institutional spaces that need dependable standards and visible accountability.</p>
-          <div class="hero-actions">
-            <a class="button primary" href="#scope-review">Request a facility review <span aria-hidden="true">→</span></a>
-            <a class="button ghost" href="capability-statement.html">View capability profile <span aria-hidden="true">↗</span></a>
+<section class="section" id="buyers">
+  <div class="shell">
+    <div class="section-head">
+      <p class="eyebrow">Who we are built to serve</p>
+      <h2>Four buyers, four different ways of <b>placing the work.</b></h2>
+      <p>Golden Crest is not competing for consumer cleaning leads. Each lane below is a defined procurement path with its own registration, notification, and award mechanics &mdash; and each one is reachable by a small vendor without an advertising budget.</p>
+    </div>
+    <div class="lanes">
+      <article class="lane">
+        <span class="num">01</span>
+        <h3>County &amp; municipal facilities</h3>
+        <p>Administrative buildings, community centers, parks facilities, and public offices in Gaston County and surrounding towns that buy custodial service by facility or by route.</p>
+        <p class="how">Vendor registration &rarr; bid notification &rarr; quote or ITB</p>
+      </article>
+      <article class="lane">
+        <span class="num">02</span>
+        <h3>Schools, colleges &amp; housing authorities</h3>
+        <p>Public school districts, community colleges, and housing authorities that award custodial work at the building level and often carry small-business participation goals.</p>
+        <p class="how">Vendor portal &rarr; term contract or single-facility award</p>
+      </article>
+      <article class="lane">
+        <span class="num">03</span>
+        <h3>Prime contractors &amp; facility managers</h3>
+        <p>Established janitorial and facility-management primes holding regional or multi-site contracts who need local coverage, fill-in crews, or small-business subcontractors to meet subcontracting plan commitments.</p>
+        <p class="how">Supplier outreach &rarr; subcontract or purchase order</p>
+      </article>
+      <article class="lane">
+        <span class="num">04</span>
+        <h3>Institutional &amp; commercial accounts</h3>
+        <p>Nonprofits, professional and administrative offices, and property managers who buy recurring janitorial directly and value a documented scope over the lowest bid.</p>
+        <p class="how">Walkthrough &rarr; written scope &rarr; service agreement</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="capabilities">
+  <div class="shell">
+    <div class="section-head">
+      <p class="eyebrow">Capabilities</p>
+      <h2>What we perform &mdash; and <b>what we will not bid.</b></h2>
+      <p>A scope a vendor refuses is as useful to a buyer as one it accepts. Nothing moves from the right column to the left until the training, products, procedures, insurance, and staffing behind it exist.</p>
+    </div>
+    <div class="cap-grid">
+      <div class="cap-col">
+        <h3>Performed at launch <span class="chip chip-ok">In scope</span></h3>
+        <ul>
+          <li>Recurring janitorial service for office and administrative facilities<small>Floors, restrooms, breakrooms, common areas, glass, waste, and high-touch surfaces on a written schedule.</small></li>
+          <li>Public-area opening and closing readiness<small>Lobbies, reception, corridors, meeting rooms, and public restrooms brought to a defined presentation standard.</small></li>
+          <li>Turnover, move-out, and event reset cleaning<small>Fixed-scope one-time work with a defined task list and completion check.</small></li>
+          <li>Periodic detail work within capability<small>Interior glass, high-dusting, vent and fixture detail, and scheduled deep-clean cycles quoted separately from base scope.</small></li>
+          <li>Consumable monitoring and reorder reporting<small>Restroom and breakroom supply levels reported to the facility contact; supply purchasing optional by agreement.</small></li>
+          <li>Documented completion checks and issue escalation<small>Written service record per visit and a named contact for corrective action.</small></li>
+        </ul>
+      </div>
+      <div class="cap-col excl">
+        <h3>Not offered until built <span class="chip chip-off">Out of scope</span></h3>
+        <ul>
+          <li>Medical, clinical, or infection-control sanitation<small>Requires exposure-control planning, product training, and insurance we have not established.</small></li>
+          <li>Hard-floor restoration, stripping, waxing, and carpet extraction<small>Equipment-dependent. Added, or subcontracted transparently, only when the capability is real.</small></li>
+          <li>Exterior, high-access, or above-ground-level window work<small>Fall protection and separate coverage required.</small></li>
+          <li>Cleared or background-adjudicated personnel<small>Screening will follow a written hiring policy. We will never describe screening as a security clearance.</small></li>
+          <li>Bonding or guaranteed response-time service levels<small>Bonding and response commitments are priced per contract, not advertised.</small></li>
+          <li>Regional multi-site contracts<small>Beyond current staffing. We would rather decline than fail a performance requirement.</small></li>
+        </ul>
+      </div>
+    </div>
+    <p class="cap-note">Scope, frequencies, exclusions, access rules, and supply responsibility are defined in writing for every facility before pricing. Cleaning and disinfecting are quoted, staffed, and documented as separate activities.</p>
+  </div>
+</section>
+
+<section class="section" id="standard">
+  <div class="shell">
+    <div class="section-head">
+      <p class="eyebrow">Performance standard</p>
+      <h2>How the work is specified, checked, <b>and corrected.</b></h2>
+      <p>Small custodial awards are lost on inconsistency, not on price. Each commitment below produces a document a facility contact or contracting officer can hold us to.</p>
+    </div>
+    <div class="std">
+      <article>
+        <span class="k">01</span>
+        <h3>Written performance scope</h3>
+        <p>Every facility gets a task list by area and frequency, with exclusions, access rules, service windows, and supply responsibility stated before a price is quoted.</p>
+        <p class="deliv">Deliverable &rarr; Facility scope document</p>
+      </article>
+      <article>
+        <span class="k">02</span>
+        <h3>Consistent routine</h3>
+        <p>Opening and closing procedures, zone assignments, and chemical and PPE handling are documented so the work does not change when the person does.</p>
+        <p class="deliv">Deliverable &rarr; Site procedure sheet</p>
+      </article>
+      <article>
+        <span class="k">03</span>
+        <h3>Inspection cadence</h3>
+        <p>A managing member inspects against the scope document on a stated schedule during startup and at an agreed interval afterward. The cadence is written into the agreement, not promised in general terms.</p>
+        <p class="deliv">Deliverable &rarr; Signed inspection record</p>
+      </article>
+      <article>
+        <span class="k">04</span>
+        <h3>Issue ownership</h3>
+        <p>One named contact receives deficiencies, with a response window agreed per contract and corrective action recorded and closed in writing.</p>
+        <p class="deliv">Deliverable &rarr; Corrective action log</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section personnel" id="personnel">
+  <div class="shell">
+    <div class="section-head">
+      <p class="eyebrow">Key personnel</p>
+      <h2>The experience <b>behind the standard.</b></h2>
+      <p>A company without contract history is evaluated on the people running it. Both managing members come out of high-volume casino and resort operations, where sanitation controls, inspection readiness, and public-facing presentation are daily operating requirements rather than marketing language.</p>
+    </div>
+    <div class="people">
+      <article class="person">
+        <span class="role">Managing member</span>
+        <h3>Miesha</h3>
+        <p class="title">Operations &amp; quality</p>
+        <p class="bio">Food and beverage management experience in a major casino and resort environment, with responsibility shaped by high guest volume, sanitation controls, health inspections, shift execution, and public-facing standards.</p>
+        <ul>
+          <li>ServSafe management credential (food safety)</li>
+          <li>High-volume operational leadership</li>
+          <li>Inspection readiness and corrective action</li>
+        </ul>
+      </article>
+      <article class="person">
+        <span class="role">Managing member</span>
+        <h3>Kimberly</h3>
+        <p class="title">Scheduling &amp; crew accountability</p>
+        <p class="bio">Supervisory experience in high-volume casino hospitality operations, focused on shift accountability, team coordination, presentation standards, and consistent execution across changing crews.</p>
+        <ul>
+          <li>Front-line team supervision</li>
+          <li>Shift coverage and quality accountability</li>
+          <li>Presentation and readiness standards</li>
+        </ul>
+      </article>
+    </div>
+    <p class="disclaimer"><b>Stated accurately:</b> the above is individual founder work experience, not Golden Crest past performance. Golden Crest has no contract history under its own name. ServSafe is a food-safety management credential; it is not a janitorial, medical, or infection-control certification. Employer names are withheld pending permission.</p>
+  </div>
+</section>
+
+<section class="section" id="howtobuy">
+  <div class="shell">
+    <div class="section-head">
+      <p class="eyebrow">How to buy</p>
+      <h2>Ways a buyer can <b>place custodial work with us.</b></h2>
+      <p>These are the mechanics, not a claim that every one of them is open to us today. The vendor status table below shows exactly which paths are available now and which are waiting on a registration.</p>
+    </div>
+    <div class="buy">
+      <div>
+        <div class="sidenote">
+          <strong>Available now</strong>
+          Direct commercial and institutional agreements, prime-contractor supplier conversations, and quote requests for scoped one-time work. We can meet, walk a facility, and put a written scope and price in front of you before the entity paperwork clears.
+        </div>
+        <div class="sidenote">
+          <strong>Available after registration</strong>
+          Local and state vendor systems, federal solicitations, and any award requiring an active SAM registration, UEI, or certification. We will not respond to a solicitation we are not eligible to be awarded.
+        </div>
+        <div class="sidenote mute">
+          <strong>Not claimed</strong>
+          Government purchase card acceptance is not established. No GSA schedule, IDIQ, or BPA is held. Any set-aside eligibility is unconfirmed until SBA issues a determination.
+        </div>
+      </div>
+      <div class="buy-list">
+        <article class="buy-item">
+          <div class="buy-top"><h3>Micro-purchase</h3><span class="thr">Federal: generally $15,000</span></div>
+          <p>Small scoped work a buyer can place with a qualified supplier without competitive quotations when the price is found reasonable. Lower statutory thresholds apply to some categories &mdash; including $2,500 for services covered by Service Contract Labor Standards, which recurring janitorial labor often is. State and local buyers set their own informal limits.</p>
+        </article>
+        <article class="buy-item">
+          <div class="buy-top"><h3>Simplified acquisition &amp; informal quotes</h3><span class="thr">Federal: up to $350,000</span></div>
+          <p>Quote-based awards for single facilities and defined routes. Small-business consideration commonly applies in this range, but the contracting officer still applies market research, responsibility, competition, and the specific set-aside stated in the solicitation.</p>
+        </article>
+        <article class="buy-item">
+          <div class="buy-top"><h3>Subcontract under a prime</h3><span class="thr">No registration required</span></div>
+          <p>The fastest realistic path for a new vendor. Primes holding regional custodial or facility-management contracts need local coverage and small-business subcontractors to meet subcontracting plan commitments. We can be added as a supplier and perform under your quality program.</p>
+        </article>
+        <article class="buy-item">
+          <div class="buy-top"><h3>Direct service agreement</h3><span class="thr">Commercial &amp; institutional</span></div>
+          <p>Walkthrough, written facility scope, price, and a service agreement with terms defined in the proposal. This is where our first documented performance record gets built.</p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="status">
+  <div class="shell">
+    <div class="section-head">
+      <p class="eyebrow">Vendor &amp; certification status</p>
+      <h2>Nothing here is listed as active <b>until it is issued.</b></h2>
+      <p>Contracting officers and supplier-diversity managers verify these against public systems. Publishing a credential before it exists is the fastest way for a new vendor to be disqualified, so this table is the single source of truth for where we actually stand.</p>
+    </div>
+    <div class="status-table">
+      <div class="st-head">
+        <span>Item</span><span>Notes</span><span class="st-status">Status</span>
+      </div>
+      <div class="st-row">
+        <div><strong>NAICS 561720 / PSC S201</strong></div>
+        <p>Primary service classification selected and used consistently across outreach and every vendor registration.</p>
+        <div class="st-status"><span class="chip chip-ok">Defined</span></div>
+      </div>
+      <div class="st-row">
+        <div><strong>NC LLC formation &amp; operating agreement</strong></div>
+        <p>Articles of Organization with the NC Secretary of State, plus a signed operating agreement documenting ownership, control, signature authority, and deadlock resolution.</p>
+        <div class="st-status"><span class="chip chip-hold">In progress</span></div>
+      </div>
+      <div class="st-row">
+        <div><strong>EIN, business banking &amp; W-9</strong></div>
+        <p>Required before SAM registration and before any buyer can set us up as a payee.</p>
+        <div class="st-status"><span class="chip chip-off">Follows formation</span></div>
+      </div>
+      <div class="st-row">
+        <div><strong>General liability &amp; workers&rsquo; compensation</strong></div>
+        <p>Limits bound to the first contract scope. Certificate of insurance furnished on request; limits are never advertised before a policy is in force.</p>
+        <div class="st-status"><span class="chip chip-hold">Quoting</span></div>
+      </div>
+      <div class="st-row">
+        <div><strong>SAM.gov registration, UEI &amp; CAGE</strong></div>
+        <p>Registration is free at SAM.gov. Activation can take up to 10 business days and must be renewed every 365 days. We register only when legal name, address, EIN, and banking records match exactly.</p>
+        <div class="st-status"><span class="chip chip-off">Not registered</span></div>
+      </div>
+      <div class="st-row">
+        <div><strong>SBA WOSB / EDWOSB certification</strong></div>
+        <p>Free application through MySBA Certifications, requiring active SAM registration and at least 51% ownership and control by women who are U.S. citizens. NAICS 561720 appears on SBA&rsquo;s eligible-industry list under the EDWOSB designation. Eligibility is under review with a counselor; no determination has been issued.</p>
+        <div class="st-status"><span class="chip chip-off">Not certified</span></div>
+      </div>
+      <div class="st-row">
+        <div><strong>NC eVP vendor registration &amp; NCSBE</strong></div>
+        <p>State vendor registration plus the race- and gender-neutral NCSBE small-business program. North Carolina ended the state HUB program in July 2026; HUB certification is no longer recognized on state contracts.</p>
+        <div class="st-status"><span class="chip chip-off">Follows formation</span></div>
+      </div>
+      <div class="st-row">
+        <div><strong>Gaston County &amp; City of Charlotte registration</strong></div>
+        <p>Bid-notification enrollment with Gaston County, and City of Charlotte supplier registration, which is required before a supplier can receive a purchase order or payment. Charlotte SBE certification is evaluated separately against its presence, size, and net-worth rules.</p>
+        <div class="st-status"><span class="chip chip-off">Follows formation</span></div>
+      </div>
+      <div class="st-row">
+        <div><strong>APEX Accelerator / NC SBTDC counseling</strong></div>
+        <p>No-cost government-contracting assistance for registration, capability review, pricing, and opportunity targeting. Intake is the next scheduled action.</p>
+        <div class="st-status"><span class="chip chip-teal">Next action</span></div>
+      </div>
+      <div class="st-row">
+        <div><strong>Past performance under Golden Crest</strong></div>
+        <p>No contract history exists under this company yet. Founder work experience is presented separately and is never described as company past performance.</p>
+        <div class="st-status"><span class="chip chip-off">None</span></div>
+      </div>
+    </div>
+    <p class="legend">Thresholds and program facts on this page come from acquisition.gov (FAR 2.101, FAR 13.203, and the current threshold changes), sam.gov entity registration, sba.gov certifications and the WOSB/EDWOSB eligible-NAICS list, doa.nc.gov small business enterprise program, charlottenc.gov vendor registration, and sbtdc.org government contracting. Buyers are encouraged to verify our status directly in those systems.</p>
+  </div>
+</section>
+
+<section class="section contact" id="contact">
+  <div class="shell c-grid">
+    <div>
+      <p class="eyebrow">Contact</p>
+      <h2>Two ways <b>to start.</b></h2>
+      <p class="c-intro">Whether you are a contracting officer, a small-business or supplier-diversity liaison, a facility manager, or a prime looking for local coverage: tell us the facility and the buying mechanism. We will answer with a scope and a price, or tell you plainly that it is outside what we can staff today.</p>
+      <div class="c-channels">
+        <div class="c-channel">
+          <span>Procurement &amp; primes</span>
+          <strong>Capability statement, solicitations, subcontract inquiries</strong>
+          <p>Include the facility, square footage if known, frequency, and any solicitation or contract number.</p>
+        </div>
+        <div class="c-channel">
+          <span>Facility managers</span>
+          <strong>Walkthrough and written scope</strong>
+          <p>We walk the site, put the scope in writing, and quote from measured labor &mdash; not a square-foot rate card.</p>
+        </div>
+        <div class="c-channel">
+          <span>Response</span>
+          <strong>One business day to acknowledge</strong>
+          <p>Proposal timing follows the walkthrough and scope. We do not promise a same-day quote on work we have not seen.</p>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <form id="inquiryForm" novalidate>
+        <h3>Send an inquiry</h3>
+        <p class="fintro">Required fields are marked. We ask for nothing sensitive &mdash; never door codes, alarm codes, keycard details, or floor plans through this form.</p>
+        <div class="fields">
+          <div class="field"><label for="f-name">Name <span class="req">*</span></label><input id="f-name" name="name" autocomplete="name" required></div>
+          <div class="field"><label for="f-org">Organization or agency <span class="req">*</span></label><input id="f-org" name="organization" autocomplete="organization" required></div>
+          <div class="field"><label for="f-email">Work email <span class="req">*</span></label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
+          <div class="field"><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel"></div>
+          <div class="field"><label for="f-type">Inquiry type <span class="req">*</span></label>
+            <select id="f-type" name="inquiry_type" required>
+              <option value="">Select one</option>
+              <option>Capability statement request</option>
+              <option>Government or institutional solicitation</option>
+              <option>Prime contractor / subcontract opportunity</option>
+              <option>Commercial facility &mdash; recurring service</option>
+              <option>One-time turnover, move-out, or event reset</option>
+              <option>Other</option>
+            </select>
           </div>
-          <div class="trust-row" aria-label="Company facts">
-            <div><strong>Women-led</strong><span>Miesha and Kimberly, managing founders</span></div>
-            <div><strong>Hospitality-trained</strong><span>High-volume casino and resort operations</span></div>
-            <div><strong>Locally based</strong><span>Mount Holly, North Carolina</span></div>
+          <div class="field"><label for="f-loc">Facility city and ZIP <span class="req">*</span></label><input id="f-loc" name="location" autocomplete="postal-code" placeholder="Mount Holly, NC 28120" required></div>
+          <div class="field"><label for="f-size">Approximate size</label>
+            <select id="f-size" name="size">
+              <option>Not sure</option><option>Under 3,000 sq. ft.</option><option>3,000 to 10,000 sq. ft.</option><option>10,000 to 25,000 sq. ft.</option><option>Over 25,000 sq. ft.</option><option>Multiple facilities</option>
+            </select>
           </div>
+          <div class="field"><label for="f-solnum">Solicitation or contract no.</label><input id="f-solnum" name="solicitation" placeholder="If applicable"></div>
+          <div class="field full"><label for="f-msg">What should we understand about the requirement?</label><textarea id="f-msg" name="message" placeholder="Areas and surfaces, current schedule and frequency, occupancy and traffic, access windows, response expectations, and any deadline or site-visit date."></textarea></div>
         </div>
-        <div class="hero-media">
-          <img src="assets/golden-crest-facilities-hero.png" width="1672" height="941" alt="Two facilities operations leaders reviewing a quality checklist in a polished commercial lobby">
-          <div class="hero-note"><span class="mono">The Golden Crest standard</span><strong>Founder attention. Documented expectations. Clean, ready spaces.</strong></div>
+        <label class="consent"><input id="f-consent" type="checkbox" required><span>I am authorized to share these facility details. I understand this inquiry is not a bid, quote, or binding commitment by either party.</span></label>
+        <div class="form-foot">
+          <button class="btn btn-teal" type="submit">Send inquiry</button>
+          <p class="fstatus" id="formStatus" role="status" aria-live="polite"></p>
         </div>
+      </form>
+      <div class="pending-box" id="channelPending" hidden>
+        <strong>Contact channel being established</strong>
+        The monitored business email and phone line are set up at formation, alongside the entity records they have to match. Until that is live, this form is not connected: nothing is transmitted, collected, or stored. Reach out through the referral you came from and we will respond the same way.
       </div>
-    </section>
+    </div>
+  </div>
+</section>
+</main>
 
-    <section class="section services" id="services">
-      <div class="shell">
-        <div class="section-head">
-          <div><p class="eyebrow">Core service lanes</p><h2>Start focused. Deliver consistently.</h2></div>
-          <p>The launch offer stays narrow enough for the founders to supervise directly, establish repeatable checklists, and build documented performance before taking on larger facilities.</p>
-        </div>
-        <div class="service-grid">
-          <article class="service-card"><span class="num">01</span><h3>Recurring office janitorial</h3><p>Routine floor, restroom, breakroom, waste, glass, and high-touch care for professional and administrative facilities.</p><span class="fit">Best first contract lane</span></article>
-          <article class="service-card"><span class="num">02</span><h3>Public-area readiness</h3><p>Opening and closing presentation standards for lobbies, reception areas, meeting rooms, corridors, and public restrooms.</p><span class="fit">Hospitality experience applied</span></article>
-          <article class="service-card"><span class="num">03</span><h3>Turnover and event resets</h3><p>Planned cleaning resets before or after meetings, events, guest traffic, move-ins, and facility transitions.</p><span class="fit">Fixed-scope opportunity</span></article>
-          <article class="service-card"><span class="num">04</span><h3>Inspection and supply checks</h3><p>Documented completion checks, issue escalation, and consumable observations tailored to the agreed scope.</p><span class="fit">Accountability without gimmicks</span></article>
-        </div>
+<footer>
+  <div class="shell">
+    <div class="f-grid">
+      <div>
+        <strong>Golden Crest Facilities</strong>
+        <p>Women-owned custodial and facility services. Mount Holly, North Carolina. Serving Gaston and western Mecklenburg counties.</p>
+        <p class="f-codes">NAICS 561720 &middot; PSC S201</p>
       </div>
-    </section>
-
-    <section class="section founders" id="leadership">
-      <div class="shell">
-        <div class="section-head">
-          <div><p class="eyebrow">Founder experience</p><h2>Built by operators who understand public-facing standards.</h2></div>
-          <p>Golden Crest translates hospitality operations experience into a practical commercial cleaning standard. The founders' backgrounds support the business. They do not replace contract-specific training, insurance, staffing, or certifications.</p>
-        </div>
-        <div class="founder-grid">
-          <article class="founder"><span class="role">Co-founder and managing member</span><h3>Miesha</h3><p>Food and beverage management experience in a major casino and resort environment, with responsibility shaped by high guest volume, sanitation controls, shift execution, and inspection readiness.</p><ul><li>ServSafe management credential</li><li>High-volume operational leadership</li><li>Compliance and guest-experience discipline</li></ul></article>
-          <article class="founder"><span class="role">Co-founder and managing member</span><h3>Kimberly</h3><p>Supervisory experience in high-volume casino hospitality operations, with a working focus on shift accountability, team coordination, presentation standards, and consistent execution.</p><ul><li>Front-line team supervision</li><li>Shift and quality accountability</li><li>Hospitality presentation standards</li></ul></article>
-        </div>
+      <div>
+        <p class="fh">Company</p>
+        <ul>
+          <li><a href="#buyers">Who we serve</a></li>
+          <li><a href="#capabilities">Capabilities</a></li>
+          <li><a href="#standard">Performance standard</a></li>
+          <li><a href="#personnel">Key personnel</a></li>
+        </ul>
       </div>
-    </section>
-
-    <section class="section" id="standards">
-      <div class="shell standards">
-        <div><p class="eyebrow">Operating approach</p><h2>What buyers should be able to expect.</h2></div>
-        <div class="standard-list">
-          <div class="standard"><span class="index">01</span><div><strong>Written scope before work begins</strong><p>Each facility starts with defined tasks, frequencies, access rules, exclusions, and acceptance expectations.</p></div></div>
-          <div class="standard"><span class="index">02</span><div><strong>Founder-led startup and quality review</strong><p>The founders establish the first operating checklist and review performance before delegating work to a trained crew.</p></div></div>
-          <div class="standard"><span class="index">03</span><div><strong>Site-specific safety and access</strong><p>Background screening, badges, key control, chemical requirements, and site rules are matched to the buyer's contract, not promised generically.</p></div></div>
-          <div class="standard"><span class="index">04</span><div><strong>Clear issue escalation</strong><p>Missed tasks and facility concerns are documented, assigned, corrected, and reviewed against the agreed service plan.</p></div></div>
-        </div>
+      <div>
+        <p class="fh">Procurement</p>
+        <ul>
+          <li><a href="#howtobuy">How to buy</a></li>
+          <li><a href="#status">Vendor &amp; certification status</a></li>
+          <li><a href="capability-statement.html">Capability statement (draft)</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </div>
-    </section>
+    </div>
+    <p class="f-legal">Golden Crest Facilities is a working name for a North Carolina company in formation. The company is not yet registered in SAM.gov and holds no UEI, CAGE, WOSB, EDWOSB, WBE, MBE, SBE, or other certification. Insurance and bonding are not yet bound. Founder experience described on this site is individual work history and is not Golden Crest past performance. The hero image is representative artwork, not a photograph of company operations. No government agency, program, or certifying body endorses this company. &copy; <span id="yr">2026</span> Golden Crest Facilities.</p>
+  </div>
+</footer>
 
-    <section class="section government" id="government">
-      <div class="shell gov-grid">
-        <div>
-          <p class="eyebrow">Government and institutional buyers</p>
-          <h2>Credentials should be visible only when they are real.</h2>
-          <p class="intro">Golden Crest is being structured for public-sector procurement, but it will not display SAM, UEI, CAGE, WOSB, WBE, insurance, bonding, or background-clearance badges until each item is active and verifiable.</p>
-          <div class="gov-note">The federal micro-purchase threshold is generally $15,000, but lower statutory thresholds can apply to certain construction and covered service work. A purchase card is a payment method, not a guaranteed award channel.</div>
-        </div>
-        <div class="status-table" aria-label="Procurement readiness status">
-          <div class="status-row"><div><strong>NAICS and PSC alignment</strong><small>NAICS 561720, Janitorial Services | PSC S201, Custodial Janitorial</small></div><span class="status defined">Defined</span></div>
-          <div class="status-row"><div><strong>Legal entity and ownership documents</strong><small>Finalize LLC formation and operating agreement with actual ownership and control reflected accurately.</small></div><span class="status">Before outreach</span></div>
-          <div class="status-row"><div><strong>SAM registration, UEI and CAGE</strong><small>Register free through SAM.gov after the legal entity, EIN, bank account, and address records match.</small></div><span class="status">Pending</span></div>
-          <div class="status-row"><div><strong>SBA WOSB and EDWOSB certification</strong><small>Apply free through MySBA Certifications after SAM activation and ownership, control, citizenship, and economic-disadvantage requirements are documented.</small></div><span class="status">Pending</span></div>
-          <div class="status-row"><div><strong>APEX and NC SBTDC GCAP guidance</strong><small>Use no-cost government-contracting counseling for registration, capture planning, procurement compliance, and opportunity targeting.</small></div><span class="status">Next step</span></div>
-          <div class="status-row"><div><strong>Insurance, screening and site training</strong><small>Set limits and requirements based on the first real customer or solicitation.</small></div><span class="status">Pending scope</span></div>
-          <div class="status-row"><div><strong>Government capability profile</strong><small>Draft profile available for review. Final version will carry only active identifiers and proven capabilities.</small></div><span class="status defined">Draft ready</span></div>
-        </div>
-      </div>
-    </section>
+<script>
+/* -------------------------------------------------------------
+   CONTACT CONFIG - fill these in when the monitored channel is live.
+   Leave INQUIRY_ENDPOINT and CONTACT_EMAIL empty and the form is
+   replaced with an honest "channel being established" notice.
+   ------------------------------------------------------------- */
+var CONTACT = {
+  CONTACT_EMAIL: "",       // e.g. "contracts@goldencrestfacilities.com"
+  CONTACT_PHONE: "",       // e.g. "(704) 555-0100"
+  INQUIRY_ENDPOINT: ""     // POST URL for form delivery; falls back to mailto if empty
+};
 
-    <section class="section process" id="process">
-      <div class="shell">
-        <div class="section-head"><div><p class="eyebrow">Commercial onboarding</p><h2>A simple path from facility need to written scope.</h2></div><p>Government solicitations follow their own instructions. Commercial buyers can begin with an on-site walkthrough or the designed photo-assisted scope review below. Secure storage and monitored delivery connect before public launch.</p></div>
-        <div class="steps">
-          <div class="step"><span class="mono">Step 01</span><h3>Facility conversation</h3><p>Discuss building type, operating hours, traffic, current concerns, access restrictions, and desired frequency.</p></div>
-          <div class="step"><span class="mono">Step 02</span><h3>Walkthrough and scope</h3><p>Review the site, separate included work from add-ons, and document assumptions before pricing.</p></div>
-          <div class="step"><span class="mono">Step 03</span><h3>Proposal and launch plan</h3><p>Provide written pricing, service frequency, startup requirements, quality checks, and communication expectations.</p></div>
-        </div>
-      </div>
-    </section>
+(function () {
+  document.getElementById('yr').textContent = new Date().getFullYear();
 
-    <section class="section scope-review" id="scope-review" aria-labelledby="scope-review-title">
-      <div class="shell review-layout">
-        <div class="review-copy">
-          <p class="eyebrow">Facility scope review</p>
-          <h2 id="scope-review-title">Show us the space. Choose how you want us to review it.</h2>
-          <p>Start with an on-site walkthrough, ordinary facility photos and short video, or a public solicitation and scope document. Golden Crest reviews the material before preparing any scope or proposal.</p>
-          <div class="review-points">
-            <div class="review-point"><strong>Easy for the facility contact</strong><span>One place for the building facts, service needs, media, and timing.</span></div>
-            <div class="review-point"><strong>Human-reviewed</strong><span>Uploads support the walkthrough. They do not create an automatic binding quote.</span></div>
-            <div class="review-point"><strong>Security boundaries</strong><span>No door codes, alarm codes, employee data, restricted layouts, classified files, or controlled government information.</span></div>
-          </div>
-        </div>
+  /* mobile nav */
+  var btn = document.getElementById('menuBtn');
+  var links = document.getElementById('navlinks');
+  btn.addEventListener('click', function () {
+    var open = btn.getAttribute('aria-expanded') === 'true';
+    btn.setAttribute('aria-expanded', String(!open));
+    links.classList.toggle('open', !open);
+    btn.setAttribute('aria-label', open ? 'Open navigation menu' : 'Close navigation menu');
+  });
+  links.addEventListener('click', function (e) {
+    if (e.target.tagName === 'A') { links.classList.remove('open'); btn.setAttribute('aria-expanded', 'false'); }
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && links.classList.contains('open')) {
+      links.classList.remove('open');
+      btn.setAttribute('aria-expanded', 'false');
+      btn.focus();
+    }
+  });
 
-        <form class="review-form" id="facility-review-form" novalidate>
-          <span class="preview-label">Designed intake preview | secure delivery connection is the next build step</span>
-          <fieldset style="border:0;padding:0;margin:0">
-            <legend class="eyebrow" style="color:#11776e;margin-bottom:12px">How should we review the facility?</legend>
-            <div class="choice-grid">
-              <label class="choice"><input type="radio" name="review_type" value="onsite" checked><span><strong>On-site walkthrough</strong>Meet at the facility and review the scope together.</span></label>
-              <label class="choice"><input type="radio" name="review_type" value="media"><span><strong>Photo and video review</strong>Share ordinary rooms, surfaces, traffic areas, and concerns.</span></label>
-              <label class="choice"><input type="radio" name="review_type" value="solicitation"><span><strong>Solicitation review</strong>Share a public scope, bid packet, or ordinary facility document.</span></label>
-            </div>
-          </fieldset>
+  /* contact channel wiring */
+  var form = document.getElementById('inquiryForm');
+  var pending = document.getElementById('channelPending');
+  var status = document.getElementById('formStatus');
+  var live = CONTACT.INQUIRY_ENDPOINT || CONTACT.CONTACT_EMAIL;
 
-          <div class="form-grid">
-            <div class="field"><label for="review-name">Contact name</label><input id="review-name" name="name" autocomplete="name" required></div>
-            <div class="field"><label for="review-org">Organization or agency</label><input id="review-org" name="organization" autocomplete="organization" required></div>
-            <div class="field"><label for="review-email">Work email</label><input id="review-email" name="email" type="email" autocomplete="email" required></div>
-            <div class="field"><label for="review-phone">Phone</label><input id="review-phone" name="phone" type="tel" autocomplete="tel"></div>
-            <div class="field"><label for="review-location">Facility city and ZIP</label><input id="review-location" name="location" autocomplete="postal-code" placeholder="Mount Holly, NC 28120" required></div>
-            <div class="field"><label for="review-type">Facility type</label><select id="review-type" name="facility_type" required><option value="">Select one</option><option>Professional or administrative office</option><option>Government or municipal facility</option><option>Hospitality or public-facing facility</option><option>Community or nonprofit facility</option><option>Retail or mixed-use facility</option><option>Other commercial facility</option></select></div>
-            <div class="field"><label for="review-size">Approximate size</label><select id="review-size" name="size"><option>Not sure</option><option>Under 3,000 sq. ft.</option><option>3,000 to 10,000 sq. ft.</option><option>10,000 to 25,000 sq. ft.</option><option>Over 25,000 sq. ft.</option></select></div>
-            <div class="field"><label for="review-timing">Desired start or bid date</label><input id="review-timing" name="timing" type="date"></div>
-            <div class="field full"><label for="review-needs">What should we understand about the facility?</label><textarea id="review-needs" name="needs" placeholder="Describe the rooms or public areas, current schedule, traffic, surfaces, recurring issues, expected frequency, and any ordinary access requirements."></textarea></div>
-            <div class="field full">
-              <label class="upload-box" for="review-files"><strong>Drag files here or click to browse</strong><span>Add photos, short video, PDF, or ordinary scope documents. Up to 8 files. Images, MP4/MOV video, and PDF. The secure backend is not connected in this preview, so files remain on your device.</span><input id="review-files" name="files" type="file" multiple accept="image/jpeg,image/png,image/webp,video/mp4,video/quicktime,application/pdf"></label>
-              <div class="file-list" id="review-file-list" aria-live="polite"></div>
-            </div>
-          </div>
+  if (!live) { form.hidden = true; pending.hidden = false; return; }
 
-          <div class="security-note"><strong>Do not upload:</strong> access credentials, door or alarm codes, employee records, restricted floor plans, classified information, controlled unclassified information, or documents the organization is not authorized to share.</div>
-          <label class="consent"><input id="review-consent" type="checkbox" required><span>I am authorized to share these ordinary facility details and understand this preview does not transmit files or create a binding quote.</span></label>
-          <button class="button dark" type="submit" style="width:100%">Preview my facility review request <span aria-hidden="true">→</span></button>
-          <div class="form-status" id="review-form-status" role="status" aria-live="polite"></div>
-        </form>
-      </div>
-    </section>
+  var chan = document.querySelector('.c-channels');
+  if (CONTACT.CONTACT_EMAIL || CONTACT.CONTACT_PHONE) {
+    var d = document.createElement('div');
+    d.className = 'c-channel';
+    d.innerHTML = '<span>Direct</span><strong>' +
+      (CONTACT.CONTACT_EMAIL ? '<a href="mailto:' + CONTACT.CONTACT_EMAIL + '">' + CONTACT.CONTACT_EMAIL + '</a>' : '') +
+      (CONTACT.CONTACT_EMAIL && CONTACT.CONTACT_PHONE ? '<br>' : '') +
+      (CONTACT.CONTACT_PHONE ? '<a href="tel:' + CONTACT.CONTACT_PHONE.replace(/[^0-9+]/g, '') + '">' + CONTACT.CONTACT_PHONE + '</a>' : '') +
+      '</strong>';
+    chan.insertBefore(d, chan.firstChild);
+  }
 
-    <section class="contact" id="contact">
-      <div class="shell contact-grid">
-        <div><p class="eyebrow">Next step</p><h2>Build the company before claiming the credentials.</h2><p>The site design and capability structure are ready for a focused launch. Final contact details, legal name, insurance, registration identifiers, service radius, and approved founder photography should be added before public outreach.</p></div>
-        <div class="contact-card"><strong>Golden Crest prelaunch checklist</strong><p>Confirm the legal business name, ownership agreement, business email, phone, initial service radius, first commercial offer, insurance quote, and formation timeline.</p><span class="pending">Contact channel pending formation</span></div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="shell"><span>Golden Crest is a working business name. Mount Holly, North Carolina.</span><span><a href="capability-statement.html">Capability profile</a> | <a href="#government">Procurement readiness</a></span></div>
-  </footer>
-
-  <script>
-    const toggle=document.querySelector('.mobile-toggle');
-    const links=document.querySelector('.nav-links');
-    toggle?.addEventListener('click',()=>{
-      const open=toggle.getAttribute('aria-expanded')==='true';
-      toggle.setAttribute('aria-expanded',String(!open));
-      links.style.display=open?'none':'flex';
-      if(!open){links.style.position='absolute';links.style.left='16px';links.style.right='16px';links.style.top='76px';links.style.padding='20px';links.style.background='#fbfaf6';links.style.border='1px solid #d8d7d1';links.style.flexDirection='column';links.style.alignItems='flex-start';}
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    status.className = 'fstatus';
+    var missing = [];
+    ['f-name', 'f-org', 'f-email', 'f-type', 'f-loc'].forEach(function (id) {
+      var el = document.getElementById(id);
+      if (!el.value.trim()) missing.push(el);
     });
-    document.querySelectorAll('.nav-links a').forEach(link=>link.addEventListener('click',()=>{if(window.innerWidth<981){links.style.display='none';toggle.setAttribute('aria-expanded','false');}}));
+    var email = document.getElementById('f-email');
+    if (email.value.trim() && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim())) missing.push(email);
+    if (!document.getElementById('f-consent').checked) missing.push(document.getElementById('f-consent'));
 
-    const reviewFiles=document.getElementById('review-files');
-    const reviewFileList=document.getElementById('review-file-list');
-    const reviewForm=document.getElementById('facility-review-form');
-    const reviewStatus=document.getElementById('review-form-status');
-    const formatBytes=bytes=>bytes<1024*1024?`${Math.max(1,Math.round(bytes/1024))} KB`:`${(bytes/1024/1024).toFixed(1)} MB`;
+    if (missing.length) {
+      status.className = 'fstatus err';
+      status.textContent = 'Please complete the required fields before sending.';
+      missing[0].focus();
+      return;
+    }
 
-    reviewFiles?.addEventListener('change',()=>{
-      const files=Array.from(reviewFiles.files||[]);
-      const allowed=['image/jpeg','image/png','image/webp','video/mp4','video/quicktime','application/pdf'];
-      const valid=files.slice(0,8).filter(file=>allowed.includes(file.type)&&file.size<=50*1024*1024);
-      reviewFileList.innerHTML='';
-      valid.forEach(file=>{
-        const row=document.createElement('div');
-        row.textContent=`${file.name} | ${formatBytes(file.size)}`;
-        reviewFileList.appendChild(row);
+    var data = {};
+    new FormData(form).forEach(function (v, k) { data[k] = v; });
+
+    if (CONTACT.INQUIRY_ENDPOINT) {
+      status.textContent = 'Sending...';
+      fetch(CONTACT.INQUIRY_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      }).then(function (r) {
+        if (!r.ok) throw new Error(r.status);
+        form.reset();
+        status.className = 'fstatus ok';
+        status.textContent = 'Received. We acknowledge inquiries within one business day.';
+      }).catch(function () {
+        status.className = 'fstatus err';
+        status.textContent = 'That did not send. Email us directly at ' + (CONTACT.CONTACT_EMAIL || 'the address listed above') + '.';
       });
-      if(files.length>8){const row=document.createElement('div');row.textContent='Only the first 8 files can be included.';reviewFileList.appendChild(row);}
-      if(valid.length!==Math.min(files.length,8)){const row=document.createElement('div');row.textContent='One or more files were not listed because the format or size is outside the preview limits.';reviewFileList.appendChild(row);}
-    });
-
-    reviewForm?.addEventListener('submit',event=>{
-      event.preventDefault();
-      reviewStatus.classList.remove('show');
-      if(!reviewForm.checkValidity()){
-        reviewForm.reportValidity();
-        return;
-      }
-      const count=reviewFiles?.files?.length||0;
-      reviewStatus.textContent=`Preview ready with ${count} selected file${count===1?'':'s'}. No information or files were transmitted because secure storage and the monitored Golden Crest contact channel are not connected yet.`;
-      reviewStatus.classList.add('show');
-      reviewStatus.scrollIntoView({behavior:'smooth',block:'nearest'});
-    });
-  </script>
+    } else {
+      var body = Object.keys(data).map(function (k) { return k + ': ' + data[k]; }).join('\n');
+      window.location.href = 'mailto:' + CONTACT.CONTACT_EMAIL +
+        '?subject=' + encodeURIComponent('Facility inquiry - ' + (data.organization || '')) +
+        '&body=' + encodeURIComponent(body);
+      status.className = 'fstatus ok';
+      status.textContent = 'Opening your email client with the details filled in.';
+    }
+  });
+})();
+</script>
 </body>
 </html>

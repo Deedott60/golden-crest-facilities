@@ -16,12 +16,29 @@ Golden Crest is a separate potential business for Miesha and Kimberly. It is not
 
 - `AGENTS.md`: mandatory project boundaries and verification rules for Claude, Codex, and Hermes.
 - `CERTIFICATION_ROADMAP.md`: plain-language registration, WOSB, EDWOSB, NCSBE, SBE, WBENC, NMSDC, operating-agreement, and secure photo-intake roadmap.
-- `index.html`: rebuilt responsive landing page.
+- `index.html`: procurement-first landing page. Written for public, institutional, and prime-contractor buyers rather than consumer cleaning search traffic.
 - `capability-statement.html`: printable pre-registration capability profile.
 - `Golden-Crest-Capability-Profile-DRAFT.pdf`: verified one-page draft PDF generated from the printable profile.
 - `master_business_and_contracting_plan.md`: corrected launch and procurement plan with official sources.
 - `capability_statement_and_website_copy.md`: controlled capability and copy source.
 - `assets/golden-crest-facilities-hero.png`: original representative hero artwork generated for the project.
+
+## Website structure (do not revert without discussion)
+
+`index.html` is ordered for a buyer who evaluates vendors, not a homeowner shopping for cleaning:
+
+1. Hero + vendor data rail (classification, ownership, service area, registration status).
+2. Who we serve - four buyer lanes with the buying mechanism named for each.
+3. Capabilities - what is performed at launch beside what will not be bid.
+4. Performance standard - four commitments, each producing a named deliverable.
+5. Key personnel - founder experience, explicitly labeled as individual work history and not company past performance.
+6. How to buy - micro-purchase, simplified acquisition, subcontracting, direct agreement.
+7. Vendor and certification status - the single source of truth table.
+8. Contact - procurement and facility lanes.
+
+Contact details are set in one place: the `CONTACT` object at the top of the inline script in `index.html`. While `CONTACT_EMAIL` and `INQUIRY_ENDPOINT` are both empty the inquiry form is hidden and replaced with an honest "contact channel being established" notice, so the page never ships a dead form.
+
+The hero image is representative artwork. It carries a visible caption and a footer disclosure, and it should be replaced with approved founder or real operations photography before public launch.
 
 ## Current truth
 
