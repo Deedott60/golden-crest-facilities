@@ -118,6 +118,40 @@
     .step .mono{font:400 12px "IBM Plex Mono",monospace;color:var(--gold-dark)}
     .step h3{margin:42px 0 10px;font-size:21px;font-weight:500}
     .step p{margin:0;color:var(--muted);font-size:14px}
+    .scope-review{background:#eaf5f3;border-top:1px solid #cce3df;border-bottom:1px solid #cce3df}
+    .review-layout{display:grid;grid-template-columns:.78fr 1.22fr;gap:64px;align-items:start}
+    .review-copy h2{margin:0;font-size:clamp(40px,5vw,64px);font-weight:300;line-height:1.02;letter-spacing:-.045em}
+    .review-copy>p{color:var(--muted);font-size:17px;margin:24px 0 0}
+    .review-points{display:grid;gap:1px;background:#bdd8d3;border:1px solid #bdd8d3;margin-top:32px}
+    .review-point{background:rgba(255,255,255,.7);padding:18px}
+    .review-point strong{display:block;font-size:14px;font-weight:600}
+    .review-point span{display:block;color:var(--muted);font-size:12px;margin-top:4px}
+    .review-form{background:var(--white);border-top:4px solid var(--teal);padding:30px}
+    .preview-label{display:inline-block;margin-bottom:22px;padding:6px 8px;background:#dff1ee;color:#0c665e;font:500 10px "IBM Plex Mono",monospace;text-transform:uppercase;letter-spacing:.06em}
+    .choice-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:24px}
+    .choice{position:relative;display:block}
+    .choice input{position:absolute;opacity:0;pointer-events:none}
+    .choice span{display:block;min-height:94px;padding:14px;border:1px solid var(--line);background:var(--paper);font-size:12px;cursor:pointer}
+    .choice span strong{display:block;color:var(--ink);font-size:13px;margin-bottom:5px}
+    .choice input:checked+span{border:2px solid var(--teal);background:#eaf5f3;padding:13px}
+    .choice input:focus-visible+span{outline:3px solid #0f62fe;outline-offset:2px}
+    .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .field{display:grid;gap:7px}
+    .field.full{grid-column:1/-1}
+    .field label{font:500 11px "IBM Plex Mono",monospace;text-transform:uppercase;letter-spacing:.04em;color:#4f5963}
+    .field input,.field select,.field textarea{width:100%;min-height:48px;border:0;border-bottom:2px solid #8c959d;background:#f4f4f4;padding:12px 14px;border-radius:0;color:var(--ink);font:400 14px "IBM Plex Sans",sans-serif}
+    .field textarea{min-height:112px;resize:vertical}
+    .field input:focus,.field select:focus,.field textarea:focus{outline:2px solid var(--teal);outline-offset:0;border-bottom-color:var(--teal)}
+    .upload-box{display:block;padding:22px;border:2px dashed #8bbdb6;background:#f6fbfa;text-align:center;cursor:pointer}
+    .upload-box strong{display:block;font-size:15px}
+    .upload-box span{display:block;margin-top:5px;color:var(--muted);font-size:12px}
+    .upload-box input{position:absolute;width:1px;height:1px;opacity:0;overflow:hidden}
+    .file-list{display:grid;gap:6px;margin-top:10px;font:400 11px "IBM Plex Mono",monospace;color:#4f5963}
+    .security-note{margin:18px 0;padding:14px 16px;background:#f4f4f4;border-left:3px solid var(--teal);color:#505a64;font-size:12px}
+    .consent{display:flex;gap:10px;align-items:flex-start;font-size:12px;color:#4f5963;margin:16px 0}
+    .consent input{margin-top:3px}
+    .form-status{display:none;margin-top:14px;padding:13px 15px;background:#e7f2ec;color:#175d3c;font-size:13px}
+    .form-status.show{display:block}
     .contact{background:var(--ink);color:#fff;padding:88px 0}
     .contact-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:64px;align-items:end}
     .contact h2{font-size:clamp(42px,6vw,72px);line-height:1;font-weight:300;letter-spacing:-.045em;margin:0}
@@ -140,7 +174,7 @@
       .hero-media{min-height:700px}
       .hero-media:after{background:linear-gradient(90deg,#111820 0%,rgba(17,24,32,.97) 38%,rgba(17,24,32,.7) 72%,rgba(17,24,32,.3) 100%)}
       .service-grid{grid-template-columns:repeat(2,1fr)}
-      .section-head,.gov-grid,.contact-grid{grid-template-columns:1fr}
+      .section-head,.gov-grid,.contact-grid,.review-layout{grid-template-columns:1fr}
       .founder-grid,.standards{grid-template-columns:1fr}
       .gov-grid{gap:40px}
       .contact-grid{align-items:start}
@@ -162,6 +196,9 @@
       .hero-media:after{background:linear-gradient(180deg,rgba(17,24,32,.98) 0%,rgba(17,24,32,.93) 56%,rgba(17,24,32,.58) 100%)}
       .hero-note{display:none}
       .service-grid,.founder-grid,.steps{grid-template-columns:1fr}
+      .choice-grid,.form-grid{grid-template-columns:1fr}
+      .field.full{grid-column:auto}
+      .review-form{padding:22px}
       .service-card{min-height:240px}
       .founder{padding:28px;min-height:0}
       .standards{gap:38px}
@@ -192,7 +229,7 @@
         <a href="#standards">Standards</a>
         <a href="#government">Government readiness</a>
       </div>
-      <a class="button dark" href="#contact">Start a facility conversation <span aria-hidden="true">↗</span></a>
+      <a class="button dark" href="#scope-review">Start a facility review <span aria-hidden="true">↗</span></a>
       <button class="mobile-toggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
     </nav>
   </header>
@@ -205,7 +242,7 @@
           <h1 id="hero-title">Hospitality discipline for the spaces <em>people depend on.</em></h1>
           <p class="lead">Commercial janitorial and facility care shaped by high-volume casino and resort operations. Golden Crest is being built for offices, public-facing facilities, hospitality environments, and institutional spaces that need dependable standards and visible accountability.</p>
           <div class="hero-actions">
-            <a class="button primary" href="#contact">Request a site walkthrough <span aria-hidden="true">→</span></a>
+            <a class="button primary" href="#scope-review">Request a facility review <span aria-hidden="true">→</span></a>
             <a class="button ghost" href="capability-statement.html">View capability profile <span aria-hidden="true">↗</span></a>
           </div>
           <div class="trust-row" aria-label="Company facts">
@@ -273,7 +310,8 @@
           <div class="status-row"><div><strong>NAICS and PSC alignment</strong><small>NAICS 561720, Janitorial Services | PSC S201, Custodial Janitorial</small></div><span class="status defined">Defined</span></div>
           <div class="status-row"><div><strong>Legal entity and ownership documents</strong><small>Finalize LLC formation and operating agreement with actual ownership and control reflected accurately.</small></div><span class="status">Before outreach</span></div>
           <div class="status-row"><div><strong>SAM registration, UEI and CAGE</strong><small>Register free through SAM.gov after the legal entity, EIN, bank account, and address records match.</small></div><span class="status">Pending</span></div>
-          <div class="status-row"><div><strong>SBA WOSB certification</strong><small>Apply through MySBA Certifications after eligibility and control requirements are documented.</small></div><span class="status">Pending</span></div>
+          <div class="status-row"><div><strong>SBA WOSB and EDWOSB certification</strong><small>Apply free through MySBA Certifications after SAM activation and ownership, control, citizenship, and economic-disadvantage requirements are documented.</small></div><span class="status">Pending</span></div>
+          <div class="status-row"><div><strong>APEX and NC SBTDC GCAP guidance</strong><small>Use no-cost government-contracting counseling for registration, capture planning, procurement compliance, and opportunity targeting.</small></div><span class="status">Next step</span></div>
           <div class="status-row"><div><strong>Insurance, screening and site training</strong><small>Set limits and requirements based on the first real customer or solicitation.</small></div><span class="status">Pending scope</span></div>
           <div class="status-row"><div><strong>Government capability profile</strong><small>Draft profile available for review. Final version will carry only active identifiers and proven capabilities.</small></div><span class="status defined">Draft ready</span></div>
         </div>
@@ -282,12 +320,60 @@
 
     <section class="section process" id="process">
       <div class="shell">
-        <div class="section-head"><div><p class="eyebrow">Commercial onboarding</p><h2>A simple path from facility need to written scope.</h2></div><p>Government solicitations follow their own instructions. Commercial buyers can begin with an on-site walkthrough. A secure photo-assisted scope review can be added after the upload, privacy, storage, and monitored-delivery workflow is active.</p></div>
+        <div class="section-head"><div><p class="eyebrow">Commercial onboarding</p><h2>A simple path from facility need to written scope.</h2></div><p>Government solicitations follow their own instructions. Commercial buyers can begin with an on-site walkthrough or the designed photo-assisted scope review below. Secure storage and monitored delivery connect before public launch.</p></div>
         <div class="steps">
           <div class="step"><span class="mono">Step 01</span><h3>Facility conversation</h3><p>Discuss building type, operating hours, traffic, current concerns, access restrictions, and desired frequency.</p></div>
           <div class="step"><span class="mono">Step 02</span><h3>Walkthrough and scope</h3><p>Review the site, separate included work from add-ons, and document assumptions before pricing.</p></div>
           <div class="step"><span class="mono">Step 03</span><h3>Proposal and launch plan</h3><p>Provide written pricing, service frequency, startup requirements, quality checks, and communication expectations.</p></div>
         </div>
+      </div>
+    </section>
+
+    <section class="section scope-review" id="scope-review" aria-labelledby="scope-review-title">
+      <div class="shell review-layout">
+        <div class="review-copy">
+          <p class="eyebrow">Facility scope review</p>
+          <h2 id="scope-review-title">Show us the space. Choose how you want us to review it.</h2>
+          <p>Start with an on-site walkthrough, ordinary facility photos and short video, or a public solicitation and scope document. Golden Crest reviews the material before preparing any scope or proposal.</p>
+          <div class="review-points">
+            <div class="review-point"><strong>Easy for the facility contact</strong><span>One place for the building facts, service needs, media, and timing.</span></div>
+            <div class="review-point"><strong>Human-reviewed</strong><span>Uploads support the walkthrough. They do not create an automatic binding quote.</span></div>
+            <div class="review-point"><strong>Security boundaries</strong><span>No door codes, alarm codes, employee data, restricted layouts, classified files, or controlled government information.</span></div>
+          </div>
+        </div>
+
+        <form class="review-form" id="facility-review-form" novalidate>
+          <span class="preview-label">Designed intake preview | secure delivery connection is the next build step</span>
+          <fieldset style="border:0;padding:0;margin:0">
+            <legend class="eyebrow" style="color:#11776e;margin-bottom:12px">How should we review the facility?</legend>
+            <div class="choice-grid">
+              <label class="choice"><input type="radio" name="review_type" value="onsite" checked><span><strong>On-site walkthrough</strong>Meet at the facility and review the scope together.</span></label>
+              <label class="choice"><input type="radio" name="review_type" value="media"><span><strong>Photo and video review</strong>Share ordinary rooms, surfaces, traffic areas, and concerns.</span></label>
+              <label class="choice"><input type="radio" name="review_type" value="solicitation"><span><strong>Solicitation review</strong>Share a public scope, bid packet, or ordinary facility document.</span></label>
+            </div>
+          </fieldset>
+
+          <div class="form-grid">
+            <div class="field"><label for="review-name">Contact name</label><input id="review-name" name="name" autocomplete="name" required></div>
+            <div class="field"><label for="review-org">Organization or agency</label><input id="review-org" name="organization" autocomplete="organization" required></div>
+            <div class="field"><label for="review-email">Work email</label><input id="review-email" name="email" type="email" autocomplete="email" required></div>
+            <div class="field"><label for="review-phone">Phone</label><input id="review-phone" name="phone" type="tel" autocomplete="tel"></div>
+            <div class="field"><label for="review-location">Facility city and ZIP</label><input id="review-location" name="location" autocomplete="postal-code" placeholder="Mount Holly, NC 28120" required></div>
+            <div class="field"><label for="review-type">Facility type</label><select id="review-type" name="facility_type" required><option value="">Select one</option><option>Professional or administrative office</option><option>Government or municipal facility</option><option>Hospitality or public-facing facility</option><option>Community or nonprofit facility</option><option>Retail or mixed-use facility</option><option>Other commercial facility</option></select></div>
+            <div class="field"><label for="review-size">Approximate size</label><select id="review-size" name="size"><option>Not sure</option><option>Under 3,000 sq. ft.</option><option>3,000 to 10,000 sq. ft.</option><option>10,000 to 25,000 sq. ft.</option><option>Over 25,000 sq. ft.</option></select></div>
+            <div class="field"><label for="review-timing">Desired start or bid date</label><input id="review-timing" name="timing" type="date"></div>
+            <div class="field full"><label for="review-needs">What should we understand about the facility?</label><textarea id="review-needs" name="needs" placeholder="Describe the rooms or public areas, current schedule, traffic, surfaces, recurring issues, expected frequency, and any ordinary access requirements."></textarea></div>
+            <div class="field full">
+              <label class="upload-box" for="review-files"><strong>Drag files here or click to browse</strong><span>Add photos, short video, PDF, or ordinary scope documents. Up to 8 files. Images, MP4/MOV video, and PDF. The secure backend is not connected in this preview, so files remain on your device.</span><input id="review-files" name="files" type="file" multiple accept="image/jpeg,image/png,image/webp,video/mp4,video/quicktime,application/pdf"></label>
+              <div class="file-list" id="review-file-list" aria-live="polite"></div>
+            </div>
+          </div>
+
+          <div class="security-note"><strong>Do not upload:</strong> access credentials, door or alarm codes, employee records, restricted floor plans, classified information, controlled unclassified information, or documents the organization is not authorized to share.</div>
+          <label class="consent"><input id="review-consent" type="checkbox" required><span>I am authorized to share these ordinary facility details and understand this preview does not transmit files or create a binding quote.</span></label>
+          <button class="button dark" type="submit" style="width:100%">Preview my facility review request <span aria-hidden="true">→</span></button>
+          <div class="form-status" id="review-form-status" role="status" aria-live="polite"></div>
+        </form>
       </div>
     </section>
 
@@ -313,6 +399,39 @@
       if(!open){links.style.position='absolute';links.style.left='16px';links.style.right='16px';links.style.top='76px';links.style.padding='20px';links.style.background='#fbfaf6';links.style.border='1px solid #d8d7d1';links.style.flexDirection='column';links.style.alignItems='flex-start';}
     });
     document.querySelectorAll('.nav-links a').forEach(link=>link.addEventListener('click',()=>{if(window.innerWidth<981){links.style.display='none';toggle.setAttribute('aria-expanded','false');}}));
+
+    const reviewFiles=document.getElementById('review-files');
+    const reviewFileList=document.getElementById('review-file-list');
+    const reviewForm=document.getElementById('facility-review-form');
+    const reviewStatus=document.getElementById('review-form-status');
+    const formatBytes=bytes=>bytes<1024*1024?`${Math.max(1,Math.round(bytes/1024))} KB`:`${(bytes/1024/1024).toFixed(1)} MB`;
+
+    reviewFiles?.addEventListener('change',()=>{
+      const files=Array.from(reviewFiles.files||[]);
+      const allowed=['image/jpeg','image/png','image/webp','video/mp4','video/quicktime','application/pdf'];
+      const valid=files.slice(0,8).filter(file=>allowed.includes(file.type)&&file.size<=50*1024*1024);
+      reviewFileList.innerHTML='';
+      valid.forEach(file=>{
+        const row=document.createElement('div');
+        row.textContent=`${file.name} | ${formatBytes(file.size)}`;
+        reviewFileList.appendChild(row);
+      });
+      if(files.length>8){const row=document.createElement('div');row.textContent='Only the first 8 files can be included.';reviewFileList.appendChild(row);}
+      if(valid.length!==Math.min(files.length,8)){const row=document.createElement('div');row.textContent='One or more files were not listed because the format or size is outside the preview limits.';reviewFileList.appendChild(row);}
+    });
+
+    reviewForm?.addEventListener('submit',event=>{
+      event.preventDefault();
+      reviewStatus.classList.remove('show');
+      if(!reviewForm.checkValidity()){
+        reviewForm.reportValidity();
+        return;
+      }
+      const count=reviewFiles?.files?.length||0;
+      reviewStatus.textContent=`Preview ready with ${count} selected file${count===1?'':'s'}. No information or files were transmitted because secure storage and the monitored Golden Crest contact channel are not connected yet.`;
+      reviewStatus.classList.add('show');
+      reviewStatus.scrollIntoView({behavior:'smooth',block:'nearest'});
+    });
   </script>
 </body>
 </html>

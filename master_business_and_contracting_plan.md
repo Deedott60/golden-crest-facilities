@@ -12,9 +12,9 @@
 
 ## Executive decision
 
-The business concept makes sense with one major correction: government contracting should be a parallel growth channel, not the only launch plan.
+The business concept makes sense as an account-based government and institutional contractor engine. Golden Crest should not depend on consumer advertising or compete broadly for residential cleaning leads. The primary pipeline should be named agencies, municipalities, schools, colleges, housing and community institutions, facility managers, prime contractors, and commercial accounts that buy through a defined procurement process.
 
-The strongest foundation is not a certification badge. It is the founders' experience managing sanitation, guest-facing presentation, teams, and compliance inside high-volume casino and resort operations. Golden Crest should first turn that experience into a narrow, repeatable commercial service. It can build government readiness at the same time.
+The strongest foundation is not a certification badge. It is the founders' experience managing sanitation, guest-facing presentation, teams, and compliance inside high-volume casino and resort operations. Miesha can remain employed while Derrick and the agents build the registration, opportunity-research, relationship, and proposal engine, but Golden Crest must confirm founder availability, outside-employment rules, staffing depth, and cash flow before accepting work.
 
 ## Project boundary
 
@@ -89,19 +89,34 @@ Gaston County has previously issued janitorial solicitations for individual faci
 
 The NC SBTDC Charlotte office provides government-contracting assistance and lists a government contracting counselor.[6] This is the most direct local starting point for free registration, capability-statement, pricing, bid, and opportunity guidance.
 
+## Account-based government and institutional contractor engine
+
+The operating pipeline is:
+
+1. Build a named-account list of public agencies, local institutions, facility managers, and established primes that buy janitorial or facility support.
+2. Register in each buyer's vendor system and select accurate commodity codes.
+3. Track procurement calendars, bid notifications, sources-sought notices, subcontracting requests, expiring awards, incumbent vendors, and site-visit dates.
+4. Maintain a contact map of purchasing staff, small-business officers, facility contacts, and prime-contractor supplier teams.
+5. Send a short capability profile and a facility-specific introduction, not mass advertising.
+6. Qualify each opportunity against staffing, schedule, insurance, wages, equipment, travel, security, payroll cash flow, and founder capacity.
+7. Build the compliance matrix and proposal only for work Golden Crest can actually perform.
+8. Record every contact, deadline, document, response, award result, and follow-up in one opportunity workspace.
+
+APEX Accelerators provide no-cost government-marketplace guidance and education.[20] In North Carolina, the SBTDC Government Contracting Assistance Program provides capture management, procurement-compliance, contract-performance, and strategic advisory support, with government-contracting counselors listed at the Charlotte center.[6][19] Golden Crest should request an intake after the founders approve the business structure, and use the counselor while completing registrations and building the first account list.
+
 ## Corrected go-to-market strategy
 
-### Lane 1: Commercial proof first
+### Lane 1: Account-based institutional and commercial proof
 
 Start with one narrow offer:
 
 > Founder-led recurring janitorial care for small professional, administrative, and public-facing facilities in Gaston and western Mecklenburg counties.
 
-Best first targets:
+Best first targets do not require paid consumer advertising:
 
-- Professional offices.
-- Administrative and nonprofit offices.
-- Small municipal or community facilities when a vendor path is available.
+- Small municipal, administrative, education, housing, nonprofit, and community facilities when a vendor path is available.
+- Established janitorial and facility-management primes needing local subcontract coverage.
+- Professional offices and property managers identified through direct account research.
 - Hospitality-adjacent offices and public areas.
 - One-time turnover and event reset work with a defined scope.
 
@@ -188,10 +203,12 @@ North Carolina generally requires workers' compensation coverage when an employe
 - Purchase only the equipment needed for the first service lane.
 - Create chemical, SDS, PPE, key-control, incident, and quality-check procedures.
 
-### Days 31 to 60: commercial proof
+### Days 31 to 60: account engine and proof
 
-- Pursue three to five carefully selected local facilities.
-- Win one small recurring account or clearly scoped one-time project.
+- Build the first 25 named government, institutional, prime-contractor, and commercial target accounts.
+- Complete the local APEX or SBTDC GCAP intake and use the counselor to review the registration and capture plan.[19][20]
+- Pursue three to five carefully selected facility or subcontracting opportunities.
+- Win one small recurring account, subcontract, or clearly scoped one-time project.
 - Document the approved scope, checklist, issue process, and customer reference.
 - Measure actual labor time and margin.
 
@@ -227,3 +244,5 @@ The rebuilt `index.html` follows this rule. The printable `capability-statement.
 [13] https://sosnc.gov/manual/launching_a_business/preparing_the_document_and_attachments
 [14] https://sosnc.gov/guides/launching_a_business/maintaining_registration
 [15] https://sam.gov/entity-registration
+[19] https://sbtdc.org/services/government-contracting
+[20] https://www.apexaccelerators.us

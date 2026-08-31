@@ -31,12 +31,13 @@ The company is not yet formed, insured, bonded, registered in SAM, assigned a UE
 
 1. Founders approve the name, ownership, duties, capital, and deadlock plan.
 2. Review current-employer conflict and outside-business rules.
-3. Validate one narrow local commercial service lane and price a real facility.
+3. Validate one narrow janitorial service lane and price a real facility.
 4. Form the company, open banking, and bind appropriate insurance.
-5. Establish one to three commercial proof accounts or scoped projects.
-6. Register in local and state vendor systems.
-7. Complete SAM, UEI, CAGE, and SBA certification work only with matching legal records.
-8. Pursue small RFQs, sources-sought notices, subcontracting, and suitable public opportunities.
+5. Start the no-cost APEX or NC SBTDC Government Contracting Assistance Program intake.
+6. Build a named-account pipeline of agencies, institutions, prime contractors, and facility buyers.
+7. Register in local and state vendor systems.
+8. Complete SAM, UEI, CAGE, and SBA certification work only with matching legal records.
+9. Pursue small RFQs, sources-sought notices, subcontracting, and suitable public opportunities.
 
 ## Preview
 

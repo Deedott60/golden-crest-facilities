@@ -116,12 +116,14 @@ NMSDC says initial fees vary by business size and can be as low as $270 for busi
 1. Finalize the founders' ownership and operating agreement.
 2. Form the LLC, obtain EIN, bank account, insurance, and monitored contact channels.
 3. Establish the initial commercial offer and cost model.
-4. Register for Gaston and nearby local vendor opportunities.
-5. Register in NC eVP and apply for NCSBE if eligible.[11]
-6. Register as a City of Charlotte supplier and evaluate Charlotte SBE.[7][8]
-7. Register free in SAM.gov and complete the Small Business Search profile.[5][15]
-8. Apply free through MySBA Certifications for WOSB and EDWOSB if the founders meet the requirements.[4][16]
-9. Buy WBENC or NMSDC only after a real target buyer says the credential affects sourcing.
+4. Request no-cost APEX and NC SBTDC Government Contracting Assistance Program guidance for registration, capture planning, procurement compliance, and account targeting.[19][20]
+5. Build a named-account list of agencies, institutions, prime contractors, and facility buyers.
+6. Register for Gaston and nearby local vendor opportunities.
+7. Register in NC eVP and apply for NCSBE if eligible.[11]
+8. Register as a City of Charlotte supplier and evaluate Charlotte SBE.[7][8]
+9. Register free in SAM.gov and complete the Small Business Search profile.[5][15]
+10. Apply free through MySBA Certifications for WOSB and EDWOSB if the founders meet the requirements.[4][16]
+11. Buy WBENC or NMSDC only after a real target buyer says the credential affects sourcing.
 
 ## 6. What belongs on the website
 
@@ -204,3 +206,5 @@ The agents do not create legal eligibility, physical janitorial capacity, staffi
 [16] https://certifications.sba.gov
 [17] https://wbenc.org/certification/frequently-asked-questions-about-wbenc-certification
 [18] https://nmsdc.org/certifications/certification-process
+[19] https://sbtdc.org/services/government-contracting
+[20] https://www.apexaccelerators.us
