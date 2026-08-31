@@ -15,6 +15,7 @@ Golden Crest is a separate potential business for Miesha and Kimberly. It is not
 ## Files
 
 - `AGENTS.md`: mandatory project boundaries and verification rules for Claude, Codex, and Hermes.
+- `CERTIFICATION_ROADMAP.md`: plain-language registration, WOSB, EDWOSB, NCSBE, SBE, WBENC, NMSDC, operating-agreement, and secure photo-intake roadmap.
 - `index.html`: rebuilt responsive landing page.
 - `capability-statement.html`: printable pre-registration capability profile.
 - `Golden-Crest-Capability-Profile-DRAFT.pdf`: verified one-page draft PDF generated from the printable profile.

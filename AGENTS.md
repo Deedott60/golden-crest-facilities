@@ -6,8 +6,9 @@ Before editing this project, read:
 
 1. `README.md`
 2. `master_business_and_contracting_plan.md`
-3. `capability_statement_and_website_copy.md`
-4. `PREMIUM_REDESIGN_AUDIT.md`
+3. `CERTIFICATION_ROADMAP.md`
+4. `capability_statement_and_website_copy.md`
+5. `PREMIUM_REDESIGN_AUDIT.md`
 
 ## Project boundary
 

@@ -17,9 +17,9 @@
       --soft:#f1f0ea;
       --line:#d8d7d1;
       --muted:#5d6670;
-      --gold:#b1863d;
-      --gold-dark:#805f28;
-      --teal:#1f5d57;
+      --gold:#52c7b8;
+      --gold-dark:#11776e;
+      --teal:#11776e;
       --success:#26734d;
       --warning:#8a5b13;
       --max:1240px;
@@ -40,11 +40,11 @@
     .topline{background:var(--ink);color:#d9dde2;font:400 12px/1.2 "IBM Plex Mono",monospace}
     .topline .shell{min-height:40px;display:flex;align-items:center;justify-content:space-between;gap:20px}
     .topline strong{color:#fff;font-weight:500}
-    .topline span:last-child{color:#c9ab70}
+    .topline span:last-child{color:#8edfd4}
     header{position:sticky;top:0;z-index:20;background:rgba(251,250,246,.96);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
     nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:28px}
     .brand{min-width:0;text-decoration:none;display:flex;align-items:center;gap:14px}
-    .mark{width:42px;height:42px;display:grid;place-items:center;background:var(--ink);color:#e4c889;font:500 15px "IBM Plex Mono",monospace}
+    .mark{width:42px;height:42px;display:grid;place-items:center;background:var(--ink);color:#8edfd4;font:500 15px "IBM Plex Mono",monospace}
     .brand-copy strong{display:block;font-size:20px;font-weight:600;letter-spacing:-.02em}
     .brand-copy span{display:block;color:var(--muted);font:400 10px/1.3 "IBM Plex Mono",monospace;text-transform:uppercase;letter-spacing:.08em}
     .nav-links{display:flex;align-items:center;gap:28px}
@@ -56,22 +56,25 @@
     .button.dark{background:var(--ink);color:#fff}
     .button.dark:hover{background:#2a3541}
     .button.ghost{background:transparent;border-color:var(--ink);color:var(--ink)}
-    .hero{background:var(--white);border-bottom:1px solid var(--line)}
-    .hero-grid{display:grid;grid-template-columns:minmax(0,1.02fr) minmax(460px,.98fr);min-height:690px}
+    .hero .eyebrow{color:#8edfd4}
+    .hero .button.ghost{border-color:rgba(255,255,255,.68);color:#fff;background:rgba(17,24,32,.28)}
+    .hero{position:relative;overflow:hidden;background:var(--ink);color:#fff;border-bottom:1px solid #2d3944}
+    .hero-grid{position:relative;display:block;min-height:720px}
     .hero-grid>*{min-width:0}
-    .hero-copy{min-width:0;padding:96px 64px 88px max(24px,calc((100vw - var(--max))/2));display:flex;flex-direction:column;justify-content:center}
+    .hero-copy{position:relative;z-index:2;min-width:0;max-width:780px;min-height:720px;padding:92px 64px 80px max(24px,calc((100vw - var(--max))/2));display:flex;flex-direction:column;justify-content:center}
     .hero h1{max-width:760px;margin:0;font-size:clamp(48px,6.3vw,86px);line-height:.98;font-weight:300;letter-spacing:-.055em}
-    .hero h1 em{font-style:normal;color:var(--gold-dark)}
-    .hero .lead{max-width:650px;margin:28px 0 0;color:var(--muted);font-size:clamp(17px,2vw,20px);line-height:1.55}
+    .hero h1 em{font-style:normal;color:#8edfd4}
+    .hero .lead{max-width:650px;margin:28px 0 0;color:#d1d9df;font-size:clamp(17px,2vw,20px);line-height:1.55}
     .hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:36px}
-    .trust-row{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:54px;max-width:720px}
-    .trust-row div{background:var(--paper);padding:18px}
+    .trust-row{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.16);margin-top:48px;max-width:720px}
+    .trust-row div{background:rgba(17,24,32,.82);padding:18px}
     .trust-row strong{display:block;font-size:14px;font-weight:600}
-    .trust-row span{display:block;color:var(--muted);font-size:12px;margin-top:4px}
-    .hero-media{position:relative;min-height:620px;background:var(--soft);overflow:hidden}
-    .hero-media img{width:100%;height:100%;object-fit:cover;object-position:78% center}
-    .hero-note{position:absolute;left:0;bottom:0;width:min(420px,92%);padding:24px 28px;background:rgba(17,24,32,.95);color:#fff;border-top:3px solid var(--gold)}
-    .hero-note .mono{font:400 11px/1.4 "IBM Plex Mono",monospace;color:#d8be86;text-transform:uppercase;letter-spacing:.07em}
+    .trust-row span{display:block;color:#aeb9c2;font-size:12px;margin-top:4px}
+    .hero-media{position:absolute;inset:0;z-index:0;min-height:720px;background:var(--ink);overflow:hidden}
+    .hero-media:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#111820 0%,rgba(17,24,32,.98) 24%,rgba(17,24,32,.88) 46%,rgba(17,24,32,.28) 76%,rgba(17,24,32,.08) 100%)}
+    .hero-media img{width:100%;height:100%;object-fit:cover;object-position:76% center;opacity:.9}
+    .hero-note{position:absolute;z-index:2;right:0;bottom:0;width:min(420px,92%);padding:24px 28px;background:rgba(10,17,23,.94);color:#fff;border-top:3px solid var(--gold)}
+    .hero-note .mono{font:400 11px/1.4 "IBM Plex Mono",monospace;color:#8edfd4;text-transform:uppercase;letter-spacing:.07em}
     .hero-note strong{display:block;font-size:20px;font-weight:500;margin-top:7px}
     .services{background:var(--paper)}
     .service-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
@@ -82,15 +85,15 @@
     .service-card .fit{margin-top:auto;padding-top:24px;color:var(--teal);font:500 11px "IBM Plex Mono",monospace;text-transform:uppercase;letter-spacing:.04em}
     .founders{background:var(--ink);color:#fff}
     .founders .section-head p{color:#c4cbd2}
-    .founders .eyebrow{color:#d8be86}
+    .founders .eyebrow{color:#8edfd4}
     .founder-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:#3a434c;border:1px solid #3a434c}
     .founder{background:var(--ink-2);padding:36px;min-height:300px}
-    .founder .role{font:400 11px "IBM Plex Mono",monospace;color:#d8be86;text-transform:uppercase;letter-spacing:.07em}
+    .founder .role{font:400 11px "IBM Plex Mono",monospace;color:#8edfd4;text-transform:uppercase;letter-spacing:.07em}
     .founder h3{font-size:34px;font-weight:300;margin:18px 0 12px}
     .founder p{color:#c4cbd2;margin:0;max-width:560px}
     .founder ul{list-style:none;padding:0;margin:28px 0 0;display:grid;gap:10px;color:#e9edf0;font-size:14px}
     .founder li{padding-left:22px;position:relative}
-    .founder li:before{content:"";position:absolute;left:0;top:.65em;width:8px;height:1px;background:#d8be86}
+    .founder li:before{content:"";position:absolute;left:0;top:.65em;width:8px;height:1px;background:#8edfd4}
     .standards{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
     .standards h2{margin:0;font-size:clamp(38px,5vw,62px);font-weight:300;line-height:1.02;letter-spacing:-.04em}
     .standard-list{border-top:1px solid var(--ink)}
@@ -122,7 +125,7 @@
     .contact-card{border-top:3px solid var(--gold);background:var(--ink-2);padding:28px}
     .contact-card strong{display:block;font-size:20px;font-weight:500}
     .contact-card p{font-size:14px;margin:10px 0 0;color:#c4cbd2}
-    .contact-card .pending{display:inline-block;margin-top:20px;padding:7px 9px;background:#403722;color:#e9d29f;font:400 11px "IBM Plex Mono",monospace;text-transform:uppercase}
+    .contact-card .pending{display:inline-block;margin-top:20px;padding:7px 9px;background:#173c39;color:#9fe4da;font:400 11px "IBM Plex Mono",monospace;text-transform:uppercase}
     footer{background:#0b1016;color:#929ba5;padding:30px 0;border-top:1px solid #27313b;font-size:12px}
     footer .shell{display:flex;justify-content:space-between;gap:24px;align-items:center}
     footer a{color:#d7dde2}
@@ -132,9 +135,10 @@
       .nav-links{display:none}
       .mobile-toggle{display:block}
       nav>.button{display:none}
-      .hero-grid{grid-template-columns:1fr}
-      .hero-copy{padding:72px 24px}
-      .hero-media{min-height:520px}
+      .hero-grid{min-height:700px}
+      .hero-copy{min-height:700px;padding:72px 24px}
+      .hero-media{min-height:700px}
+      .hero-media:after{background:linear-gradient(90deg,#111820 0%,rgba(17,24,32,.97) 38%,rgba(17,24,32,.7) 72%,rgba(17,24,32,.3) 100%)}
       .service-grid{grid-template-columns:repeat(2,1fr)}
       .section-head,.gov-grid,.contact-grid{grid-template-columns:1fr}
       .founder-grid,.standards{grid-template-columns:1fr}
@@ -147,15 +151,16 @@
       .brand-copy span{display:none}
       .section{padding:64px 0}
       .section-head{gap:18px;margin-bottom:32px}
-      .hero-copy{padding:58px 20px 52px}
+      .hero-grid,.hero-copy,.hero-media{min-height:760px}
+      .hero-copy{padding:58px 20px 46px;justify-content:flex-start}
       .hero h1{max-width:100%;font-size:45px;overflow-wrap:normal;word-break:normal}
       .hero .lead{max-width:100%;font-size:16px;overflow-wrap:break-word}
       .hero-actions{display:grid}
       .button{width:100%}
       .trust-row{grid-template-columns:1fr;margin-top:38px}
-      .hero-media{min-height:440px}
-      .hero-media img{object-position:76% center}
-      .hero-note{padding:18px 20px}
+      .hero-media img{object-position:70% center;opacity:.66}
+      .hero-media:after{background:linear-gradient(180deg,rgba(17,24,32,.98) 0%,rgba(17,24,32,.93) 56%,rgba(17,24,32,.58) 100%)}
+      .hero-note{display:none}
       .service-grid,.founder-grid,.steps{grid-template-columns:1fr}
       .service-card{min-height:240px}
       .founder{padding:28px;min-height:0}
@@ -200,7 +205,7 @@
           <h1 id="hero-title">Hospitality discipline for the spaces <em>people depend on.</em></h1>
           <p class="lead">Commercial janitorial and facility care shaped by high-volume casino and resort operations. Golden Crest is being built for offices, public-facing facilities, hospitality environments, and institutional spaces that need dependable standards and visible accountability.</p>
           <div class="hero-actions">
-            <a class="button primary" href="#contact">Discuss your facility <span aria-hidden="true">→</span></a>
+            <a class="button primary" href="#contact">Request a site walkthrough <span aria-hidden="true">→</span></a>
             <a class="button ghost" href="capability-statement.html">View capability profile <span aria-hidden="true">↗</span></a>
           </div>
           <div class="trust-row" aria-label="Company facts">
@@ -277,7 +282,7 @@
 
     <section class="section process" id="process">
       <div class="shell">
-        <div class="section-head"><div><p class="eyebrow">Commercial onboarding</p><h2>A simple path from facility need to written scope.</h2></div><p>Government solicitations follow their own instructions. Commercial buyers can begin with a site conversation and written scope.</p></div>
+        <div class="section-head"><div><p class="eyebrow">Commercial onboarding</p><h2>A simple path from facility need to written scope.</h2></div><p>Government solicitations follow their own instructions. Commercial buyers can begin with an on-site walkthrough. A secure photo-assisted scope review can be added after the upload, privacy, storage, and monitored-delivery workflow is active.</p></div>
         <div class="steps">
           <div class="step"><span class="mono">Step 01</span><h3>Facility conversation</h3><p>Discuss building type, operating hours, traffic, current concerns, access restrictions, and desired frequency.</p></div>
           <div class="step"><span class="mono">Step 02</span><h3>Walkthrough and scope</h3><p>Review the site, separate included work from add-ons, and document assumptions before pricing.</p></div>
