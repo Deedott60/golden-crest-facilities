@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Golden Crest | Capability Profile</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root{--ink:#111820;--paper:#fbfaf6;--white:#fff;--line:#d6d5cf;--muted:#56606a;--gold:#b1863d;--teal:#1f5d57}
+    *{box-sizing:border-box}
+    body{margin:0;background:#e9e8e3;color:var(--ink);font-family:"IBM Plex Sans",sans-serif;line-height:1.45}
+    .toolbar{max-width:960px;margin:22px auto;display:flex;justify-content:space-between;align-items:center;gap:16px;font-size:13px}
+    .toolbar a,.toolbar button{min-height:42px;padding:10px 16px;border:1px solid var(--ink);background:transparent;color:var(--ink);text-decoration:none;font:600 13px "IBM Plex Sans",sans-serif;cursor:pointer}
+    .toolbar button{background:var(--ink);color:#fff}
+    .page{width:min(960px,calc(100% - 32px));min-height:1120px;margin:0 auto 32px;background:var(--white);border-top:8px solid var(--ink);padding:48px;box-shadow:0 18px 50px rgba(17,24,32,.12)}
+    header{display:grid;grid-template-columns:1fr auto;gap:32px;padding-bottom:28px;border-bottom:1px solid var(--ink)}
+    .brand{display:flex;gap:16px;align-items:center}
+    .mark{width:48px;height:48px;background:var(--ink);color:#e4c889;display:grid;place-items:center;font:500 15px "IBM Plex Mono",monospace}
+    h1{margin:0;font-size:30px;font-weight:500;letter-spacing:-.03em}
+    .sub{margin:3px 0 0;color:var(--muted);font-size:13px}
+    .draft{text-align:right}
+    .draft strong{display:block;color:#8a5b13;font:500 11px "IBM Plex Mono",monospace;text-transform:uppercase;letter-spacing:.06em}
+    .draft span{display:block;color:var(--muted);font-size:11px;margin-top:5px}
+    .overview{display:grid;grid-template-columns:1.35fr .65fr;gap:36px;padding:32px 0}
+    .overview h2{margin:0 0 12px;font-size:26px;font-weight:300;line-height:1.1}
+    .overview p{margin:0;color:var(--muted);font-size:14px}
+    .codes{border-top:3px solid var(--gold);background:var(--paper);padding:18px}
+    .code{padding:10px 0;border-bottom:1px solid var(--line)}
+    .code:last-child{border:0}
+    .code span{display:block;color:var(--muted);font:400 10px "IBM Plex Mono",monospace;text-transform:uppercase}
+    .code strong{display:block;margin-top:4px;font-size:14px;font-weight:500}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line)}
+    .block{background:#fff;padding:24px}
+    .block h2{margin:0 0 16px;font-size:16px;font-weight:600;text-transform:uppercase;letter-spacing:.04em}
+    ul{margin:0;padding:0;list-style:none;display:grid;gap:9px}
+    li{position:relative;padding-left:18px;color:#424c56;font-size:13px}
+    li:before{content:"";position:absolute;left:0;top:.65em;width:7px;height:1px;background:var(--gold)}
+    .leaders{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:24px}
+    .leader{background:var(--ink);color:#fff;padding:22px;border-top:3px solid var(--gold)}
+    .leader span{font:400 10px "IBM Plex Mono",monospace;color:#d8be86;text-transform:uppercase}
+    .leader h3{margin:9px 0 7px;font-size:23px;font-weight:300}
+    .leader p{margin:0;color:#c8cfd6;font-size:12px}
+    .readiness{margin-top:24px;border-top:1px solid var(--ink)}
+    .row{display:grid;grid-template-columns:1.25fr .75fr;gap:20px;padding:12px 0;border-bottom:1px solid var(--line);font-size:12px}
+    .row span:last-child{font-family:"IBM Plex Mono",monospace;color:#8a5b13;text-align:right}
+    .row .defined{color:var(--teal)!important}
+    .notice{margin-top:24px;padding:16px 18px;background:#f3f0e7;border-left:3px solid var(--gold);font-size:12px;color:#4b555f}
+    footer{margin-top:30px;padding-top:18px;border-top:1px solid var(--ink);display:grid;grid-template-columns:1fr 1fr;gap:30px;font-size:11px;color:var(--muted)}
+    footer strong{display:block;color:var(--ink);font-size:12px;margin-bottom:4px}
+    @media(max-width:700px){.page{padding:28px}.toolbar{margin:16px}.overview,.grid,.leaders,header,footer{grid-template-columns:1fr}.draft{text-align:left}.row{grid-template-columns:1fr}.row span:last-child{text-align:left}}
+    @media print{
+      @page{size:letter;margin:.25in}
+      body{background:#fff;line-height:1.28}
+      .toolbar{display:none}
+      .page{width:100%;min-height:0;margin:0;padding:14px 18px;box-shadow:none;border-top-width:5px}
+      header{gap:18px;padding-bottom:12px}
+      .mark{width:38px;height:38px}
+      h1{font-size:23px}
+      .sub,.overview p{font-size:10px}
+      .overview{grid-template-columns:1.35fr .65fr;gap:22px;padding:13px 0}
+      .overview h2{font-size:20px;margin-bottom:7px}
+      .codes{padding:9px 13px}
+      .code{padding:5px 0}
+      .code strong{font-size:10px;margin-top:2px}
+      .block{padding:12px 14px}
+      .block h2{font-size:12px;margin-bottom:8px}
+      ul{gap:4px}
+      li{font-size:9px;padding-left:13px}
+      .leaders{gap:14px;margin-top:11px}
+      .leader{padding:12px 14px}
+      .leader h3{font-size:18px;margin:5px 0 4px}
+      .leader p{font-size:9px}
+      .readiness{margin-top:11px}
+      .row{padding:6px 0;font-size:9px}
+      .notice{margin-top:11px;padding:8px 10px;font-size:8.5px}
+      footer{margin-top:10px;padding-top:8px;font-size:8px}
+      footer strong{font-size:9px;margin-bottom:2px}
+    }
+  </style>
+</head>
+<body>
+  <div class="toolbar"><a href="index.html">← Back to website</a><button type="button" onclick="window.print()">Print or save PDF</button></div>
+  <article class="page">
+    <header>
+      <div class="brand"><span class="mark">GC</span><div><h1>Golden Crest</h1><p class="sub">Commercial Janitorial & Facility Care | Mount Holly, North Carolina</p></div></div>
+      <div class="draft"><strong>Pre-registration capability profile</strong><span>Replace pending fields before external use</span></div>
+    </header>
+
+    <section class="overview">
+      <div><h2>Hospitality operations discipline applied to commercial facility care.</h2><p>Golden Crest is a planned founder-led commercial janitorial company shaped by high-volume casino and resort operations. The launch model focuses on professional, administrative, public-facing, and hospitality-adjacent facilities where the founders can establish the service checklist directly and supervise quality before expanding the crew.</p></div>
+      <div class="codes">
+        <div class="code"><span>Primary NAICS alignment</span><strong>561720 | Janitorial Services</strong></div>
+        <div class="code"><span>Primary PSC alignment</span><strong>S201 | Custodial Janitorial</strong></div>
+        <div class="code"><span>Service area</span><strong>Gaston and greater Charlotte, final radius pending</strong></div>
+      </div>
+    </section>
+
+    <section class="grid">
+      <div class="block"><h2>Core capabilities planned</h2><ul><li>Recurring office and administrative janitorial service</li><li>Restroom, breakroom, floor, glass, waste, and high-touch care within a written scope</li><li>Public-area opening and closing readiness</li><li>One-time turnover and event reset cleaning</li><li>Founder-led startup checklist and quality review</li><li>Documented issue escalation and consumable observations</li></ul></div>
+      <div class="block"><h2>Operating differentiators</h2><ul><li>Hospitality operations standards adapted to each facility</li><li>Written tasks, frequencies, exclusions, and access rules</li><li>Founder-led account startup and review</li><li>Site-specific safety and key-control requirements</li><li>Clear corrective-action path for missed tasks</li><li>Local Mount Holly and Gaston County base</li></ul></div>
+    </section>
+
+    <section class="leaders">
+      <div class="leader"><span>Co-founder and managing member</span><h3>Miesha</h3><p>Food and beverage management experience in a major casino and resort environment. ServSafe management credential. Experience with sanitation controls, inspections, shift execution, guest volume, and public-facing standards.</p></div>
+      <div class="leader"><span>Co-founder and managing member</span><h3>Kimberly</h3><p>Supervisory experience in high-volume casino hospitality operations. Experience with shift accountability, team coordination, presentation standards, and consistent execution.</p></div>
+    </section>
+
+    <section class="readiness" aria-label="Procurement readiness">
+      <div class="row"><strong>NAICS 561720 and PSC S201 alignment</strong><span class="defined">DEFINED</span></div>
+      <div class="row"><strong>Legal entity and ownership documents</strong><span>PENDING FORMATION</span></div>
+      <div class="row"><strong>SAM registration, UEI and CAGE</strong><span>PENDING</span></div>
+      <div class="row"><strong>SBA WOSB or EDWOSB certification</strong><span>PENDING ELIGIBILITY REVIEW</span></div>
+      <div class="row"><strong>Insurance, bonding and screening</strong><span>PENDING FIRST SCOPE</span></div>
+      <div class="row"><strong>Golden Crest past performance</strong><span>NOT YET ESTABLISHED</span></div>
+    </section>
+
+    <div class="notice"><strong>Claim boundary:</strong> This profile is a prelaunch planning artifact. It does not represent Golden Crest as SAM registered, insured, bonded, background cleared, WOSB certified, EDWOSB certified, or ready to perform a government contract. Final identifiers and credentials must be inserted only after verification.</div>
+
+    <footer>
+      <div><strong>Contact information required before launch</strong>Business email, business phone, legal address, managing contact, website domain</div>
+      <div><strong>Government identifiers added when active</strong>UEI, CAGE, SAM status, certification status, insurance limits, approved references</div>
+    </footer>
+  </article>
+</body>
+</html>

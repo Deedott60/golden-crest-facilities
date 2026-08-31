@@ -1,466 +1,313 @@
-<!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Golden Crest | Commercial & Government Facilities Sanitation</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600;1,700&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Plus Jakarta Sans', sans-serif; color: #0F172A; background: #FFFFFF; }
-        .serif { font-family: 'Playfair Display', serif; }
-        
-        .glass-nav { 
-            background: rgba(255, 255, 255, 0.92); 
-            backdrop-filter: blur(20px) saturate(180%);
-            -webkit-backdrop-filter: blur(20px) saturate(180%);
-            border-bottom: 1px solid rgba(226, 232, 240, 0.8);
-        }
-
-        .vision-glass-card {
-            background: rgba(255, 255, 255, 0.94);
-            backdrop-filter: blur(30px);
-            border: 1px solid rgba(255, 255, 255, 0.95);
-            box-shadow: 0 30px 70px -15px rgba(15, 23, 42, 0.08), 0 0 0 1px rgba(226, 232, 240, 0.8);
-        }
-
-        .btn-purple {
-            background: linear-gradient(135deg, #8B5CF6 0%, #6D28D9 50%, #4C1D95 100%);
-            color: #FFFFFF;
-            box-shadow: 0 10px 25px -5px rgba(139, 92, 246, 0.4);
-            transition: all 0.25s ease;
-        }
-        .btn-purple:hover {
-            background: linear-gradient(135deg, #A78BFA 0%, #7C3AED 50%, #5B21B6 100%);
-            box-shadow: 0 15px 35px -5px rgba(139, 92, 246, 0.55);
-            transform: translateY(-2px);
-        }
-
-        .specular-icon {
-            background: linear-gradient(135deg, #FFFFFF 0%, #F8FAFC 100%);
-            border: 1px solid rgba(226, 232, 240, 0.9);
-            box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.05);
-            transition: all 0.3s ease;
-        }
-        .card-hover:hover .specular-icon {
-            transform: scale(1.1) rotate(-3deg);
-            border-color: #8B5CF6;
-            box-shadow: 0 15px 30px -5px rgba(139, 92, 246, 0.25);
-        }
-        .card-hover {
-            transition: all 0.3s ease;
-        }
-        .card-hover:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.08);
-            border-color: rgba(139, 92, 246, 0.35);
-        }
-
-        .tab-btn.active {
-            background: #0F172A;
-            color: #FFFFFF;
-            border-color: #0F172A;
-        }
-
-        @keyframes float-ambient {
-            0%, 100% { transform: translate(0, 0) scale(1); }
-            50% { transform: translate(30px, -20px) scale(1.08); }
-        }
-        .ambient-glow { animation: float-ambient 15s ease-in-out infinite; }
-        .marquee-inner { animation: marquee 30s linear infinite; display: flex; width: max-content; }
-        @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Golden Crest provides founder-led commercial janitorial and facility care shaped by high-volume casino and resort operations.">
+  <title>Golden Crest | Commercial Janitorial & Facility Care</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --ink:#111820;
+      --ink-2:#202a35;
+      --paper:#fbfaf6;
+      --white:#fff;
+      --soft:#f1f0ea;
+      --line:#d8d7d1;
+      --muted:#5d6670;
+      --gold:#b1863d;
+      --gold-dark:#805f28;
+      --teal:#1f5d57;
+      --success:#26734d;
+      --warning:#8a5b13;
+      --max:1240px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;max-width:100%;overflow-x:hidden}
+    body{margin:0;max-width:100%;overflow-x:hidden;background:var(--paper);color:var(--ink);font-family:"IBM Plex Sans",system-ui,sans-serif;line-height:1.55}
+    img{display:block;max-width:100%}
+    a{color:inherit}
+    button,a{touch-action:manipulation}
+    :focus-visible{outline:3px solid #0f62fe;outline-offset:3px}
+    .shell{width:min(var(--max),calc(100% - 48px));margin:0 auto}
+    .eyebrow{margin:0 0 16px;font:500 12px/1.3 "IBM Plex Mono",monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--gold-dark)}
+    .section{padding:88px 0}
+    .section-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(280px,520px);gap:40px;align-items:end;margin-bottom:48px}
+    .section-head h2{margin:0;font-size:clamp(34px,5vw,56px);line-height:1.04;font-weight:300;letter-spacing:-.035em}
+    .section-head p{margin:0;color:var(--muted);font-size:17px}
+    .topline{background:var(--ink);color:#d9dde2;font:400 12px/1.2 "IBM Plex Mono",monospace}
+    .topline .shell{min-height:40px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .topline strong{color:#fff;font-weight:500}
+    .topline span:last-child{color:#c9ab70}
+    header{position:sticky;top:0;z-index:20;background:rgba(251,250,246,.96);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+    nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:28px}
+    .brand{min-width:0;text-decoration:none;display:flex;align-items:center;gap:14px}
+    .mark{width:42px;height:42px;display:grid;place-items:center;background:var(--ink);color:#e4c889;font:500 15px "IBM Plex Mono",monospace}
+    .brand-copy strong{display:block;font-size:20px;font-weight:600;letter-spacing:-.02em}
+    .brand-copy span{display:block;color:var(--muted);font:400 10px/1.3 "IBM Plex Mono",monospace;text-transform:uppercase;letter-spacing:.08em}
+    .nav-links{display:flex;align-items:center;gap:28px}
+    .nav-links a{text-decoration:none;font-size:14px;color:#424b55}
+    .nav-links a:hover{text-decoration:underline;text-underline-offset:5px}
+    .button{min-height:48px;display:inline-flex;align-items:center;justify-content:space-between;gap:26px;padding:13px 18px;text-decoration:none;border:1px solid transparent;font-weight:600;font-size:14px;cursor:pointer}
+    .button.primary{background:var(--gold);color:#111}
+    .button.primary:hover{background:#c59a4b}
+    .button.dark{background:var(--ink);color:#fff}
+    .button.dark:hover{background:#2a3541}
+    .button.ghost{background:transparent;border-color:var(--ink);color:var(--ink)}
+    .hero{background:var(--white);border-bottom:1px solid var(--line)}
+    .hero-grid{display:grid;grid-template-columns:minmax(0,1.02fr) minmax(460px,.98fr);min-height:690px}
+    .hero-grid>*{min-width:0}
+    .hero-copy{min-width:0;padding:96px 64px 88px max(24px,calc((100vw - var(--max))/2));display:flex;flex-direction:column;justify-content:center}
+    .hero h1{max-width:760px;margin:0;font-size:clamp(48px,6.3vw,86px);line-height:.98;font-weight:300;letter-spacing:-.055em}
+    .hero h1 em{font-style:normal;color:var(--gold-dark)}
+    .hero .lead{max-width:650px;margin:28px 0 0;color:var(--muted);font-size:clamp(17px,2vw,20px);line-height:1.55}
+    .hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:36px}
+    .trust-row{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:54px;max-width:720px}
+    .trust-row div{background:var(--paper);padding:18px}
+    .trust-row strong{display:block;font-size:14px;font-weight:600}
+    .trust-row span{display:block;color:var(--muted);font-size:12px;margin-top:4px}
+    .hero-media{position:relative;min-height:620px;background:var(--soft);overflow:hidden}
+    .hero-media img{width:100%;height:100%;object-fit:cover;object-position:78% center}
+    .hero-note{position:absolute;left:0;bottom:0;width:min(420px,92%);padding:24px 28px;background:rgba(17,24,32,.95);color:#fff;border-top:3px solid var(--gold)}
+    .hero-note .mono{font:400 11px/1.4 "IBM Plex Mono",monospace;color:#d8be86;text-transform:uppercase;letter-spacing:.07em}
+    .hero-note strong{display:block;font-size:20px;font-weight:500;margin-top:7px}
+    .services{background:var(--paper)}
+    .service-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+    .service-card{min-height:290px;background:var(--white);padding:28px;display:flex;flex-direction:column}
+    .service-card .num{font:400 12px "IBM Plex Mono",monospace;color:var(--gold-dark)}
+    .service-card h3{margin:46px 0 12px;font-size:22px;line-height:1.2;font-weight:500}
+    .service-card p{margin:0;color:var(--muted);font-size:14px}
+    .service-card .fit{margin-top:auto;padding-top:24px;color:var(--teal);font:500 11px "IBM Plex Mono",monospace;text-transform:uppercase;letter-spacing:.04em}
+    .founders{background:var(--ink);color:#fff}
+    .founders .section-head p{color:#c4cbd2}
+    .founders .eyebrow{color:#d8be86}
+    .founder-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:#3a434c;border:1px solid #3a434c}
+    .founder{background:var(--ink-2);padding:36px;min-height:300px}
+    .founder .role{font:400 11px "IBM Plex Mono",monospace;color:#d8be86;text-transform:uppercase;letter-spacing:.07em}
+    .founder h3{font-size:34px;font-weight:300;margin:18px 0 12px}
+    .founder p{color:#c4cbd2;margin:0;max-width:560px}
+    .founder ul{list-style:none;padding:0;margin:28px 0 0;display:grid;gap:10px;color:#e9edf0;font-size:14px}
+    .founder li{padding-left:22px;position:relative}
+    .founder li:before{content:"";position:absolute;left:0;top:.65em;width:8px;height:1px;background:#d8be86}
+    .standards{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+    .standards h2{margin:0;font-size:clamp(38px,5vw,62px);font-weight:300;line-height:1.02;letter-spacing:-.04em}
+    .standard-list{border-top:1px solid var(--ink)}
+    .standard{display:grid;grid-template-columns:60px 1fr;gap:16px;padding:22px 0;border-bottom:1px solid var(--line)}
+    .standard .index{font:400 12px "IBM Plex Mono",monospace;color:var(--gold-dark)}
+    .standard strong{display:block;font-size:18px;font-weight:500}
+    .standard p{margin:6px 0 0;color:var(--muted);font-size:14px}
+    .government{background:#f3f0e7;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+    .gov-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:72px;align-items:start}
+    .government h2{margin:0;font-size:clamp(38px,5vw,62px);line-height:1.03;font-weight:300;letter-spacing:-.04em}
+    .government .intro{color:var(--muted);font-size:17px;margin:24px 0 0}
+    .status-table{background:var(--white);border-top:3px solid var(--ink)}
+    .status-row{display:grid;grid-template-columns:1fr 150px;gap:20px;padding:19px 22px;border-bottom:1px solid var(--line);align-items:center}
+    .status-row strong{display:block;font-size:14px;font-weight:500}
+    .status-row small{display:block;color:var(--muted);font-size:12px;margin-top:3px}
+    .status{justify-self:end;font:500 11px "IBM Plex Mono",monospace;text-transform:uppercase;padding:6px 8px;background:#f0eee7;color:var(--warning)}
+    .status.defined{background:#e7f2ec;color:var(--success)}
+    .gov-note{margin-top:18px;padding:18px 20px;border-left:3px solid var(--gold);background:rgba(255,255,255,.65);font-size:13px;color:#4f5963}
+    .process{background:var(--white)}
+    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+    .step{background:var(--white);padding:30px;min-height:230px}
+    .step .mono{font:400 12px "IBM Plex Mono",monospace;color:var(--gold-dark)}
+    .step h3{margin:42px 0 10px;font-size:21px;font-weight:500}
+    .step p{margin:0;color:var(--muted);font-size:14px}
+    .contact{background:var(--ink);color:#fff;padding:88px 0}
+    .contact-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:64px;align-items:end}
+    .contact h2{font-size:clamp(42px,6vw,72px);line-height:1;font-weight:300;letter-spacing:-.045em;margin:0}
+    .contact p{color:#c4cbd2;font-size:17px;margin:22px 0 0;max-width:650px}
+    .contact-card{border-top:3px solid var(--gold);background:var(--ink-2);padding:28px}
+    .contact-card strong{display:block;font-size:20px;font-weight:500}
+    .contact-card p{font-size:14px;margin:10px 0 0;color:#c4cbd2}
+    .contact-card .pending{display:inline-block;margin-top:20px;padding:7px 9px;background:#403722;color:#e9d29f;font:400 11px "IBM Plex Mono",monospace;text-transform:uppercase}
+    footer{background:#0b1016;color:#929ba5;padding:30px 0;border-top:1px solid #27313b;font-size:12px}
+    footer .shell{display:flex;justify-content:space-between;gap:24px;align-items:center}
+    footer a{color:#d7dde2}
+    .mobile-toggle{display:none;background:transparent;border:1px solid var(--line);width:44px;height:44px;font-size:20px}
+    @media (max-width:980px){
+      .shell{width:min(100% - 32px,var(--max))}
+      .nav-links{display:none}
+      .mobile-toggle{display:block}
+      nav>.button{display:none}
+      .hero-grid{grid-template-columns:1fr}
+      .hero-copy{padding:72px 24px}
+      .hero-media{min-height:520px}
+      .service-grid{grid-template-columns:repeat(2,1fr)}
+      .section-head,.gov-grid,.contact-grid{grid-template-columns:1fr}
+      .founder-grid,.standards{grid-template-columns:1fr}
+      .gov-grid{gap:40px}
+      .contact-grid{align-items:start}
+    }
+    @media (max-width:640px){
+      .topline .shell{justify-content:center;text-align:center;min-height:48px}
+      .topline span:last-child{display:none}
+      .brand-copy span{display:none}
+      .section{padding:64px 0}
+      .section-head{gap:18px;margin-bottom:32px}
+      .hero-copy{padding:58px 20px 52px}
+      .hero h1{max-width:100%;font-size:45px;overflow-wrap:normal;word-break:normal}
+      .hero .lead{max-width:100%;font-size:16px;overflow-wrap:break-word}
+      .hero-actions{display:grid}
+      .button{width:100%}
+      .trust-row{grid-template-columns:1fr;margin-top:38px}
+      .hero-media{min-height:440px}
+      .hero-media img{object-position:76% center}
+      .hero-note{padding:18px 20px}
+      .service-grid,.founder-grid,.steps{grid-template-columns:1fr}
+      .service-card{min-height:240px}
+      .founder{padding:28px;min-height:0}
+      .standards{gap:38px}
+      .status-row{grid-template-columns:1fr;gap:10px}
+      .status{justify-self:start}
+      footer .shell{display:grid}
+    }
+    @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  </style>
 </head>
-<body class="antialiased bg-[#FAFAFC] text-slate-900 overflow-x-hidden">
-
-    <!-- Top Announcement Bar (With Lightbulb / Compliance Indicator) -->
-    <div class="bg-[#0B0F19] text-slate-300 text-xs py-2.5 px-4 text-center font-medium flex justify-center items-center gap-3">
-        <span class="inline-flex items-center gap-1.5 text-purple-300 font-semibold">
-            <span class="text-sm">💡</span> Commercial & Public Sector Sanitation
-        </span>
-        <span class="text-slate-600">|</span>
-        <span class="text-slate-300 font-medium">NAICS 561720 · PSC S201 · 100% Woman-Owned Enterprise (WOSB / WBE)</span>
+<body>
+  <div class="topline">
+    <div class="shell">
+      <span><strong>Mount Holly, NC</strong> | Gaston and greater Charlotte</span>
+      <span>Commercial janitorial | Public-sector readiness in progress</span>
     </div>
+  </div>
 
-    <!-- Navigation -->
-    <nav class="sticky top-0 z-50 glass-nav">
-        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
-            <div class="flex items-center gap-3.5">
-                <div class="w-10 h-10 rounded-2xl bg-gradient-to-tr from-slate-950 via-purple-950 to-indigo-950 flex items-center justify-center font-serif font-black text-purple-300 text-lg border border-purple-400/20 shadow-md">
-                    GC
-                </div>
-                <div>
-                    <span class="serif text-2xl font-bold tracking-tight text-slate-950 block leading-none">Golden Crest</span>
-                    <span class="text-[10px] tracking-[0.25em] uppercase font-extrabold text-purple-600 block mt-1">Commercial & Facility Sanitation</span>
-                </div>
-            </div>
-
-            <div class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-600">
-                <a href="#services" class="hover:text-slate-950 transition">Facilities</a>
-                <a href="#government" class="hover:text-purple-600 transition flex items-center gap-1.5 font-bold text-slate-900">
-                    <span class="w-2 h-2 rounded-full bg-purple-500"></span> Government Facilities
-                </a>
-                <a href="#tech" class="hover:text-slate-950 transition">Technology</a>
-                <a href="#comparison" class="hover:text-slate-950 transition">Our Standard</a>
-            </div>
-
-            <div class="flex items-center gap-4">
-                <a href="#intake" class="btn-purple text-sm font-bold px-6 py-2.5 rounded-full">
-                    Request Walkthrough / Bid
-                </a>
-            </div>
-        </div>
+  <header>
+    <nav class="shell" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="Golden Crest home">
+        <span class="mark" aria-hidden="true">GC</span>
+        <span class="brand-copy"><strong>Golden Crest</strong><span>Commercial Janitorial & Facility Care</span></span>
+      </a>
+      <div class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#leadership">Leadership</a>
+        <a href="#standards">Standards</a>
+        <a href="#government">Government readiness</a>
+      </div>
+      <a class="button dark" href="#contact">Start a facility conversation <span aria-hidden="true">↗</span></a>
+      <button class="mobile-toggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
     </nav>
+  </header>
 
-    <!-- HERO SECTION -->
-    <section class="relative pt-10 pb-20 overflow-hidden bg-transparent">
-        <div class="ambient-glow absolute top-[-5%] left-[-8%] w-[650px] h-[650px] rounded-full bg-gradient-to-br from-purple-200/35 via-rose-100/20 to-transparent blur-[140px] pointer-events-none -z-10"></div>
-        <div class="ambient-glow absolute top-[15%] right-[-10%] w-[700px] h-[700px] rounded-full bg-gradient-to-bl from-slate-200/40 via-purple-100/20 to-transparent blur-[160px] pointer-events-none -z-10"></div>
-
-        <div class="max-w-6xl mx-auto px-6 w-full">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-
-                <!-- Left Column -->
-                <div class="lg:col-span-6 space-y-7">
-                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/90 border border-purple-200 text-slate-900 text-xs font-black tracking-widest uppercase shadow-sm">
-                        <span class="w-2.5 h-2.5 rounded-full bg-purple-600 animate-ping"></span>
-                        <span class="text-purple-700">Hospitality Trained</span> · <span>Commercial & Public Facilities</span>
-                    </div>
-
-                    <h1 class="serif text-5xl sm:text-6xl lg:text-7xl font-black text-slate-950 leading-[1.0] tracking-tight">
-                        Clean spaces.<br/>
-                        <span class="italic font-normal text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-rose-500 to-indigo-600">Verified</span><br/>
-                        every shift.
-                    </h1>
-
-                    <p class="text-slate-600 text-lg font-medium leading-relaxed max-w-[480px]">
-                        Hospitality-grade commercial sanitation tailored for medical suites, corporate offices, and government facilities. Built with **tamper-proof QR room logs**, **digital chain-of-custody**, and strict compliance.
-                    </p>
-
-                    <div class="flex flex-wrap gap-4 pt-1">
-                        <a href="#intake" class="btn-purple inline-flex items-center gap-3 px-8 py-4 rounded-full text-base font-bold">
-                            Submit Space Walkthrough / Bid
-                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-                        </a>
-                        <a href="#government" class="inline-flex items-center gap-2 px-7 py-4 rounded-full text-base font-bold text-slate-800 bg-white border border-slate-200 hover:bg-slate-50 transition shadow-sm">
-                            Government Info & NAICS
-                        </a>
-                    </div>
-
-                    <div class="pt-6 border-t border-slate-200/70 grid grid-cols-3 gap-3 text-xs font-bold text-slate-700">
-                        <div class="flex items-center gap-2"><span class="w-5 h-5 rounded-full bg-purple-100 flex items-center justify-center text-purple-700">✓</span><span>Licensed & Insured</span></div>
-                        <div class="flex items-center gap-2"><span class="w-5 h-5 rounded-full bg-purple-100 flex items-center justify-center text-purple-700">✓</span><span>Dedicated Crew</span></div>
-                        <div class="flex items-center gap-2"><span class="w-5 h-5 rounded-full bg-purple-100 flex items-center justify-center text-purple-700">✓</span><span>Month-to-Month</span></div>
-                    </div>
-                </div>
-
-                <!-- Right Column: Dual-Mode Digital Intake Portal (Commercial & Government) -->
-                <div class="lg:col-span-6" id="intake">
-                    <div class="vision-glass-card rounded-3xl p-8 relative">
-                        <div class="absolute -top-3.5 right-8 bg-[#0F172A] text-purple-300 text-[11px] font-black uppercase tracking-widest px-4 py-1.5 rounded-full shadow-lg border border-purple-400/30">
-                            ⚡ 2-Hour Response Time
-                        </div>
-
-                        <!-- Tab Selection: Commercial vs Government RFP -->
-                        <div class="flex gap-2 p-1.5 bg-slate-100/80 rounded-2xl mb-6">
-                            <button type="button" class="tab-btn active flex-1 py-2 rounded-xl text-xs font-black uppercase tracking-wider transition">
-                                🏢 Commercial Walkthrough
-                            </button>
-                            <button type="button" class="tab-btn flex-1 py-2 rounded-xl text-xs font-black uppercase tracking-wider text-slate-600 hover:text-slate-950 transition">
-                                🏛️ Government / Municipal Bid
-                            </button>
-                        </div>
-
-                        <form class="space-y-4">
-                            <!-- Digital Space Scanner / Room Photo Drop Area -->
-                            <div class="p-4 rounded-2xl border-2 border-dashed border-purple-300 bg-purple-50/50 text-center cursor-pointer hover:bg-purple-50 transition">
-                                <div class="text-2xl mb-1">📸</div>
-                                <p class="text-xs font-bold text-slate-900">
-                                    <span class="text-purple-700 underline">Drop room photos, floor plan, or solicitation docs</span>
-                                </p>
-                                <p class="text-[10px] text-slate-500 mt-0.5">
-                                    Instant digital assessment for office walkthroughs, high-traffic zones, or agency RFPs
-                                </p>
-                            </div>
-
-                            <div class="grid grid-cols-2 gap-3">
-                                <div><label class="block text-[11px] font-bold text-slate-700 uppercase mb-1">Contact Name</label><input type="text" placeholder="Sarah Jenkins" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 text-sm bg-white"></div>
-                                <div><label class="block text-[11px] font-bold text-slate-700 uppercase mb-1">Phone Number</label><input type="tel" placeholder="(555) 000-0000" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 text-sm bg-white"></div>
-                            </div>
-
-                            <div class="grid grid-cols-2 gap-3">
-                                <div><label class="block text-[11px] font-bold text-slate-700 uppercase mb-1">Business / Agency Name</label><input type="text" placeholder="Company or Agency Name" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 text-sm bg-white"></div>
-                                <div><label class="block text-[11px] font-bold text-slate-700 uppercase mb-1">Facility Type</label>
-                                    <select class="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 text-sm bg-white text-slate-700">
-                                        <option>Medical & Dental Practice</option>
-                                        <option>Corporate Office Suite</option>
-                                        <option>MedSpa & Wellness Center</option>
-                                        <option>Government / Municipal Facility</option>
-                                        <option>Commercial Multi-Tenant</option>
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div>
-                                <label class="block text-[11px] font-bold text-slate-700 uppercase mb-1">Facility Access Preference</label>
-                                <div class="grid grid-cols-3 gap-2 text-[11px] font-bold">
-                                    <div class="p-2 rounded-lg border border-purple-300 bg-purple-50 text-purple-900 text-center">🔐 Keypad Code</div>
-                                    <div class="p-2 rounded-lg border border-slate-200 bg-white text-slate-700 text-center">💳 Keycard / Fob</div>
-                                    <div class="p-2 rounded-lg border border-slate-200 bg-white text-slate-700 text-center">🔑 Lockbox / Escort</div>
-                                </div>
-                            </div>
-
-                            <button type="button" class="w-full py-3.5 btn-purple font-black text-sm rounded-xl transition">
-                                Submit for Fast 2-Hour Assessment →
-                            </button>
-                        </form>
-                    </div>
-                </div>
-
-            </div>
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Founder-led commercial facility care</p>
+          <h1 id="hero-title">Hospitality discipline for the spaces <em>people depend on.</em></h1>
+          <p class="lead">Commercial janitorial and facility care shaped by high-volume casino and resort operations. Golden Crest is being built for offices, public-facing facilities, hospitality environments, and institutional spaces that need dependable standards and visible accountability.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#contact">Discuss your facility <span aria-hidden="true">→</span></a>
+            <a class="button ghost" href="capability-statement.html">View capability profile <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="trust-row" aria-label="Company facts">
+            <div><strong>Women-led</strong><span>Miesha and Kimberly, managing founders</span></div>
+            <div><strong>Hospitality-trained</strong><span>High-volume casino and resort operations</span></div>
+            <div><strong>Locally based</strong><span>Mount Holly, North Carolina</span></div>
+          </div>
         </div>
+        <div class="hero-media">
+          <img src="assets/golden-crest-facilities-hero.png" width="1672" height="941" alt="Two facilities operations leaders reviewing a quality checklist in a polished commercial lobby">
+          <div class="hero-note"><span class="mono">The Golden Crest standard</span><strong>Founder attention. Documented expectations. Clean, ready spaces.</strong></div>
+        </div>
+      </div>
     </section>
 
-    <!-- GOVERNMENT & MUNICIPAL FACILITIES SECTION (ETHICAL, COMPLIANT, NO "SET-ASIDE" JARGON) -->
-    <section id="government" class="py-20 bg-slate-950 text-white border-y border-slate-800">
-        <div class="max-w-6xl mx-auto px-6">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-                
-                <div class="lg:col-span-6 space-y-6">
-                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-purple-400/10 border border-purple-400/30 text-purple-400 text-xs font-black uppercase tracking-widest">
-                        Government & Municipal Facilities
-                    </div>
-                    <h2 class="serif text-4xl sm:text-5xl font-black text-white leading-tight">
-                        Built for government compliance, security & high standards.
-                    </h2>
-                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
-                        Golden Crest provides dependable, background-cleared commercial custodial services for government offices, courthouses, municipal centers, and public sector facilities. Fully compliant with federal and local procurement standards.
-                    </p>
-
-                    <!-- Government Quick Facts Data Block (Standard Searchable Codes) -->
-                    <div class="grid grid-cols-2 gap-4 pt-2">
-                        <div class="p-4 rounded-2xl bg-slate-900 border border-slate-800">
-                            <span class="text-[10px] text-slate-400 uppercase font-black tracking-widest block">Primary NAICS Code</span>
-                            <span class="text-sm font-extrabold text-purple-300 font-mono">561720</span>
-                            <span class="text-xs text-slate-400 block mt-0.5">Janitorial & Sanitation Services</span>
-                        </div>
-                        <div class="p-4 rounded-2xl bg-slate-900 border border-slate-800">
-                            <span class="text-[10px] text-slate-400 uppercase font-black tracking-widest block">Product Service Code (PSC)</span>
-                            <span class="text-sm font-extrabold text-purple-300 font-mono">S201</span>
-                            <span class="text-xs text-slate-400 block mt-0.5">Housekeeping - Custodial</span>
-                        </div>
-                        <div class="p-4 rounded-2xl bg-slate-900 border border-slate-800">
-                            <span class="text-[10px] text-slate-400 uppercase font-black tracking-widest block">Business Classification</span>
-                            <span class="text-sm font-extrabold text-white">WOSB / WBE</span>
-                            <span class="text-xs text-slate-400 block mt-0.5">100% Woman-Owned Enterprise</span>
-                        </div>
-                        <div class="p-4 rounded-2xl bg-slate-900 border border-slate-800">
-                            <span class="text-[10px] text-slate-400 uppercase font-black tracking-widest block">Billing & Payment</span>
-                            <span class="text-sm font-extrabold text-emerald-400">Electronic & GPC</span>
-                            <span class="text-xs text-slate-400 block mt-0.5">Government Purchase Card Ready</span>
-                        </div>
-                    </div>
-
-                    <div class="pt-4 flex flex-wrap gap-4">
-                        <a href="#intake" class="btn-purple px-6 py-3 rounded-full text-xs font-bold uppercase tracking-wider">
-                            Submit RFP / Solicitation
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Right Side: Assurances & Standards -->
-                <div class="lg:col-span-6">
-                    <div class="p-8 rounded-3xl bg-slate-900/90 border border-slate-800 space-y-6">
-                        <h3 class="serif text-2xl font-bold text-white">Public Sector Compliance Assurances</h3>
-                        
-                        <div class="space-y-4 text-xs">
-                            <div class="flex items-start gap-3.5">
-                                <span class="w-6 h-6 rounded-full bg-purple-400/20 text-purple-400 flex items-center justify-center font-bold shrink-0 mt-0.5">✓</span>
-                                <div>
-                                    <h4 class="font-bold text-white text-sm">Background-Cleared & Fully Insured Personnel</h4>
-                                    <p class="text-slate-400 mt-0.5">Strict identity checks, background screenings, and continuous liability coverage for secure facilities.</p>
-                                </div>
-                            </div>
-                            <div class="flex items-start gap-3.5">
-                                <span class="w-6 h-6 rounded-full bg-purple-400/20 text-purple-400 flex items-center justify-center font-bold shrink-0 mt-0.5">✓</span>
-                                <div>
-                                    <h4 class="font-bold text-white text-sm">Quality Control & Multi-Point Inspection Plan</h4>
-                                    <p class="text-slate-400 mt-0.5">Rigorous compliance checklists adapted from high-volume hospitality management to ensure zero missed tasks.</p>
-                                </div>
-                            </div>
-                            <div class="flex items-start gap-3.5">
-                                <span class="w-6 h-6 rounded-full bg-purple-400/20 text-purple-400 flex items-center justify-center font-bold shrink-0 mt-0.5">✓</span>
-                                <div>
-                                    <h4 class="font-bold text-white text-sm">CleanVerify™ Time-Stamped Audit Logs</h4>
-                                    <p class="text-slate-400 mt-0.5">Tamper-proof digital check-in records provide Contracting Officers and Property Directors complete transparency.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+    <section class="section services" id="services">
+      <div class="shell">
+        <div class="section-head">
+          <div><p class="eyebrow">Core service lanes</p><h2>Start focused. Deliver consistently.</h2></div>
+          <p>The launch offer stays narrow enough for the founders to supervise directly, establish repeatable checklists, and build documented performance before taking on larger facilities.</p>
         </div>
+        <div class="service-grid">
+          <article class="service-card"><span class="num">01</span><h3>Recurring office janitorial</h3><p>Routine floor, restroom, breakroom, waste, glass, and high-touch care for professional and administrative facilities.</p><span class="fit">Best first contract lane</span></article>
+          <article class="service-card"><span class="num">02</span><h3>Public-area readiness</h3><p>Opening and closing presentation standards for lobbies, reception areas, meeting rooms, corridors, and public restrooms.</p><span class="fit">Hospitality experience applied</span></article>
+          <article class="service-card"><span class="num">03</span><h3>Turnover and event resets</h3><p>Planned cleaning resets before or after meetings, events, guest traffic, move-ins, and facility transitions.</p><span class="fit">Fixed-scope opportunity</span></article>
+          <article class="service-card"><span class="num">04</span><h3>Inspection and supply checks</h3><p>Documented completion checks, issue escalation, and consumable observations tailored to the agreed scope.</p><span class="fit">Accountability without gimmicks</span></article>
+        </div>
+      </div>
     </section>
 
-    <!-- THE 4 TECH ADVANTAGES -->
-    <section id="tech" class="py-20 bg-white border-b border-slate-100">
-        <div class="max-w-6xl mx-auto px-6">
-            <div class="text-center mb-14">
-                <span class="text-xs font-black tracking-widest uppercase text-purple-600 mb-2 block">Technology Advantage</span>
-                <h2 class="serif text-4xl sm:text-5xl font-black text-slate-950">Modern verification for every facility.</h2>
-                <p class="text-slate-500 mt-2 max-w-xl mx-auto text-sm">Full digital accountability so property directors never have to guess.</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="card-hover rounded-3xl p-7 bg-[#FAFAFC] border border-slate-200/80">
-                    <div class="specular-icon w-14 h-14 rounded-2xl flex items-center justify-center text-2xl mb-5">📱</div>
-                    <div class="text-xs font-black text-purple-600 uppercase mb-1">CleanVerify™</div>
-                    <h3 class="font-bold text-slate-950 text-base mb-2">QR Room Checkpoints</h3>
-                    <p class="text-slate-500 text-xs leading-relaxed">Cleaners scan tamper-proof QR tags in each room. Time-stamped proof of completion.</p>
-                </div>
-                <div class="card-hover rounded-3xl p-7 bg-[#FAFAFC] border border-slate-200/80">
-                    <div class="specular-icon w-14 h-14 rounded-2xl flex items-center justify-center text-2xl mb-5">📸</div>
-                    <div class="text-xs font-black text-purple-600 uppercase mb-1">SpaceScan™</div>
-                    <h3 class="font-bold text-slate-950 text-base mb-2">Digital Photo Bidding</h3>
-                    <p class="text-slate-500 text-xs leading-relaxed">Drop room photos or floor plans into our portal for an automated fast quote in 2 hours.</p>
-                </div>
-                <div class="card-hover rounded-3xl p-7 bg-[#FAFAFC] border border-slate-200/80">
-                    <div class="specular-icon w-14 h-14 rounded-2xl flex items-center justify-center text-2xl mb-5">🔐</div>
-                    <div class="text-xs font-black text-purple-600 uppercase mb-1">SecureKey™</div>
-                    <h3 class="font-bold text-slate-950 text-base mb-2">Digital Chain of Custody</h3>
-                    <p class="text-slate-500 text-xs leading-relaxed">Encrypted tracking for keycards, digital lockboxes, and alarm codes. 100% compliant.</p>
-                </div>
-                <div class="card-hover rounded-3xl p-7 bg-[#FAFAFC] border border-slate-200/80">
-                    <div class="specular-icon w-14 h-14 rounded-2xl flex items-center justify-center text-2xl mb-5">📊</div>
-                    <div class="text-xs font-black text-purple-600 uppercase mb-1">FacilityHub™</div>
-                    <h3 class="font-bold text-slate-950 text-base mb-2">Live Client Portal</h3>
-                    <p class="text-slate-500 text-xs leading-relaxed">Log in anytime to see shift completion logs, supply levels, and direct manager messaging.</p>
-                </div>
-            </div>
+    <section class="section founders" id="leadership">
+      <div class="shell">
+        <div class="section-head">
+          <div><p class="eyebrow">Founder experience</p><h2>Built by operators who understand public-facing standards.</h2></div>
+          <p>Golden Crest translates hospitality operations experience into a practical commercial cleaning standard. The founders' backgrounds support the business. They do not replace contract-specific training, insurance, staffing, or certifications.</p>
         </div>
+        <div class="founder-grid">
+          <article class="founder"><span class="role">Co-founder and managing member</span><h3>Miesha</h3><p>Food and beverage management experience in a major casino and resort environment, with responsibility shaped by high guest volume, sanitation controls, shift execution, and inspection readiness.</p><ul><li>ServSafe management credential</li><li>High-volume operational leadership</li><li>Compliance and guest-experience discipline</li></ul></article>
+          <article class="founder"><span class="role">Co-founder and managing member</span><h3>Kimberly</h3><p>Supervisory experience in high-volume casino hospitality operations, with a working focus on shift accountability, team coordination, presentation standards, and consistent execution.</p><ul><li>Front-line team supervision</li><li>Shift and quality accountability</li><li>Hospitality presentation standards</li></ul></article>
+        </div>
+      </div>
     </section>
 
-    <!-- COMPARISON MATRIX -->
-    <section id="comparison" class="py-20 bg-[#FAFAFC] border-b border-slate-100">
-        <div class="max-w-4xl mx-auto px-6">
-            <div class="text-center mb-12">
-                <span class="text-xs font-black tracking-widest uppercase text-purple-600 mb-2 block">The Clear Difference</span>
-                <h2 class="serif text-4xl font-black text-slate-950">Why facilities partner with Golden Crest.</h2>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="p-8 rounded-3xl bg-white border border-slate-200">
-                    <p class="text-xs font-bold text-red-600 uppercase tracking-wider mb-4">Standard Cleaning Franchises</p>
-                    <ul class="space-y-3 text-xs text-slate-600">
-                        <li class="flex items-center gap-2.5"><span class="text-red-500 font-bold">✗</span> Unscreened rotating subcontractors</li>
-                        <li class="flex items-center gap-2.5"><span class="text-red-500 font-bold">✗</span> Single mop used across restrooms and offices</li>
-                        <li class="flex items-center gap-2.5"><span class="text-red-500 font-bold">✗</span> 1-800 call center when trash is missed</li>
-                        <li class="flex items-center gap-2.5"><span class="text-red-500 font-bold">✗</span> Zero digital verification of completed rooms</li>
-                    </ul>
-                </div>
-                <div class="p-8 rounded-3xl bg-purple-50/50 border border-purple-200 shadow-sm">
-                    <p class="text-xs font-bold text-purple-900 uppercase tracking-wider mb-4">The Golden Crest Standard</p>
-                    <ul class="space-y-3 text-xs text-slate-900 font-medium">
-                        <li class="flex items-center gap-2.5"><span class="text-purple-600 font-bold">★</span> Dedicated, background-cleared team every shift</li>
-                        <li class="flex items-center gap-2.5"><span class="text-purple-600 font-bold">★</span> 4-Zone color-coded cross-contamination prevention</li>
-                        <li class="flex items-center gap-2.5"><span class="text-purple-600 font-bold">★</span> Direct line to leadership with 2-hour response</li>
-                        <li class="flex items-center gap-2.5"><span class="text-purple-600 font-bold">★</span> CleanVerify™ QR time-stamped room logs every visit</li>
-                    </ul>
-                </div>
-            </div>
+    <section class="section" id="standards">
+      <div class="shell standards">
+        <div><p class="eyebrow">Operating approach</p><h2>What buyers should be able to expect.</h2></div>
+        <div class="standard-list">
+          <div class="standard"><span class="index">01</span><div><strong>Written scope before work begins</strong><p>Each facility starts with defined tasks, frequencies, access rules, exclusions, and acceptance expectations.</p></div></div>
+          <div class="standard"><span class="index">02</span><div><strong>Founder-led startup and quality review</strong><p>The founders establish the first operating checklist and review performance before delegating work to a trained crew.</p></div></div>
+          <div class="standard"><span class="index">03</span><div><strong>Site-specific safety and access</strong><p>Background screening, badges, key control, chemical requirements, and site rules are matched to the buyer's contract, not promised generically.</p></div></div>
+          <div class="standard"><span class="index">04</span><div><strong>Clear issue escalation</strong><p>Missed tasks and facility concerns are documented, assigned, corrected, and reviewed against the agreed service plan.</p></div></div>
         </div>
+      </div>
     </section>
 
-    <!-- SPECIALIZED FACILITIES WE SERVE -->
-    <section id="services" class="py-20 bg-white border-b border-slate-100">
-        <div class="max-w-6xl mx-auto px-6">
-            <div class="text-center mb-14">
-                <span class="text-xs font-black tracking-widest uppercase text-purple-600 mb-2 block">Specialized Facilities</span>
-                <h2 class="serif text-4xl sm:text-5xl font-black text-slate-950">Spaces where cleanliness is non-negotiable.</h2>
-            </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="p-7 rounded-3xl bg-[#FAFAFC] border border-slate-200">
-                    <div class="text-3xl mb-4">🏥</div>
-                    <h3 class="font-bold text-slate-900 text-base mb-2">Medical & Dental</h3>
-                    <p class="text-slate-500 text-xs leading-relaxed">Exam rooms, operatories, and washrooms cleaned to clinic-grade standards with hospital disinfectants.</p>
-                </div>
-                <div class="p-7 rounded-3xl bg-[#FAFAFC] border border-slate-200">
-                    <div class="text-3xl mb-4">🏢</div>
-                    <h3 class="font-bold text-slate-900 text-base mb-2">Corporate Offices</h3>
-                    <p class="text-slate-500 text-xs leading-relaxed">Workspaces, boardrooms, and common areas client-ready every morning without fail.</p>
-                </div>
-                <div class="p-7 rounded-3xl bg-[#FAFAFC] border border-slate-200">
-                    <div class="text-3xl mb-4">💆</div>
-                    <h3 class="font-bold text-slate-900 text-base mb-2">MedSpas & Wellness</h3>
-                    <p class="text-slate-500 text-xs leading-relaxed">Five-star luxury presentation maintained so clients experience premium hygiene the second they enter.</p>
-                </div>
-                <div class="p-7 rounded-3xl bg-[#FAFAFC] border border-slate-200">
-                    <div class="text-3xl mb-4">🏛️</div>
-                    <h3 class="font-bold text-slate-900 text-base mb-2">Government & Municipal</h3>
-                    <p class="text-slate-500 text-xs leading-relaxed">Courthouses, municipal centers, and public facilities maintained with strict security compliance.</p>
-                </div>
-            </div>
+    <section class="section government" id="government">
+      <div class="shell gov-grid">
+        <div>
+          <p class="eyebrow">Government and institutional buyers</p>
+          <h2>Credentials should be visible only when they are real.</h2>
+          <p class="intro">Golden Crest is being structured for public-sector procurement, but it will not display SAM, UEI, CAGE, WOSB, WBE, insurance, bonding, or background-clearance badges until each item is active and verifiable.</p>
+          <div class="gov-note">The federal micro-purchase threshold is generally $15,000, but lower statutory thresholds can apply to certain construction and covered service work. A purchase card is a payment method, not a guaranteed award channel.</div>
         </div>
+        <div class="status-table" aria-label="Procurement readiness status">
+          <div class="status-row"><div><strong>NAICS and PSC alignment</strong><small>NAICS 561720, Janitorial Services | PSC S201, Custodial Janitorial</small></div><span class="status defined">Defined</span></div>
+          <div class="status-row"><div><strong>Legal entity and ownership documents</strong><small>Finalize LLC formation and operating agreement with actual ownership and control reflected accurately.</small></div><span class="status">Before outreach</span></div>
+          <div class="status-row"><div><strong>SAM registration, UEI and CAGE</strong><small>Register free through SAM.gov after the legal entity, EIN, bank account, and address records match.</small></div><span class="status">Pending</span></div>
+          <div class="status-row"><div><strong>SBA WOSB certification</strong><small>Apply through MySBA Certifications after eligibility and control requirements are documented.</small></div><span class="status">Pending</span></div>
+          <div class="status-row"><div><strong>Insurance, screening and site training</strong><small>Set limits and requirements based on the first real customer or solicitation.</small></div><span class="status">Pending scope</span></div>
+          <div class="status-row"><div><strong>Government capability profile</strong><small>Draft profile available for review. Final version will carry only active identifiers and proven capabilities.</small></div><span class="status defined">Draft ready</span></div>
+        </div>
+      </div>
     </section>
 
-    <!-- HOW IT WORKS -->
-    <section id="process" class="py-20 bg-[#FAFAFC] border-b border-slate-100">
-        <div class="max-w-4xl mx-auto px-6 text-center">
-            <span class="text-xs font-black tracking-widest uppercase text-purple-600 mb-2 block">Simple Onboarding</span>
-            <h2 class="serif text-4xl sm:text-5xl font-black text-slate-950 mb-12">Up and running in 3 steps.</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="space-y-3">
-                    <div class="w-12 h-12 rounded-2xl bg-slate-950 text-purple-300 font-black text-lg flex items-center justify-center mx-auto shadow-sm">1</div>
-                    <h3 class="font-bold text-slate-900 text-base">Photo Drop or Walkthrough</h3>
-                    <p class="text-slate-500 text-xs leading-relaxed">Drop room photos online or schedule a free 15-minute facility walkthrough.</p>
-                </div>
-                <div class="space-y-3">
-                    <div class="w-12 h-12 rounded-2xl bg-slate-950 text-purple-300 font-black text-lg flex items-center justify-center mx-auto shadow-sm">2</div>
-                    <h3 class="font-bold text-slate-900 text-base">Flat Price in 2 Hours</h3>
-                    <p class="text-slate-500 text-xs leading-relaxed">Transparent, flat-rate quote delivered in 24 hours. No hidden fees.</p>
-                </div>
-                <div class="space-y-3">
-                    <div class="w-12 h-12 rounded-2xl bg-slate-950 text-purple-300 font-black text-lg flex items-center justify-center mx-auto shadow-sm">3</div>
-                    <h3 class="font-bold text-slate-900 text-base">Month-to-Month Agreement</h3>
-                    <p class="text-slate-500 text-xs leading-relaxed">Zero long-term lock-in contracts. Stay because your facility is pristine every shift.</p>
-                </div>
-            </div>
+    <section class="section process" id="process">
+      <div class="shell">
+        <div class="section-head"><div><p class="eyebrow">Commercial onboarding</p><h2>A simple path from facility need to written scope.</h2></div><p>Government solicitations follow their own instructions. Commercial buyers can begin with a site conversation and written scope.</p></div>
+        <div class="steps">
+          <div class="step"><span class="mono">Step 01</span><h3>Facility conversation</h3><p>Discuss building type, operating hours, traffic, current concerns, access restrictions, and desired frequency.</p></div>
+          <div class="step"><span class="mono">Step 02</span><h3>Walkthrough and scope</h3><p>Review the site, separate included work from add-ons, and document assumptions before pricing.</p></div>
+          <div class="step"><span class="mono">Step 03</span><h3>Proposal and launch plan</h3><p>Provide written pricing, service frequency, startup requirements, quality checks, and communication expectations.</p></div>
         </div>
+      </div>
     </section>
 
-    <!-- FOOTER -->
-    <footer class="bg-slate-950 text-slate-400 py-12 text-xs">
-        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-start gap-8">
-            <div>
-                <div class="serif text-white text-lg font-bold mb-1">Golden Crest</div>
-                <p class="text-slate-400 font-medium">Commercial & Government Facilities Sanitation</p>
-                <p class="mt-3 text-slate-500">📞 (XXX) XXX-XXXX &nbsp;·&nbsp; ✉️ info@goldencrestclean.com</p>
-                <div class="mt-4 inline-flex items-center gap-2 px-3 py-1 rounded-md bg-slate-900 border border-slate-800 text-[11px] text-purple-300 font-mono">
-                    NAICS: 561720 | PSC: S201 | WOSB Eligible
-                </div>
-            </div>
-            <div class="flex gap-12">
-                <div>
-                    <p class="text-white font-bold mb-3 uppercase tracking-wider text-[11px]">Government</p>
-                    <ul class="space-y-2 text-slate-400">
-                        <li><a href="#government" class="hover:text-purple-300">Government Facilities</a></li>
-                        <li><a href="#intake" class="hover:text-purple-300">Submit Solicitation</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <p class="text-white font-bold mb-3 uppercase tracking-wider text-[11px]">Commercial</p>
-                    <ul class="space-y-2 text-slate-400">
-                        <li><a href="#services" class="hover:text-purple-300">Facilities</a></li>
-                        <li><a href="#tech" class="hover:text-purple-300">Technology</a></li>
-                        <li><a href="#intake" class="hover:text-purple-300">Request Walkthrough</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="max-w-6xl mx-auto px-6 pt-8 mt-8 border-t border-slate-900 text-center text-slate-600">
-            © 2026 Golden Crest Commercial Cleaning. All rights reserved.
-        </div>
-    </footer>
+    <section class="contact" id="contact">
+      <div class="shell contact-grid">
+        <div><p class="eyebrow">Next step</p><h2>Build the company before claiming the credentials.</h2><p>The site design and capability structure are ready for a focused launch. Final contact details, legal name, insurance, registration identifiers, service radius, and approved founder photography should be added before public outreach.</p></div>
+        <div class="contact-card"><strong>Golden Crest prelaunch checklist</strong><p>Confirm the legal business name, ownership agreement, business email, phone, initial service radius, first commercial offer, insurance quote, and formation timeline.</p><span class="pending">Contact channel pending formation</span></div>
+      </div>
+    </section>
+  </main>
 
+  <footer>
+    <div class="shell"><span>Golden Crest is a working business name. Mount Holly, North Carolina.</span><span><a href="capability-statement.html">Capability profile</a> | <a href="#government">Procurement readiness</a></span></div>
+  </footer>
+
+  <script>
+    const toggle=document.querySelector('.mobile-toggle');
+    const links=document.querySelector('.nav-links');
+    toggle?.addEventListener('click',()=>{
+      const open=toggle.getAttribute('aria-expanded')==='true';
+      toggle.setAttribute('aria-expanded',String(!open));
+      links.style.display=open?'none':'flex';
+      if(!open){links.style.position='absolute';links.style.left='16px';links.style.right='16px';links.style.top='76px';links.style.padding='20px';links.style.background='#fbfaf6';links.style.border='1px solid #d8d7d1';links.style.flexDirection='column';links.style.alignItems='flex-start';}
+    });
+    document.querySelectorAll('.nav-links a').forEach(link=>link.addEventListener('click',()=>{if(window.innerWidth<981){links.style.display='none';toggle.setAttribute('aria-expanded','false');}}));
+  </script>
 </body>
 </html>
