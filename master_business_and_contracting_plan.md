@@ -71,7 +71,7 @@ The general simplified acquisition threshold is now $350,000.[1] Acquisitions ab
 
 ### SAM, UEI, and CAGE
 
-SAM.gov registration and the Unique Entity ID are free.[5] Golden Crest should register only after its legal name, physical address, EIN, banking, and formation records match. A U.S. entity can receive a CAGE code through the SAM registration process.
+SAM.gov registration and the Unique Entity ID are free.[5] Golden Crest should register only after its legal name, physical address, EIN, banking, and formation records match. A U.S. entity can receive a CAGE code through the SAM registration process. SAM says activation can take up to 10 business days and active registrations must be renewed every 365 days.[15]
 
 ### WOSB and EDWOSB
 
@@ -80,6 +80,8 @@ SBA certification requires a qualifying small business to be at least 51% owned 
 Janitorial Services, NAICS 561720, appears on SBA's eligible-industry list under the EDWOSB designation.[10] That means the founders should have an APEX or SBA counselor verify whether they meet the economic-disadvantage tests before building the federal strategy around women-owned janitorial set-asides. Certification does not create demand and does not replace past performance, pricing, staffing, insurance, or contract compliance.
 
 ### Local programs
+
+North Carolina eliminated the state HUB program in July 2026. State contracts no longer recognize HUB certifications, pending HUB applications are not considered, and HUB certifications are not being renewed. The state directs new small businesses toward the race- and gender-neutral NCSBE program through eVP.[11]
 
 The City of Charlotte requires supplier registration before a supplier can receive purchase orders or payment.[7] As of 2026, Charlotte describes its certification program as race- and gender-neutral SBE certification rather than local MBE or WBE certification.[8] A Mount Holly business may fall within the Charlotte Combined Statistical Area, but it must still satisfy the city's ownership, size, presence, and personal-net-worth requirements.
 
@@ -110,9 +112,9 @@ Do not lead with medical or clinical sanitation until the company has the requir
 After formation and insurance:
 
 1. Register with Gaston County bid notifications.
-2. Register as a City of Charlotte supplier.[7]
-3. Evaluate Charlotte SBE eligibility.[8]
-4. Register in North Carolina eVP using accurate commodity codes.
+2. Register in North Carolina eVP and evaluate NCSBE eligibility.[11]
+3. Register as a City of Charlotte supplier.[7]
+4. Evaluate Charlotte SBE eligibility.[8]
 5. Monitor school, college, housing, municipal, county, and nonprofit facility opportunities.
 6. Pursue subcontracting under established janitorial primes where past performance is required.
 
@@ -167,6 +169,8 @@ Do not publish generic square-foot pricing yet. Build pricing from:
 
 Every proposal should separate recurring base scope, periodic work, supplies, floor care, windows, emergency calls, and one-time add-ons.
 
+North Carolina generally requires workers' compensation coverage when an employer regularly has three or more employees, although customers or prime contractors may require it sooner.[12] Commercial general liability, vehicle-related coverage, equipment/property coverage, workers' compensation, and bonding should be quoted against the actual service model. A janitorial fidelity bond and a contract bid, performance, or payment bond solve different risks and should not be advertised interchangeably.
+
 ## 90-day launch sequence
 
 ### Days 1 to 15: formation decisions
@@ -179,7 +183,7 @@ Every proposal should separate recurring base scope, periodic work, supplies, fl
 
 ### Days 16 to 30: legal and operational foundation
 
-- File the entity after attorney or qualified adviser review.
+- File the entity after attorney or qualified adviser review. North Carolina currently lists a $125 Articles of Organization filing fee, and LLC annual reports are currently $200 plus any applicable online transaction fee.[13][14]
 - Obtain EIN, bank account, bookkeeping, W-9, and insurance.
 - Purchase only the equipment needed for the first service lane.
 - Create chemical, SDS, PPE, key-control, incident, and quality-check procedures.
@@ -218,3 +222,8 @@ The rebuilt `index.html` follows this rule. The printable `capability-statement.
 [8] https://www.charlottenc.gov/City-Government/Departments/Contracting-and-Procurement/CBI/Get-Small-Business-Certified
 [9] https://www.gastongov.com/bids.aspx?bidID=107
 [10] https://www.sba.gov/document/support-eligible-naics-women-owned-small-business-federal-contracting-program
+[11] https://www.doa.nc.gov/divisions/small-business-enterprise-program
+[12] https://www.ic.nc.gov/workers-compensation-claims/employers
+[13] https://sosnc.gov/manual/launching_a_business/preparing_the_document_and_attachments
+[14] https://sosnc.gov/guides/launching_a_business/maintaining_registration
+[15] https://sam.gov/entity-registration
