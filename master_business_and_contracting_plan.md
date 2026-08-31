@@ -1,100 +1,88 @@
-# Master Blueprint: Business Registration & Government Contracting Playbook
+# Master Strategic Blueprint: Golden Crest Commercial Sanitation & Government Contracting
 
-**Company Name:** Golden Crest Commercial Cleaning (or K&M Facilities Group)  
-**Ownership Structure:** 100% Black Women-Owned LLC (Miesha & Kimberly)  
-**Business Development & Prospecting Lead:** Husband  
+**Company Name:** Golden Crest Commercial Cleaning & Facilities  
+**Entity Structure:** 100% Black Women-Owned LLC (Miesha & Kimberly — 50/50 Managing Members)  
+**Business Development & Government Prospecting Lead:** Husband (Operating in service of the founders)  
 **Primary NAICS Code:** `561720` (Janitorial Services)  
 **Primary PSC Code:** `S201` (Housekeeping - Custodial Janitorial)  
 
 ---
 
-## 1. Master File Directory (For You & Any Future Agent)
+## 1. Complete Business Context & Founding Team
 
-All project files are saved and persisted in this directory:
-`C:\Users\lenovo\.gemini\antigravity\brain\4395a0d5-0261-4a88-a8b4-ceebfc174beb\`
+### The Founders & Leadership:
+* **Miesha (Co-Founder & Managing Member - 50% Ownership):** 
+  * Food & Beverage Manager at a major casino property (near Director level).
+  * Holds ServSafe certification; built a career around strict compliance, zero-failure health inspections, and high-volume operations.
+* **Kimberly (Co-Founder & Managing Member - 50% Ownership):** 
+  * Supervisor in high-volume casino hospitality operations.
+  * Expert in shift management, team accountability, and quality standards.
+* **Husband (Business Development & Proposal Lead):** 
+  * Handles technology, SAM.gov monitoring, RFP tracking, municipal vendor registrations, and relationship building with facility managers and Contracting Officers.
 
-| File Name | Purpose |
-| :--- | :--- |
-| [`master_business_and_contracting_plan.md`](file:///C:/Users/lenovo/.gemini/antigravity/brain/4395a0d5-0261-4a88-a8b4-ceebfc174beb/master_business_and_contracting_plan.md) | **The Master Strategy & Legal Blueprint:** Complete guide covering business setup, ownership structuring, government thresholds, and compliance. |
-| [`capability_statement_and_website_copy.md`](file:///C:/Users/lenovo/.gemini/antigravity/brain/4395a0d5-0261-4a88-a8b4-ceebfc174beb/capability_statement_and_website_copy.md) | **1-Page Government Capability Statement:** PDF-ready text for Contracting Officers + complete written copy for marketing. |
-| [`landing_page_preview.html`](file:///C:/Users/lenovo/.gemini/antigravity/brain/4395a0d5-0261-4a88-a8b4-ceebfc174beb/landing_page_preview.html) | **Live Website:** Interactive, high-converting customer landing page (Apple x Golden Girls aesthetic with zero brown). |
-
----
-
-## 2. Step-by-Step Registration Roadmap (In Exact Order)
-
-```mermaid
-flowchart TD
-    Step1["Step 1: File LLC Online\n(Miesha & Kimberly 100% Owners)"] --> Step2["Step 2: Get Free EIN\n(IRS.gov - Instant)"]
-    Step2 --> Step3["Step 3: Open Business Bank Account\n(Using LLC Docs + EIN)"]
-    Step3 --> Step4["Step 4: Register on SAM.gov (Free)\n(Obtain UEI & CAGE Code)"]
-    Step4 --> Step5["Step 5: Apply for WOSB on SBA.gov (Free)\n(certifications.sba.gov)"]
-    Step5 --> Step6["Step 6: Meet Free APEX Accelerator Counselor\n(Set up automated bid alerts)"]
-```
-
-### Phase 1: Legal Entity Setup ($50–$300 State Fee Only)
-1. **File LLC:** Register online with your state's Secretary of State.
-   * *Critical Rule:* Miesha and Kimberly must be listed as the sole Managing Members (50/50 ownership) to qualify for all minority and women-owned set-asides.
-2. **Get EIN ($0 Free):** Go to [IRS.gov](https://www.irs.gov) and apply for an Employer Identification Number. Takes 5 minutes and is issued instantly.
-3. **Open Business Checking Account ($0):** Bring the LLC filing and EIN to a local bank or credit union. 
-
-### Phase 2: Government Vendor Registration ($0 Free)
-4. **SAM.gov Registration:**
-   * Go to the official [SAM.gov](https://sam.gov) portal.
-   * Register the entity to get your **UEI (Unique Entity Identifier)** and **CAGE Code**.
-   * Select Primary NAICS: `561720` (Janitorial Services) and PSC `S201`.
-5. **SBA WOSB Certification ($0 Free):**
-   * Once SAM.gov is active, submit for **Women-Owned Small Business (WOSB)** certification at [certifications.sba.gov](https://certifications.sba.gov).
-   * This is legally protected and allows access to federal contracts set aside exclusively for women-owned businesses.
-6. **Connect with APEX Accelerators ($0 Free):**
-   * Visit [apexaccelerators.us](https://www.apexaccelerators.us) to find your regional office.
-   * Schedule a 1-on-1 meeting. Your counselor is a free government employee whose job is to help you win bids.
+### Day 1 Operating Model:
+* **Bootstrapped & Hands-On:** Founders begin by performing the initial commercial accounts directly to establish standard operating procedures (SOPs) before onboarding and training dedicated crew members.
+* **Zero Paid Advertising Strategy:** Growth is driven 100% through direct outreach, municipal vendor registries (City, County, School Districts), and government contracting (SAM.gov & APEX Accelerators).
+* **Ethical Positioning:** The company is positioned on **excellence, hospitality standards, and compliance**—never framed as "chasing set-aside loopholes."
 
 ---
 
-## 3. The Husband Prospector & Contracting Playbook
-
-You do not need advertising dollars. You are running an **Account-Based Government & Municipal Relationship Engine**.
+## 2. Verified 2026 Government Contracting Strategy & Rules
 
 ```
                            ┌───────────────────────────────────────────────┐
-                           │         YOUR DAILY PROSPECTING SYSTEM         │
+                           │      ACCOUNT-BASED PROSPECTING ENGINE         │
                            └───────────────────────────────────────────────┘
                                                    │
              ┌─────────────────────────────────────┼─────────────────────────────────────┐
              ▼                                     ▼                                     ▼
-     1. SAM.GOV OPPORTUNITIES              2. MICRO-PURCHASES                    3. LOCAL MUNICIPALITIES
-     • Search NAICS 561720                 • Jobs under $15,000                  • County Courthouse
-     • Filter by WOSB & Small Business     • Swiped on Gov Purchase Card         • School Districts
-     • Review with APEX before bidding     • No formal bidding required          • City Hall & Transit Authority
+     1. SAM.GOV FEDERAL                    2. MICRO-PURCHASES                    3. LOCAL MUNICIPALITIES
+     • NAICS 561720 / PSC S201             • Contracts < $15,000                 • County Courthouses
+     • Simplified Acq (<$350k)             • Swiped on Gov Purchase Card         • School Districts & Colleges
+     • Free APEX Proposal Review           • Zero public bidding required        • City Facilities & Housing Dept
 ```
 
-### Strategy A: The Under-$15,000 Micro-Purchase Pipeline
-* Federal agencies can hire vendors for contracts **under $15,000** without putting them out for competitive public bid.
-* **Target:** Local National Guard armories, Army/Navy recruiting stations, Social Security branch offices, FAA towers, and federal park facilities.
-* **Your Action:**
-  1. Identify the **Small Business Specialist (SBS)** or **Facility Manager** at local federal offices.
-  2. Send them your [1-Page Capability Statement PDF](file:///C:/Users/lenovo/.gemini/antigravity/brain/4395a0d5-0261-4a88-a8b4-ceebfc174beb/capability_statement_and_website_copy.md).
-  3. Inform them you are an active, SAM.gov-registered, WOSB-eligible vendor ready for immediate facility maintenance or turnover deep cleans.
-
-### Strategy B: Simplified Acquisition Bids ($15,000 to $350,000)
-* Contracts between **$15,000 and $350,000** are automatically set aside for small businesses.
-* When a janitorial solicitation posts on SAM.gov in your metro area:
-  1. Download the Statement of Work (SOW).
-  2. Attend the mandatory or optional on-site walkthrough.
-  3. Draft your 3-to-5 page price proposal.
-  4. **Email your draft to your APEX Accelerator counselor** — they review your pricing and compliance for free before you submit.
-
-### Strategy C: Local City & County Government Portals (Fastest Local Wins)
-* Federal SAM.gov is massive, but **your City Purchasing Department, County Board of Education, and County Courthouse** issue recurring 1-year to 3-year cleaning RFPs constantly.
-* Register directly on your City and County vendor registries (100% free).
+### Key Federal Rules & Thresholds (Fact-Checked for 2026):
+1. **Micro-Purchase Threshold is $15,000:** 
+   * Federal agencies can swipe their Government Purchase Card (GPC) for janitorial jobs under $15,000 with zero public bid.
+   * *Targets:* Local National Guard armories, Social Security branch offices, Army/Navy recruiting stations, FAA radar towers, federal park facilities.
+2. **Simplified Acquisition Threshold is $350,000:** 
+   * Federal contracts between $15,000 and $350,000 are automatically reserved for small businesses under FAR Part 19.
+3. **WOSB Federal Certification ($0 Free):** 
+   * Third-party self-certification was eliminated by Congress. Official WOSB certification is done 100% free through the SBA at [certifications.sba.gov](https://certifications.sba.gov).
+4. **APEX Accelerators ($0 Free):** 
+   * DoD-funded business counseling centers ([apexaccelerators.us](https://www.apexaccelerators.us)) assign you a dedicated counselor who reviews your bid pricing and compliance for free before submission.
+5. **Corporate Diversity Programs (Phase 2):** 
+   * Do not pay for WBENC ($350) or NMSDC during the startup phase. Conserve cash flow and pursue them after achieving 3–6 months of steady commercial revenue.
+6. **SBA 8(a) Program:** 
+   * Target for Year 2 or 3 once the LLC has 2 years of filed business tax returns.
 
 ---
 
-## 4. Phase 2 (Once You Have Revenue): Corporate Diversity Certifications
+## 3. Step-by-Step Legal & Government Registration Roadmap
 
-Do not spend money on these today. Pursue them after you have your first 3–6 months of operating cashflow:
+```mermaid
+flowchart TD
+    Step1["Step 1: File LLC Online\n(Miesha 50% & Kimberly 50% Sole Managing Members)"] --> Step2["Step 2: Get Free EIN\n(IRS.gov - Instant 5 min)"]
+    Step2 --> Step3["Step 3: Open Business Bank Account\n(Dedicated Business Checking)"]
+    Step3 --> Step4["Step 4: Register on SAM.gov (Free)\n(Obtain UEI & CAGE Code)"]
+    Step4 --> Step5["Step 5: Apply for WOSB on SBA.gov (Free)\n(certifications.sba.gov)"]
+    Step5 --> Step6["Step 6: Connect with APEX Accelerator\n(Free DoD Bid Match & Review)"]
+```
 
-* **NMSDC (National Minority Supplier Development Council):** For corporate supplier diversity lists (Marriott, Delta, Amazon, banking headquarters).
-* **WBENC (Women's Business Enterprise National Council):** $350 application fee — opens Fortune 500 corporate supplier matchmaking events.
-* **SBA 8(a) Program:** Target for **Year 2 or 3** once the LLC has 2 years of tax returns.
+1. **LLC Filing ($50–$300 State Fee):** File Articles of Organization with Secretary of State. Miesha & Kimberly listed as 100% owners/managing members to protect WOSB/EDWOSB eligibility.
+2. **EIN ($0 Free):** Apply on [IRS.gov](https://www.irs.gov).
+3. **Business Checking ($0):** Open dedicated account.
+4. **SAM.gov ($0 Free):** Register entity for federal database, receive Unique Entity Identifier (UEI) and CAGE Code.
+5. **WOSB Application ($0 Free):** Submit required LLC docs at `certifications.sba.gov`.
+6. **APEX Accelerator Intake ($0 Free):** Meet local counselor to set up automated local/federal bid notifications.
+
+---
+
+## 4. Master File Directory in this Repository
+
+| File | Role | Context & Review Points for Hermes |
+| :--- | :--- | :--- |
+| `index.html` | **Customer & Government Landing Page** | High-conversion landing page styled in modern Electric Purple & Rose Quartz on crisp white. Features SpaceDrop™ photo uploader, access protocol selector, QR checkpoint tech, and ethical Government Bids section (NAICS 561720). |
+| `master_business_and_contracting_plan.md` | **Master Blueprint & Strategy** | This document. Complete strategic, legal, and operational context for all agents. |
+| `capability_statement_and_website_copy.md` | **1-Page Capability Statement PDF Text** | The standard 1-page PDF fact sheet to email directly to Federal Contracting Officers and Small Business Specialists. |
