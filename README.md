@@ -23,22 +23,17 @@ Golden Crest is a separate potential business for Miesha and Kimberly. It is not
 - `capability_statement_and_website_copy.md`: controlled capability and copy source.
 - `assets/golden-crest-facilities-hero.png`: original representative hero artwork generated for the project.
 
-## Website structure (do not revert without discussion)
+## Website scope (important)
 
-`index.html` is ordered for a buyer who evaluates vendors, not a homeowner shopping for cleaning:
+`index.html` is a customer-facing website, not a summary of the business plan. Strategy, procurement lanes, contracting thresholds, certification roadmaps, competitive positioning, and founder biographies belong in the markdown planning documents in this repo and must not be published on the site.
 
-1. Hero + vendor data rail (classification, ownership, service area, registration status).
-2. Who we serve - four buyer lanes with the buying mechanism named for each.
-3. Capabilities - what is performed at launch beside what will not be bid.
-4. Performance standard - four commitments, each producing a named deliverable.
-5. Key personnel - founder experience, explicitly labeled as individual work history and not company past performance.
-6. How to buy - micro-purchase, simplified acquisition, subcontracting, direct agreement.
-7. Vendor and certification status - the single source of truth table.
-8. Contact - procurement and facility lanes.
+Page sections: hero, services, facilities we serve, how we work, vendor information, request a quote.
 
-Contact details are set in one place: the `CONTACT` object at the top of the inline script in `index.html`. While `CONTACT_EMAIL` and `INQUIRY_ENDPOINT` are both empty the inquiry form is hidden and replaced with an honest "contact channel being established" notice, so the page never ships a dead form.
+`vendor information` is the only procurement-facing block. It carries the four facts a purchasing office needs to set up a vendor - business type, NAICS/PSC, location, service area - plus one line noting that registrations are in progress. Do not expand it into a status table or a certification narrative.
 
-The hero image is representative artwork. It carries a visible caption and a footer disclosure, and it should be replaced with approved founder or real operations photography before public launch.
+Contact details live in one place: the `CONTACT` object at the top of the inline script. While `CONTACT_EMAIL` and `INQUIRY_ENDPOINT` are both empty, the quote form hides itself and a short notice shows instead, so a dead form never ships.
+
+The hero image is representative artwork and should be replaced with real photography before public launch.
 
 ## Current truth
 
