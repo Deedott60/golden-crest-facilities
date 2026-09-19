@@ -1,5 +1,17 @@
 # Golden Crest Registration and Certification Roadmap
 
+> **CORRECTED 2026-09-19 — read `AGENTS.md` before using anything below.**
+>
+> This document is background. It contains claims that were accurate when written and are not now:
+>
+> - **8(a):** rules changed 2026-09-10. The race-based presumption of social disadvantage was eliminated. Any 8(a) guidance predating that date is stale.
+> - **WOSB vs EDWOSB:** these are one free application, not two choices. EDWOSB is the higher tier and includes WOSB. NAICS 561720 sits in the EDWOSB-restricted bucket, so plain WOSB does not open cleaning set-asides.
+> - **Strategy order:** federal contracting is the moat, not the starting revenue. Private commercial accounts come first. See `docs/startup-checklist.html`.
+> - **Missing entirely:** AbilityOne mandatory-source limits on federal custodial work, Service Contract Act wages (+$5.92/hr health & welfare), and 30–60 day payment terms.
+>
+> The founder walkthrough in `docs/` supersedes this file wherever they disagree.
+
+
 ## Plain-language answer
 
 Golden Crest does not need every certification at once. It needs the legal and operating foundation first, then the registrations connected to the actual buyers it plans to pursue.
