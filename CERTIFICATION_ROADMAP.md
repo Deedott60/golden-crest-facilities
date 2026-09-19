@@ -1,4 +1,4 @@
-# Golden Crest Registration and Certification Roadmap
+# Business Name To Be Chosen Registration and Certification Roadmap
 
 > **CORRECTED 2026-09-19 — read `AGENTS.md` before using anything below.**
 >
@@ -14,7 +14,7 @@
 
 ## Plain-language answer
 
-Golden Crest does not need every certification at once. It needs the legal and operating foundation first, then the registrations connected to the actual buyers it plans to pursue.
+Business Name To Be Chosen does not need every certification at once. It needs the legal and operating foundation first, then the registrations connected to the actual buyers it plans to pursue.
 
 ## 1. Foundation required before certifications
 
@@ -103,7 +103,7 @@ Current SBA thresholds include:
 - Adjusted gross income averaging $400,000 or less.
 - Personal assets totaling $6.5 million or less.[4]
 
-Janitorial Services, NAICS 561720, is currently designated on SBA's eligible-industry list under EDWOSB rather than ordinary WOSB.[10] This is why Golden Crest should evaluate EDWOSB honestly. If Miesha and Kimberly do not meet the economic tests, Golden Crest can still pursue ordinary small-business opportunities and other work even if janitorial set-asides are not available under the WOSB program.
+Janitorial Services, NAICS 561720, is currently designated on SBA's eligible-industry list under EDWOSB rather than ordinary WOSB.[10] This is why Business Name To Be Chosen should evaluate EDWOSB honestly. If Miesha and Kimberly do not meet the economic tests, Business Name To Be Chosen can still pursue ordinary small-business opportunities and other work even if janitorial set-asides are not available under the WOSB program.
 
 ### Paid third-party WOSB certification is optional
 
@@ -123,7 +123,7 @@ NMSDC's MBE certification is a legitimate private-sector minority-business crede
 
 NMSDC says initial fees vary by business size and can be as low as $270 for businesses under $1 million in revenue.[18] Like WBENC, it is useful when target corporations or prime contractors actually source through that network. It does not guarantee work.
 
-## 5. Recommended order for Golden Crest
+## 5. Recommended order for Business Name To Be Chosen
 
 1. Finalize the founders' ownership and operating agreement.
 2. Form the LLC, obtain EIN, bank account, insurance, and monitored contact channels.
@@ -143,7 +143,7 @@ NMSDC says initial fees vary by business size and can be as low as $270 for busi
 
 The hero should sell the service, not the certification stack:
 
-- What Golden Crest does.
+- What Business Name To Be Chosen does.
 - What types of facilities it serves.
 - Why the founders' hospitality operations background matters.
 - One primary CTA: request a site walkthrough.
@@ -181,13 +181,13 @@ Safe first version:
 3. Buyer accepts privacy and document-handling terms.
 4. Secure upload accepts ordinary room photos and non-sensitive scope documents.
 5. Files go to private storage, not a public website directory.
-6. Golden Crest receives a monitored alert and reviews the submission.
+6. Business Name To Be Chosen receives a monitored alert and reviews the submission.
 7. The system produces a draft scope checklist for human review, not an automatic binding quote.
 8. Retention and deletion rules remove files after the review period.
 
 Do not request alarm codes, door codes, access credentials, employee data, restricted floor plans, or sensitive government documents through the marketing site.
 
-Derrick's VIN and car-lot workflow proves that a photo-driven intake can be built. Golden Crest still needs its own security model, data fields, storage boundary, review workflow, and acceptance testing.
+Derrick's VIN and car-lot workflow proves that a photo-driven intake can be built. Business Name To Be Chosen still needs its own security model, data fields, storage boundary, review workflow, and acceptance testing.
 
 ## 8. Other government-contracting lanes supported by agents
 
@@ -204,7 +204,7 @@ Danny, Codex, and Claude can support government-contracting work such as:
 - Training and workflow documentation.
 - Subcontractor and teaming research.
 
-The agents do not create legal eligibility, physical janitorial capacity, staffing, insurance, cash flow, security clearances, or past performance. Any separate government service should have its own real capability, NAICS alignment, proof, and delivery owner rather than being added to Golden Crest solely because an agent can write about it.
+The agents do not create legal eligibility, physical janitorial capacity, staffing, insurance, cash flow, security clearances, or past performance. Any separate government service should have its own real capability, NAICS alignment, proof, and delivery owner rather than being added to Business Name To Be Chosen solely because an agent can write about it.
 
 ## Sources
 

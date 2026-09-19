@@ -1,13 +1,13 @@
-# Golden Crest Agent Instructions
+# Commercial Janitorial Startup Agent Instructions
 
 Shared working folder for every agent on this project — Claude, Codex, and Hermes (Danny).
 
 **Locations**
 - Founders' checklist (unlisted, no login): `https://gc-start.76-13-25-117.sslip.io/9a010ae73fce0ff5018dbcb6/` — served from `/var/www/gc-founders/<token>/`, nginx site `gc-founders`. `why.html` in the same folder is the reasoning doc. Unlisted, not password-protected: do not post the link anywhere public.
 
-- GitHub: `https://github.com/Deedott60/golden-crest-facilities` — source of truth
-- VPS: `/root/golden-crest-facilities` — Danny's working copy
-- Live site: `https://golden-crest.76-13-25-117.sslip.io/` — served from `/var/www/golden-crest-preview`
+- GitHub: `https://github.com/Deedott60/golden-crest-facilities` — legacy technical repository slug and source of truth until the founders choose a legal name
+- VPS: `/root/golden-crest-facilities` — legacy technical working path; do not present it as the business name
+- Public-business preview: parked until the founders choose a legal name. The unlisted founders' checklist is the current deliverable.
 
 **Before starting work:** `git pull`. **After committing:** `git push`, and tell Derrick if the live site needs redeploying. Do not let the VPS copy drift — it sat six commits behind for three weeks and Danny was reading a stale plan.
 
@@ -21,11 +21,11 @@ Shared working folder for every agent on this project — Claude, Codex, and Her
 
 ## Project boundary
 
-Golden Crest is a separate business for its two founders. It is not a LeadCurate product. Do not mix customer data, branding, credentials, or infrastructure between the businesses without Derrick's explicit approval.
+This commercial janitorial startup is a separate business for its two founders. It is not a LeadCurate product. Do not mix customer data, branding, credentials, or infrastructure between the businesses without Derrick's explicit approval.
 
 ## Current state — nothing below is in place yet
 
-- Not formed. "Golden Crest Facilities" is a working name.
+- Not formed. The founders have not chosen the legal business name. Do not reuse the former made-up name in user-facing material.
 - No monitored business email or phone. The website's quote form is deliberately disabled until one exists.
 - No SAM registration, UEI, CAGE, EIN, insurance, or certification of any kind.
 - No past performance under this company.
@@ -91,8 +91,8 @@ Static files copied to the VPS:
 
 ```
 scp index.html government.html capability-statement.html robots.txt sitemap.xml llms.txt \
-    Golden-Crest-Capability-Profile-DRAFT.pdf leadcurate-vps:/var/www/golden-crest-preview/
-scp assets/site.css assets/site.js assets/golden-crest-facilities-hero.png \
+    Commercial-Janitorial-Capability-Profile-DRAFT.pdf leadcurate-vps:/var/www/golden-crest-preview/
+scp assets/site.css assets/site.js assets/commercial-janitorial-hero.png \
     leadcurate-vps:/var/www/golden-crest-preview/assets/
 ```
 

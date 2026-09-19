@@ -1,4 +1,4 @@
-# Golden Crest Commercial Janitorial and Facility Care
+# Business Name To Be Chosen Commercial Janitorial and Facility Care
 
 > **CORRECTED 2026-09-19 — read `AGENTS.md` before using anything below.**
 >
@@ -14,7 +14,7 @@
 
 ## Verified business and government-contracting plan
 
-**Working company name:** Golden Crest
+**Working company name:** Business Name To Be Chosen
 **Project status:** Pre-formation and prelaunch
 **Founders:** Miesha and Kimberly
 **Location:** Mount Holly, North Carolina
@@ -24,13 +24,13 @@
 
 ## Executive decision
 
-The business concept makes sense as an account-based government and institutional contractor engine. Golden Crest should not depend on consumer advertising or compete broadly for residential cleaning leads. The primary pipeline should be named agencies, municipalities, schools, colleges, housing and community institutions, facility managers, prime contractors, and commercial accounts that buy through a defined procurement process.
+The business concept makes sense as an account-based government and institutional contractor engine. Business Name To Be Chosen should not depend on consumer advertising or compete broadly for residential cleaning leads. The primary pipeline should be named agencies, municipalities, schools, colleges, housing and community institutions, facility managers, prime contractors, and commercial accounts that buy through a defined procurement process.
 
-The strongest foundation is not a certification badge. It is the founders' experience managing sanitation, guest-facing presentation, teams, and compliance inside high-volume casino and resort operations. Miesha can remain employed while Derrick and the agents build the registration, opportunity-research, relationship, and proposal engine, but Golden Crest must confirm founder availability, outside-employment rules, staffing depth, and cash flow before accepting work.
+The strongest foundation is not a certification badge. It is the founders' experience managing sanitation, guest-facing presentation, teams, and compliance inside high-volume casino and resort operations. Miesha can remain employed while Derrick and the agents build the registration, opportunity-research, relationship, and proposal engine, but Business Name To Be Chosen must confirm founder availability, outside-employment rules, staffing depth, and cash flow before accepting work.
 
 ## Project boundary
 
-Golden Crest is a separate potential business for Miesha and Kimberly. It is not a LeadCurate product and it should have its own legal entity, bank account, insurance, contracts, records, website, and future operating system.
+Business Name To Be Chosen is a separate potential business for Miesha and Kimberly. It is not a LeadCurate product and it should have its own legal entity, bank account, insurance, contracts, records, website, and future operating system.
 
 The current name is a working name. Do not buy a domain, print uniforms, or file registrations until Miesha and Kimberly approve the legal name and ownership terms.
 
@@ -83,7 +83,7 @@ The general simplified acquisition threshold is now $350,000.[1] Acquisitions ab
 
 ### SAM, UEI, and CAGE
 
-SAM.gov registration and the Unique Entity ID are free.[5] Golden Crest should register only after its legal name, physical address, EIN, banking, and formation records match. A U.S. entity can receive a CAGE code through the SAM registration process. SAM says activation can take up to 10 business days and active registrations must be renewed every 365 days.[15]
+SAM.gov registration and the Unique Entity ID are free.[5] Business Name To Be Chosen should register only after its legal name, physical address, EIN, banking, and formation records match. A U.S. entity can receive a CAGE code through the SAM registration process. SAM says activation can take up to 10 business days and active registrations must be renewed every 365 days.[15]
 
 ### WOSB and EDWOSB
 
@@ -111,10 +111,10 @@ The operating pipeline is:
 4. Maintain a contact map of purchasing staff, small-business officers, facility contacts, and prime-contractor supplier teams.
 5. Send a short capability profile and a facility-specific introduction, not mass advertising.
 6. Qualify each opportunity against staffing, schedule, insurance, wages, equipment, travel, security, payroll cash flow, and founder capacity.
-7. Build the compliance matrix and proposal only for work Golden Crest can actually perform.
+7. Build the compliance matrix and proposal only for work Business Name To Be Chosen can actually perform.
 8. Record every contact, deadline, document, response, award result, and follow-up in one opportunity workspace.
 
-APEX Accelerators provide no-cost government-marketplace guidance and education.[20] In North Carolina, the SBTDC Government Contracting Assistance Program provides capture management, procurement-compliance, contract-performance, and strategic advisory support, with government-contracting counselors listed at the Charlotte center.[6][19] Golden Crest should request an intake after the founders approve the business structure, and use the counselor while completing registrations and building the first account list.
+APEX Accelerators provide no-cost government-marketplace guidance and education.[20] In North Carolina, the SBTDC Government Contracting Assistance Program provides capture management, procurement-compliance, contract-performance, and strategic advisory support, with government-contracting counselors listed at the Charlotte center.[6][19] Business Name To Be Chosen should request an intake after the founders approve the business structure, and use the counselor while completing registrations and building the first account list.
 
 ## Corrected go-to-market strategy
 

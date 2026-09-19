@@ -1,0 +1,22 @@
+[Unit]
+Description=Shared progress API for commercial janitorial founders checklist
+After=network.target
+
+[Service]
+Type=simple
+User=root
+Group=root
+WorkingDirectory=/opt/janitorial-checklist-sync
+ExecStart=/usr/bin/python3 /opt/janitorial-checklist-sync/checklist-sync.py
+Environment=CHECKLIST_SYNC_PORT=3231
+Environment=CHECKLIST_SYNC_DATA=/var/lib/janitorial-checklist/progress.json
+Restart=on-failure
+RestartSec=3
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ReadWritePaths=/var/lib/janitorial-checklist
+ProtectHome=true
+
+[Install]
+WantedBy=multi-user.target

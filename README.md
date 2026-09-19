@@ -1,7 +1,7 @@
-# Golden Crest Commercial Janitorial and Facility Care
+# Business Name To Be Chosen Commercial Janitorial and Facility Care
 
 **Status:** Pre-formation business project
-**Working name:** Golden Crest
+**Working name:** Business Name To Be Chosen
 **Founders:** Miesha and Kimberly
 **Location:** Mount Holly, North Carolina
 **Initial service lane:** Commercial janitorial and facility care
@@ -10,7 +10,7 @@
 
 ## Project boundary
 
-Golden Crest is a separate potential business for Miesha and Kimberly. It is not part of LeadCurate's property-data business. The repository is the shared source for the business plan, landing page, capability profile, visual assets, and future government-contracting setup.
+Business Name To Be Chosen is a separate potential business for Miesha and Kimberly. It is not part of LeadCurate's property-data business. The repository is the shared source for the business plan, landing page, capability profile, visual assets, and future government-contracting setup.
 
 ## Files
 
@@ -18,10 +18,10 @@ Golden Crest is a separate potential business for Miesha and Kimberly. It is not
 - `CERTIFICATION_ROADMAP.md`: plain-language registration, WOSB, EDWOSB, NCSBE, SBE, WBENC, NMSDC, operating-agreement, and secure photo-intake roadmap.
 - `index.html`: procurement-first landing page. Written for public, institutional, and prime-contractor buyers rather than consumer cleaning search traffic.
 - `capability-statement.html`: printable pre-registration capability profile.
-- `Golden-Crest-Capability-Profile-DRAFT.pdf`: verified one-page draft PDF generated from the printable profile.
+- `Commercial-Janitorial-Capability-Profile-DRAFT.pdf`: one-page draft PDF generated from the printable profile; regenerate after major copy changes.
 - `master_business_and_contracting_plan.md`: corrected launch and procurement plan with official sources.
 - `capability_statement_and_website_copy.md`: controlled capability and copy source.
-- `assets/golden-crest-facilities-hero.png`: original representative hero artwork generated for the project.
+- `assets/commercial-janitorial-hero.png`: original representative hero artwork generated for the project.
 
 ## Website structure (do not revert without discussion)
 

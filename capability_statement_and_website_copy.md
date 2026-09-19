@@ -1,4 +1,4 @@
-# Golden Crest Capability Profile
+# Business Name To Be Chosen Capability Profile
 
 ## Pre-registration draft
 
@@ -6,7 +6,7 @@ This document is a drafting source for the printable `capability-statement.html`
 
 ## Working identity
 
-**Working name:** Golden Crest
+**Working name:** Business Name To Be Chosen
 **Location:** Mount Holly, North Carolina
 **Founders:** Miesha and Kimberly
 **Service area:** Gaston and greater Charlotte region, final radius pending
@@ -15,7 +15,7 @@ This document is a drafting source for the printable `capability-statement.html`
 
 ## Company overview
 
-Golden Crest is a planned founder-led commercial janitorial and facility-care company shaped by high-volume casino and resort operations. Miesha and Kimberly bring practical experience in sanitation controls, guest-facing presentation, shift accountability, team coordination, and inspection readiness.
+Business Name To Be Chosen is a planned founder-led commercial janitorial and facility-care company shaped by high-volume casino and resort operations. Miesha and Kimberly bring practical experience in sanitation controls, guest-facing presentation, shift accountability, team coordination, and inspection readiness.
 
 The launch model focuses on small professional, administrative, public-facing, and hospitality-adjacent facilities where the founders can establish the service checklist directly and supervise quality before expanding the crew.
 
@@ -57,7 +57,7 @@ Supervisory experience in high-volume casino hospitality operations. Experience 
 | SBA WOSB or EDWOSB certification | Pending eligibility review and application |
 | Insurance and bonding | Pending first-scope requirements |
 | Background screening process | Pending first-scope requirements |
-| Past performance | Not yet established under Golden Crest |
+| Past performance | Not yet established under Business Name To Be Chosen |
 | Government purchase card acceptance | Not yet established |
 
 ## Important claim boundary
@@ -93,13 +93,13 @@ Do not add any of the following until verified:
 
 **Hospitality discipline for the spaces people depend on.**
 
-Commercial janitorial and facility care shaped by high-volume casino and resort operations. Golden Crest is being built for offices, public-facing facilities, hospitality environments, and institutional spaces that need dependable standards and visible accountability.
+Commercial janitorial and facility care shaped by high-volume casino and resort operations. Business Name To Be Chosen is being built for offices, public-facing facilities, hospitality environments, and institutional spaces that need dependable standards and visible accountability.
 
 ### Government section
 
 **Credentials should be visible only when they are real.**
 
-Golden Crest is being structured for public-sector procurement. SAM, UEI, CAGE, WOSB, insurance, bonding, and background-clearance details will be posted only after each item is active and verifiable.
+Business Name To Be Chosen is being structured for public-sector procurement. SAM, UEI, CAGE, WOSB, insurance, bonding, and background-clearance details will be posted only after each item is active and verifiable.
 
 ### Primary commercial call to action
 

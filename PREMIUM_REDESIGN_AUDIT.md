@@ -1,12 +1,12 @@
-# Golden Crest Landing Page Audit & Premium Redesign Brief
+# Business Name To Be Chosen Landing Page Audit & Premium Redesign Brief
 
 ## Executive direction
 
 The current page looks polished at first glance but presents a mature, certified, technology-enabled contractor that does not yet exist operationally. For commercial facility buyers and contracting officers, that is a larger credibility problem than an unfinished visual design.
 
-The redesign should position Golden Crest as a **founder-led commercial janitorial company built on real casino/resort hospitality operations experience**—not as a compliance-tech platform or certified government contractor. Premium should come from restraint, clear scope, real people, documented processes, and accurate procurement data.
+The redesign should position Business Name To Be Chosen as a **founder-led commercial janitorial company built on real casino/resort hospitality operations experience**—not as a compliance-tech platform or certified government contractor. Premium should come from restraint, clear scope, real people, documented processes, and accurate procurement data.
 
-**Launch principle:** publish only what Golden Crest can prove, perform, receive, or respond to today.
+**Launch principle:** publish only what Business Name To Be Chosen can prove, perform, receive, or respond to today.
 
 ---
 
@@ -16,7 +16,7 @@ The redesign should position Golden Crest as a **founder-led commercial janitori
 
 | Current claim or feature | Problem | Launch-safe treatment |
 |---|---|---|
-| “WOSB / WBE,” “100% Woman-Owned Enterprise,” “WOSB eligible,” “MWBE,” “MBE,” “set-aside ready” | The business is not formed, registered, or certified. Ownership facts do not equal third-party certification. “Eligible” is also a determination Golden Crest should not imply it has received. | Remove certification acronyms and badges. After formation, “Women-owned” may be used as a factual ownership statement if legally accurate. Add WOSB/WBE/MBE only after approval and retain proof. |
+| “WOSB / WBE,” “100% Woman-Owned Enterprise,” “WOSB eligible,” “MWBE,” “MBE,” “set-aside ready” | The business is not formed, registered, or certified. Ownership facts do not equal third-party certification. “Eligible” is also a determination Business Name To Be Chosen should not imply it has received. | Remove certification acronyms and badges. After formation, “Women-owned” may be used as a factual ownership statement if legally accurate. Add WOSB/WBE/MBE only after approval and retain proof. |
 | “Licensed & Insured,” “fully insured,” “bonded,” “$2,000,000 policy” | Unsupported without active policies and any jurisdiction-specific licenses. | Remove. Add exact coverage only after the policy is bound; state limits accurately and provide a certificate of insurance on request. Do not imply a general janitorial “license” unless one is actually required and held. |
 | “SAM.gov registered,” “CAGE active,” UEI/DUNS “available upon request,” “GPC ready” | No entity registration or payment infrastructure exists. DUNS is also not the current federal entity identifier. | Hide the procurement credential block until SAM registration is active. Then show legal name, UEI, CAGE, SAM status/renewal, accepted payment methods, and exact codes. |
 | “Background-cleared” or “background-screened staffing” | No screening program, criteria, vendor, or active workforce is established. “Cleared” can imply a government security clearance. | Remove. Once implemented, say “Personnel are screened under our written hiring policy” and describe the checks accurately. Reserve “security clearance” for actual adjudicated clearances. |
@@ -25,8 +25,8 @@ The redesign should position Golden Crest as a **founder-led commercial janitori
 | Two-hour assessment, quote, response, or issue resolution | Repeated inconsistently, while the process also says 24 hours. No staffing or service-level system supports it. | Use one realistic, narrow commitment, e.g. “We respond to new inquiries within one business day,” only after the team can meet and measure it. Proposal timing follows the walkthrough and scope. |
 | “30-day risk-free trial,” “month-to-month,” “zero lock-in,” “flat price” | These are contractual/commercial promises with no established terms. | Remove until pricing, cancellation, exclusions, and service agreements exist. Use “Terms are defined in each proposal.” |
 | “Health-compliance certified,” “hospitality trained,” “hospital disinfectants,” “clinic-grade,” “zero cross-contamination,” “flawless compliance records” | These overstate personal credentials or imply healthcare/environmental outcomes. ServSafe is food-safety training, not a janitorial or medical sanitation certification. | Attribute verified experience precisely: “Founders bring leadership experience from high-volume casino and resort hospitality operations.” Mention active ServSafe credentials only by holder, credential, and valid status—and explain relevance without implying medical certification. Use “EPA-registered disinfectants used according to label directions” only when operationally true. |
-| “15+ years,” “50,000+ sq. ft.,” “zero-failure inspections,” “every contract founder-inspected” | Unsupported or not yet documented as company performance. Prior employment experience is not Golden Crest past performance. | Verify dates and scope. Label it “founder experience,” never company past performance. Obtain permission before naming employers or using their brands. |
-| Competitor claims such as “unscreened rotating subcontractors,” “single mop,” and “lowest bidder” | Sweeping, adversarial, and unsupported. It makes a new vendor sound less credible. | Replace the comparison matrix with Golden Crest’s own documented service standards and buyer-facing deliverables. |
+| “15+ years,” “50,000+ sq. ft.,” “zero-failure inspections,” “every contract founder-inspected” | Unsupported or not yet documented as company performance. Prior employment experience is not Business Name To Be Chosen past performance. | Verify dates and scope. Label it “founder experience,” never company past performance. Obtain permission before naming employers or using their brands. |
+| Competitor claims such as “unscreened rotating subcontractors,” “single mop,” and “lowest bidder” | Sweeping, adversarial, and unsupported. It makes a new vendor sound less credible. | Replace the comparison matrix with Business Name To Be Chosen’s own documented service standards and buyer-facing deliverables. |
 | “Official capability statement” and “corporate capability statement” | The draft contains false certifications and placeholder identifiers. | Do not publish/download until legal name, contact data, capability scope, codes, insurance, and registrations are accurate. Mark internal drafts clearly. |
 
 ### B. Functional and content defects in `index.html`
@@ -61,7 +61,7 @@ This is credible because it connects the founders’ actual backgrounds to outco
 
 1. Commercial property/facility managers who need recurring janitorial service.
 2. Office, hospitality, and other facility operators where presentation and operational consistency matter.
-3. Public-sector buyers only after Golden Crest has a legal entity, registration, insurance, capacity, and a solicitation-ready response process.
+3. Public-sector buyers only after Business Name To Be Chosen has a legal entity, registration, insurance, capacity, and a solicitation-ready response process.
 
 Do not lead with medical facilities until the team has appropriate procedures, products, training, and insurance for that scope. Do not imply infection-control or regulated clinical capability.
 
@@ -85,7 +85,7 @@ FOUNDER-LED COMMERCIAL JANITORIAL SERVICE
 ## Commercial cleaning managed with hospitality discipline.
 
 **Support copy**  
-Golden Crest brings high-volume casino and resort operations experience to recurring facility care—clear scopes, consistent routines, and direct owner communication.
+Business Name To Be Chosen brings high-volume casino and resort operations experience to recurring facility care—clear scopes, consistent routines, and direct owner communication.
 
 Use “casino and resort operations experience” only after the founders approve the wording and the background can be substantiated.
 
@@ -114,7 +114,7 @@ If original photography is not yet possible, launch with a restrained typographi
 
 ### Visual system
 
-- **Palette:** warm white/stone background, deep charcoal/ink text, restrained muted brass or ochre accent, optional dark evergreen for operational callouts. “Golden Crest” can own a refined gold note without shiny metallic effects.
+- **Palette:** warm white/stone background, deep charcoal/ink text, restrained muted brass or ochre accent, optional dark evergreen for operational callouts. “Business Name To Be Chosen” can own a refined gold note without shiny metallic effects.
 - **Typography:** highly legible grotesk or humanist sans for nearly everything; an editorial serif only for short display moments. Avoid italic gradient display text.
 - **Layout:** strong grid, generous but controlled whitespace, thin rules, dense procurement tables where useful, square/soft-radius cards rather than pill-heavy UI.
 - **Imagery:** real people, real processes, real surfaces, real equipment. Caption founder-experience images accurately.
@@ -154,9 +154,9 @@ Present services before verticals:
 - Floor/detail work within actual capability
 - One-time/deep cleaning only if offered
 
-Then list the facility types Golden Crest is prepared and insured to serve. Each card should identify scope and exclusions rather than use aspirational “clinic-grade” language.
+Then list the facility types Business Name To Be Chosen is prepared and insured to serve. Each card should identify scope and exclusions rather than use aspirational “clinic-grade” language.
 
-### 5. The Golden Crest operating standard
+### 5. The Business Name To Be Chosen operating standard
 
 Replace competitor attacks and fictional technology with 4–5 concrete process commitments, each tied to a deliverable:
 
@@ -172,7 +172,7 @@ Show a real sample checklist after the SOP exists. A downloadable sample is stro
 
 Title: `Hospitality operations experience, applied to facility care.`
 
-Include professional portraits, short bios for Miesha and Kimberly, specific verified responsibilities, relevant active training, and why the experience matters to the buyer. Distinguish individual experience from Golden Crest contract history. Avoid employer logos without permission.
+Include professional portraits, short bios for Miesha and Kimberly, specific verified responsibilities, relevant active training, and why the experience matters to the buyer. Distinguish individual experience from Business Name To Be Chosen contract history. Avoid employer logos without permission.
 
 ### 7. How engagement works
 
@@ -187,7 +187,7 @@ Do not promise a two-hour quote; janitorial scope usually depends on size, surfa
 
 Keep this below operating capabilities and above contact. Use a clean data table, not a patriotic visual block.
 
-**Before registration:** either omit the section or use a modest statement: `Golden Crest is preparing its public-sector vendor registrations. Procurement identifiers and certifications will be published only after activation.` Do not solicit federal bids before the business can responsibly accept them.
+**Before registration:** either omit the section or use a modest statement: `Business Name To Be Chosen is preparing its public-sector vendor registrations. Procurement identifiers and certifications will be published only after activation.` Do not solicit federal bids before the business can responsibly accept them.
 
 **After activation, show only verified fields:**
 
@@ -251,7 +251,7 @@ Every important claim should link to or be backed by one of these:
 - Actual working feature tested end-to-end
 - Measured service record
 
-Until Golden Crest has company past performance, use **founder experience**, process artifacts, and accurate readiness status as proof. Never manufacture testimonials, client logos, case studies, dashboards, or performance numbers.
+Until Business Name To Be Chosen has company past performance, use **founder experience**, process artifacts, and accurate readiness status as proof. Never manufacture testimonials, client logos, case studies, dashboards, or performance numbers.
 
 ### Claims language guide
 
@@ -348,7 +348,7 @@ The redesigned page is ready when:
 
 - Every credential and performance statement has an owner and supporting document.
 - No control, download, upload, tab, phone number, email, or CTA is fake or dead.
-- The site clearly distinguishes founder experience from Golden Crest company experience.
+- The site clearly distinguishes founder experience from Business Name To Be Chosen company experience.
 - A commercial buyer can identify service fit, area, process, and next step in under a minute.
 - A contracting officer can find accurate procurement data without encountering pseudo-government branding.
 - The form has been submitted successfully on desktop and mobile and the inquiry was received by the monitored recipient.
