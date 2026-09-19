@@ -3,6 +3,8 @@
 Shared working folder for every agent on this project — Claude, Codex, and Hermes (Danny).
 
 **Locations**
+- Founders' checklist (unlisted, no login): `https://gc-start.76-13-25-117.sslip.io/9a010ae73fce0ff5018dbcb6/` — served from `/var/www/gc-founders/<token>/`, nginx site `gc-founders`. `why.html` in the same folder is the reasoning doc. Unlisted, not password-protected: do not post the link anywhere public.
+
 - GitHub: `https://github.com/Deedott60/golden-crest-facilities` — source of truth
 - VPS: `/root/golden-crest-facilities` — Danny's working copy
 - Live site: `https://golden-crest.76-13-25-117.sslip.io/` — served from `/var/www/golden-crest-preview`
