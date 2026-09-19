@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Golden Crest Startup Checklist</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Serif:wght@500;600&display=swap">
+<style>
+:root{
+  --paper:#f8faf9;--card:#fff;--ink:#14202a;--body:#2c3a42;--soft:#5d6d73;--faint:#8b9a9d;
+  --rule:#dae3e0;--rule-soft:#ebf0ee;--teal:#0f6f66;--teal-deep:#0b544d;--teal-wash:#e6f1ee;
+  --amber:#8a5b13;--amber-wash:#f8f0e0;--free:#1f6b46;--free-wash:#e7f1ea;--call:#7a4bb8;--call-wash:#f0eaf8;
+  --serif:"IBM Plex Serif",Georgia,serif;--sans:"IBM Plex Sans",system-ui,-apple-system,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#0f1619;--card:#161f23;--ink:#eef4f2;--body:#c3d0cd;--soft:#94a5a5;--faint:#6d7d7e;
+  --rule:#2b3739;--rule-soft:#1f2a2d;--teal:#5cc9b9;--teal-deep:#8adcce;--teal-wash:#12312e;
+  --amber:#d8a556;--amber-wash:#2d2415;--free:#6fc796;--free-wash:#122a1e;--call:#b79ae0;--call-wash:#241c33;
+}}
+:root[data-theme="dark"]{
+  --paper:#0f1619;--card:#161f23;--ink:#eef4f2;--body:#c3d0cd;--soft:#94a5a5;--faint:#6d7d7e;
+  --rule:#2b3739;--rule-soft:#1f2a2d;--teal:#5cc9b9;--teal-deep:#8adcce;--teal-wash:#12312e;
+  --amber:#d8a556;--amber-wash:#2d2415;--free:#6fc796;--free-wash:#122a1e;--call:#b79ae0;--call-wash:#241c33;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--body);font-family:var(--sans);font-size:16.5px;line-height:1.6;-webkit-text-size-adjust:100%}
+.wrap{width:min(820px,calc(100% - 36px));margin:0 auto}
+h1,h2,h3{margin:0;color:var(--ink);font-family:var(--serif);text-wrap:balance}
+p{margin:0}ul,ol{margin:0;padding:0;list-style:none}
+a{color:var(--teal)}
+:focus-visible{outline:3px solid var(--teal);outline-offset:2px}
+
+header.top{padding:44px 0 26px;border-bottom:2px solid var(--ink);margin-bottom:8px}
+.kicker{font-family:var(--mono);font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--soft);margin-bottom:18px}
+h1{font-size:clamp(30px,5.6vw,42px);line-height:1.06;font-weight:600;letter-spacing:-.025em}
+.sub{margin-top:16px;font-size:17.5px;color:var(--soft);max-width:60ch}
+
+.progwrap{position:sticky;top:0;z-index:20;background:var(--paper);padding:14px 0 12px;border-bottom:1px solid var(--rule);margin-bottom:34px}
+.progtop{display:flex;justify-content:space-between;align-items:baseline;gap:14px;margin-bottom:9px}
+.progtop b{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink);font-weight:600}
+.progtop span{font-family:var(--mono);font-size:12px;color:var(--soft);font-variant-numeric:tabular-nums}
+.bar{height:5px;background:var(--rule-soft);border-radius:99px;overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:var(--teal);border-radius:99px;transition:width .3s ease}
+.syncnote{margin-top:9px;font-family:var(--mono);font-size:10.5px;letter-spacing:.05em;color:var(--faint)}
+
+.phase{margin-bottom:46px}
+.phead{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:6px}
+.pnum{font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.1em;color:var(--teal);text-transform:uppercase}
+h2{font-size:clamp(21px,3vw,26px);font-weight:600;letter-spacing:-.02em;line-height:1.2}
+.pwhen{font-family:var(--mono);font-size:11px;color:var(--faint);letter-spacing:.04em}
+.pdesc{font-size:15.5px;color:var(--soft);margin-bottom:20px;max-width:66ch}
+
+.items{border-top:1px solid var(--rule)}
+.item{border-bottom:1px solid var(--rule-soft);padding:15px 0;display:grid;grid-template-columns:28px minmax(0,1fr);gap:0 14px;align-items:start}
+.item input[type=checkbox]{appearance:none;width:20px;height:20px;margin:2px 0 0;border:1.5px solid var(--faint);border-radius:4px;background:var(--card);cursor:pointer;flex:none;position:relative;transition:background .15s,border-color .15s}
+.item input[type=checkbox]:checked{background:var(--teal);border-color:var(--teal)}
+.item input[type=checkbox]:checked::after{content:"";position:absolute;left:6px;top:2px;width:5px;height:10px;border:solid #fff;border-width:0 2px 2px 0;transform:rotate(45deg)}
+.item input[type=checkbox]:disabled{cursor:default;opacity:.55}
+.ibody{min-width:0}
+.ttl{font-size:16.5px;color:var(--ink);font-weight:500;line-height:1.4;cursor:pointer;display:block}
+.item.done .ttl{color:var(--faint);text-decoration:line-through;text-decoration-thickness:1px}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.tag{font-family:var(--mono);font-size:10px;font-weight:500;letter-spacing:.07em;text-transform:uppercase;padding:3px 8px;border-radius:3px;white-space:nowrap}
+.t-free{background:var(--free-wash);color:var(--free)}
+.t-cost{background:var(--amber-wash);color:var(--amber)}
+.t-call{background:var(--call-wash);color:var(--call)}
+.t-time{background:var(--rule-soft);color:var(--soft)}
+.t-key{background:var(--teal-wash);color:var(--teal-deep)}
+.why{margin-top:9px;font-size:14.5px;color:var(--soft);line-height:1.6;max-width:68ch}
+.why b{color:var(--ink);font-weight:600}
+.why a{word-break:break-word}
+
+.box{border-left:3px solid var(--teal);background:var(--teal-wash);padding:18px 20px;border-radius:0 4px 4px 0;margin:26px 0}
+.box.warn{border-left-color:var(--amber);background:var(--amber-wash)}
+.box.call{border-left-color:var(--call);background:var(--call-wash)}
+.box h3{font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.11em;text-transform:uppercase;color:var(--teal-deep);margin-bottom:10px}
+.box.warn h3{color:var(--amber)}
+.box.call h3{color:var(--call)}
+.box p{font-size:15px;line-height:1.65;color:var(--body)}
+.box p+p{margin-top:11px}
+.box b{color:var(--ink);font-weight:600}
+.box ul{margin-top:10px}
+.box li{font-size:15px;padding:5px 0 5px 18px;position:relative;color:var(--body)}
+.box li::before{content:"";position:absolute;left:0;top:14px;width:9px;height:1.5px;background:currentColor;opacity:.4}
+
+.tbl{overflow-x:auto;border:1px solid var(--rule);border-radius:4px;background:var(--card);margin-top:8px}
+table{width:100%;border-collapse:collapse;font-size:14.5px;min-width:440px}
+th,td{text-align:left;padding:13px 16px;border-bottom:1px solid var(--rule-soft);vertical-align:top}
+thead th{font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);font-weight:500}
+tbody tr:last-child th,tbody tr:last-child td{border-bottom:0}
+tbody th{font-weight:600;color:var(--ink);font-family:var(--sans);font-size:15px}
+td{color:var(--soft)}
+td.num{font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap;font-weight:600;font-size:13.5px}
+td.num.free{color:var(--free)}
+td.num.paid{color:var(--amber)}
+
+footer{border-top:1px solid var(--rule);margin-top:44px;padding:26px 0 60px;font-size:13.5px;color:var(--faint);line-height:1.7}
+footer p+p{margin-top:11px}
+footer b{color:var(--soft);font-weight:500}
+
+@media (max-width:620px){
+  body{font-size:16px}
+  .wrap{width:calc(100% - 28px)}
+  .item{grid-template-columns:26px minmax(0,1fr);gap:0 11px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+@media print{
+  .progwrap{position:static}
+  body{background:#fff;color:#000;font-size:10.5pt}
+  .phase,.box,.tbl{break-inside:avoid}
+  .item input[type=checkbox]{border-color:#555}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <p class="kicker">Golden Crest Facilities &middot; Startup &amp; Government Contracting</p>
+  <h1>The checklist.</h1>
+  <p class="sub">Everything to get the business registered and set up for government contracting, in the order it has to happen. Work top to bottom. Tick things off as you go.</p>
+</header>
+
+<div class="progwrap">
+  <div class="progtop"><b>Progress</b><span id="pcount">0 of 0 done</span></div>
+  <div class="bar"><i id="pbar"></i></div>
+  <p class="syncnote" id="syncnote">Loading&hellip;</p>
+</div>
+
+<div class="box">
+  <h3>How to use this</h3>
+  <p>Phases 0 and 1 have to happen in order &mdash; each one unlocks the next. Everything after that can be done in any order, whenever there's time.</p>
+  <p>Anything marked <span class="tag t-call">Phone call</span> is grouped again at the bottom, so all the calls can be knocked out on one weekday.</p>
+</div>
+
+<section class="phase">
+  <div class="phead"><span class="pnum">Phase 0</span><h2>Decide together</h2><span class="pwhen">One sitting &middot; about 30 minutes</span></div>
+  <p class="pdesc">Nothing can be filed until these are settled. Several of them have legal consequences later, so decide them on purpose rather than by default.</p>
+  <ul class="items" data-phase="0"></ul>
+</section>
+
+<section class="phase">
+  <div class="phead"><span class="pnum">Phase 1</span><h2>Make it a real business</h2><span class="pwhen">1&ndash;2 weeks &middot; strict order</span></div>
+  <p class="pdesc">This is the only part with money in it. Everything downstream &mdash; every registration, every certification &mdash; requires these records to exist and to match each other exactly.</p>
+  <ul class="items" data-phase="1"></ul>
+</section>
+
+<section class="phase">
+  <div class="phead"><span class="pnum">Phase 2</span><h2>Register where the work is</h2><span class="pwhen">All free &middot; any order</span></div>
+  <p class="pdesc">Closest buyers first. Local registrations are where a brand-new company can realistically win something, and none of them require a certification.</p>
+  <ul class="items" data-phase="2"></ul>
+</section>
+
+<section class="phase">
+  <div class="phead"><span class="pnum">Phase 3</span><h2>Certifications</h2><span class="pwhen">After SAM is active</span></div>
+  <p class="pdesc">These come last on purpose. A certification multiplies a working business &mdash; it does not start one, and most require an active SAM registration first.</p>
+  <ul class="items" data-phase="3"></ul>
+</section>
+
+<section class="phase">
+  <div class="phead"><span class="pnum">Phase 4</span><h2>Get working</h2><span class="pwhen">Ongoing</span></div>
+  <p class="pdesc">Registration puts you on the list. This is what turns being on a list into money.</p>
+  <ul class="items" data-phase="4"></ul>
+</section>
+
+<section class="phase">
+  <div class="phead"><span class="pnum">Reference</span><h2>What each label gets you</h2></div>
+  <p class="pdesc">Short version, so nobody has to guess which of these actually matters.</p>
+  <div class="tbl">
+    <table>
+      <thead><tr><th>Label</th><th>Cost</th><th>What it actually does</th></tr></thead>
+      <tbody>
+        <tr><th>Small business</th><td class="num free">$0</td><td>Declared in SAM, not applied for. Janitorial size limit is roughly $22M a year, so you qualify easily.</td></tr>
+        <tr><th>WOSB</th><td class="num free">$0</td><td>Women-Owned Small Business. At least 51% owned <em>and run</em> by women who are U.S. citizens.</td></tr>
+        <tr><th>EDWOSB</th><td class="num free">$0</td><td>Same thing plus personal financial limits. <b>This is the tier that matters for cleaning</b> &mdash; see the note in Phase 3.</td></tr>
+        <tr><th>NCSBE</th><td class="num free">$0</td><td>NC state small business. Replaced the old HUB program, which the state ended in July 2026. Size and location only &mdash; not gender or race.</td></tr>
+        <tr><th>Charlotte SBE</th><td class="num free">$0</td><td>City of Charlotte small business certification. Separate rules on size, presence and net worth.</td></tr>
+        <tr><th>8(a)</th><td class="num free">$0</td><td>Nine-year federal program with sole-source contracts. <b>The rules changed on September 10, 2026</b> &mdash; see Phase 3.</td></tr>
+        <tr><th>WBENC / NMSDC</th><td class="num paid">$270&ndash;$350+</td><td>Private corporate certifications. Only worth buying if a specific company says they source through that network.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="phase">
+  <div class="phead"><span class="pnum">Reference</span><h2>What this costs</h2></div>
+  <p class="pdesc">Nearly all of the government side is free. The real money is formation and insurance.</p>
+  <div class="tbl">
+    <table>
+      <thead><tr><th>Item</th><th>Cost</th><th>Notes</th></tr></thead>
+      <tbody>
+        <tr><th>NC Articles of Organization</th><td class="num paid">$125</td><td>One-time. Filed with the NC Secretary of State.</td></tr>
+        <tr><th>NC LLC annual report</th><td class="num paid">$200/yr</td><td>Every year after, plus any online transaction fee.</td></tr>
+        <tr><th>Operating agreement</th><td class="num paid">$0&ndash;$500</td><td>Free to write yourselves. An attorney review is worth it for a 50/50 company.</td></tr>
+        <tr><th>EIN</th><td class="num free">$0</td><td>Free and instant from the IRS. Never pay a site for this.</td></tr>
+        <tr><th>Business bank account</th><td class="num paid">$0&ndash;$25</td><td>Depends on the bank and minimum balance.</td></tr>
+        <tr><th>General liability insurance</th><td class="num paid">varies</td><td>Get real quotes &mdash; do not guess. Most buyers require proof before you set foot in a building.</td></tr>
+        <tr><th>Business email / phone</th><td class="num paid">$0&ndash;$20/mo</td><td>Must match every registration exactly.</td></tr>
+        <tr><th>SAM.gov, UEI, CAGE</th><td class="num free">$0</td><td>Always free. Anyone charging for this is selling you nothing.</td></tr>
+        <tr><th>All SBA certifications</th><td class="num free">$0</td><td>WOSB, EDWOSB, 8(a) &mdash; free to apply through SBA directly.</td></tr>
+        <tr><th>Every registration in Phase 2</th><td class="num free">$0</td><td>Local, state and federal vendor lists are all free.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="phase" id="callday">
+  <div class="phead"><span class="pnum">Reference</span><h2>Everything that needs a phone call</h2></div>
+  <p class="pdesc">Grouped so they can all be done on one weekday. Most take ten minutes.</p>
+  <div class="box call">
+    <h3>Call-day list</h3>
+    <ul>
+      <li><b>APEX Accelerator</b> &mdash; book the free procurement counselor. Do this one first; everything else gets easier after it.</li>
+      <li><b>NC SBTDC</b> &mdash; the Charlotte office has a government contracting counselor. Same kind of free help.</li>
+      <li><b>Insurance agent</b> &mdash; get two or three general liability quotes for commercial janitorial.</li>
+      <li><b>Bank</b> &mdash; ask what they need to open a business account for an LLC, then book the appointment.</li>
+      <li><b>Town halls</b> &mdash; Mount Holly, Belmont, Cramerton, Lowell, Stanley, Dallas, Bessemer City. Ask the clerk or finance office: "How do we get on your vendor list for cleaning?" Small towns handle this by phone, not by portal.</li>
+      <li><b>Housing authorities</b> &mdash; ask the same question.</li>
+      <li><b>Gaston County Schools</b> &mdash; confirm what their vendor packet needs beyond the online registration.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="phase">
+  <div class="phead"><span class="pnum">Reference</span><h2>Things that catch new companies out</h2></div>
+  <p class="pdesc">Worth reading once. None of these are reasons not to do it &mdash; they are reasons to price and pace it properly.</p>
+
+  <div class="box warn">
+    <h3>You get paid slowly</h3>
+    <p>Government and institutional buyers usually pay <b>30 to 60 days</b> after you invoice. While it's just the two of you doing the cleaning, that is not a payroll crisis &mdash; but it does mean you could work a full month or two before the first check lands, while buying supplies up front.</p>
+    <p>Start with a contract size you can afford to float, and know the payment terms <em>before</em> signing.</p>
+  </div>
+
+  <div class="box warn">
+    <h3>Federal work sets your wage &mdash; the day you hire someone</h3>
+    <p>Most federal service contracts fall under the Service Contract Act, which means the Department of Labor sets the minimum wage for janitors in your county, plus a health &amp; welfare benefit of <b>$5.92 per hour</b> as of August 2026. That is about $12,000 a year on top of wages for one full-time cleaner.</p>
+    <p>While you are the only two people working, this matters much less. <b>The moment you hire your first employee onto a federal or federally-funded job, it applies</b> &mdash; and it also applies if a larger contractor hires you onto one of theirs. Never price that work at your normal commercial rate.</p>
+  </div>
+
+  <div class="box warn">
+    <h3>Some federal cleaning cannot be bid by anyone</h3>
+    <p>A lot of federal building cleaning is reserved under the AbilityOne program for nonprofits employing people who are blind or severely disabled. When a building is on that list, the agency <b>must</b> buy from the assigned nonprofit &mdash; no competition, and no certification changes it.</p>
+    <p>This is why federal work is the long game and not the first move. Ask the APEX counselor which facilities near us are <em>not</em> covered.</p>
+  </div>
+
+  <div class="box">
+    <h3>Where being women-owned actually helps</h3>
+    <p><b>It helps a lot</b> with federal contracts and with getting onto a large contractor's subcontractor list &mdash; those have real goals and set-asides attached.</p>
+    <p><b>It does not help</b> at Gaston County, the City of Gastonia, or Gaston County Schools. Local buying is mostly lowest responsible bidder, and North Carolina's state program is gender- and race-neutral now. Those you win by being registered, local, reliable and priced right.</p>
+  </div>
+</section>
+
+<footer>
+  <p><b>About this list.</b> Figures and program rules were checked against federal and North Carolina sources in September 2026. Rules change &mdash; the APEX counselor is free and will confirm anything current before you rely on it.</p>
+  <p><b>Where we are now.</b> The business is not yet formed. There is no SAM registration, UEI, CAGE code, insurance or certification yet. This list is how that changes.</p>
+</footer>
+
+</div>
+
+<script>
+const ITEMS = [
+  // ---- Phase 0 ----
+  {id:"p0-name",p:0,t:"Pick the legal business name",tags:[["t-free","Free"]],why:"Check it is available on the NC Secretary of State site before falling in love with it. Every single thing after this — bank, EIN, insurance, every registration — has to match this name exactly. Changing it later means redoing all of them."},
+  {id:"p0-split",p:0,t:"Agree the ownership split",tags:[["t-key","Affects certification"]],why:"Must be <b>at least 51% owned by women</b> for any of the women-owned certifications to be possible. A 50/50 split between the two of you is 100% women-owned and works fine."},
+  {id:"p0-control",p:0,t:"Decide who runs day-to-day operations",tags:[["t-key","Affects certification"]],why:"This is not a formality. Certification requires that qualifying women genuinely control daily decisions and long-term direction — in the operating agreement <em>and</em> in how the business actually runs. Write down who makes which calls."},
+  {id:"p0-sign",p:0,t:"Decide who can sign contracts and spend money",tags:[["t-free","Free"]],why:"Either both of you together, or one of you up to a dollar limit. Decide it now, while it is easy."},
+  {id:"p0-tie",p:0,t:"Decide the tie-breaker",tags:[["t-key","Important"]],why:"A 50/50 company can deadlock permanently with no way out. Agree in writing how a disagreement gets settled, and what happens if one of you wants to leave or sell, while you still agree with each other."},
+  {id:"p0-radius",p:0,t:"Decide how far you will actually drive",tags:[["t-free","Free"]],why:"Travel time is unpaid time. Gaston County plus the near edge of Mecklenburg is realistic. Concord and Huntersville are the wrong side of Charlotte traffic. This decision shapes which registrations are even worth doing."},
+  {id:"p0-employer",p:0,t:"Check your current employers' outside-work policies",tags:[["t-key","Do before marketing"]],why:"Outside business, conflict of interest, and non-solicitation rules. Check before using any work experience in marketing or approaching any customer connected to a current employer."},
+  {id:"p0-edwosb",p:0,t:"Decide if you are both willing to share personal financials",tags:[["t-key","Personal decision"]],why:"The EDWOSB certification — the one that matters most for cleaning — requires giving the federal government personal net worth, tax returns and asset information for each qualifying owner. Plain WOSB does not. This is a personal decision, not a business formality. Agree before anything gets submitted."},
+
+  // ---- Phase 1 ----
+  {id:"p1-llc",p:1,t:"File the NC Articles of Organization",tags:[["t-cost","$125"],["t-time","Online"]],why:"Filed with the NC Secretary of State at sosnc.gov. This is the moment the company legally exists. Budget <b>$200 a year</b> after this for the annual report."},
+  {id:"p1-oa",p:1,t:"Write and sign the operating agreement",tags:[["t-cost","$0–$500"]],why:"The internal rulebook — not a government form. It records everything decided in Phase 0. For a 50/50 company, having a North Carolina business attorney review the deadlock and exit language is money well spent. This is also the document that later proves women own and control the company."},
+  {id:"p1-ein",p:1,t:"Get the EIN from the IRS",tags:[["t-free","Free"],["t-time","15 minutes"]],why:"Free and instant at irs.gov. It is the business's tax ID. <b>Never pay a website for this</b> — the paid ones are just filling in the same free form."},
+  {id:"p1-bank",p:1,t:"Open the business bank account",tags:[["t-cost","$0–$25"],["t-call","Phone call"]],why:"Keeps business and personal money separate, which matters for taxes, for liability protection, and for every vendor registration. Call ahead and ask what documents they need for an LLC."},
+  {id:"p1-contact",p:1,t:"Set up the business email, phone and address",tags:[["t-cost","$0–$20/mo"]],why:"One email, one phone, one address — used <b>identically</b> on every form from here on. Mismatched records between the LLC filing, the bank, and SAM.gov are the single most common reason registrations get rejected or stall for weeks."},
+  {id:"p1-insq",p:1,t:"Get general liability insurance quotes",tags:[["t-call","Phone call"],["t-cost","Quotes free"]],why:"Get two or three real quotes for commercial janitorial work. Do not guess at the cost and do not promise anyone coverage you have not bought. Ask the agent what buyers in this area typically require."},
+  {id:"p1-insbind",p:1,t:"Buy the policy",tags:[["t-cost","Varies"]],why:"Nobody lets a cleaning crew into a building without a certificate of insurance. Bind it once you have a first job or a buyer who needs proof. Workers' compensation becomes a separate requirement once you have employees — in NC generally at three or more, though a customer may require it sooner."},
+
+  // ---- Phase 2 ----
+  {id:"p2-apex",p:2,t:"Book the free APEX Accelerator counselor",tags:[["t-free","Free"],["t-call","Phone call"],["t-key","Do this first"]],why:"A federally funded Procurement Counselor who helps small businesses get into government contracting at <b>no cost</b>. They review registrations, the capability statement, pricing, and which bids are worth chasing. <b>You do not have to wait for anything above to book this</b> — get on their calendar now. They advise; they do not award contracts or find work for you."},
+  {id:"p2-sbtdc",p:2,t:"Contact NC SBTDC government contracting",tags:[["t-free","Free"],["t-call","Phone call"]],why:"The Charlotte office has a government contracting counselor doing the same kind of free work as APEX. Use both — they are funded to help and it costs nothing."},
+  {id:"p2-gaston",p:2,t:"Register for Gaston County bid notifications",tags:[["t-free","Free"]],why:"County buildings and departments. Our closest public buyer. Register on the county's bid postings page so new opportunities come by email instead of being hunted for."},
+  {id:"p2-gcs",p:2,t:"Register with Gaston County Schools",tags:[["t-free","Free"],["t-call","Phone call"]],why:"They run vendor registration through <b>Public Purchase</b> and also have their own vendor application packet. A school system has a lot of buildings, which makes it one of the better-shaped local buyers for us. Call to confirm what the packet needs."},
+  {id:"p2-gastonia",p:2,t:"Get on the City of Gastonia vendor list",tags:[["t-free","Free"]],why:"Largest city in the county. Their bid and contract opportunities page is the way in."},
+  {id:"p2-towns",p:2,t:"Call the small town halls",tags:[["t-free","Free"],["t-call","Phone call"]],why:"Mount Holly, Belmont, Cramerton, Lowell, Stanley, Dallas, Bessemer City. Small buildings, low competition, and at this size a phone call to the clerk or finance office works better than any portal. Ask plainly: how do we get on your vendor list for cleaning?"},
+  {id:"p2-housing",p:2,t:"Register with local housing authorities",tags:[["t-free","Free"],["t-call","Phone call"]],why:"Gastonia and surrounding authorities buy cleaning for offices and common areas. Each registers vendors directly."},
+  {id:"p2-evp",p:2,t:"Register in NC eVP",tags:[["t-free","Free"]],why:"The state's electronic Vendor Portal. Covers all North Carolina state agencies, universities, and community colleges — including <b>Gaston College</b>, which requires an eVP vendor number to do business. This is also the door to NCSBE certification."},
+  {id:"p2-charlotte",p:2,t:"Register as a City of Charlotte supplier",tags:[["t-free","Free"]],why:"Required before the city can issue a purchase order or pay you at all. Worth doing for the west Charlotte side of the service area."},
+  {id:"p2-sam",p:2,t:"Register at SAM.gov",tags:[["t-free","Free"],["t-time","Up to 10 business days"],["t-key","Unlocks certification"]],why:"The federal system. Issues your <b>UEI</b> and routes your <b>CAGE code</b>. Completely free — anyone charging for it is a scam. Only start it once the LLC name, EIN, bank and address all match exactly, or it will stall. Must be renewed <b>every 365 days</b> or it goes inactive and you disappear from federal searches."},
+  {id:"p2-dsbs",p:2,t:"Build the SBA small business profile",tags:[["t-free","Free"]],why:"Once SAM is active, fill out the Small Business Search profile with your codes and capabilities. This is what federal buyers and large contractors search when looking for small vendors."},
+  {id:"p2-alerts",p:2,t:"Turn on alerts everywhere you registered",tags:[["t-free","Free"],["t-key","Do not skip"]],why:"Every system above has saved searches or notification lists. Filter each one to <b>NAICS 561720</b> and our area. Set once, and opportunities arrive by email instead of needing to be chased. Skipping this makes every registration above pointless."},
+
+  // ---- Phase 3 ----
+  {id:"p3-ncsbe",p:3,t:"Apply for NCSBE certification",tags:[["t-free","Free"]],why:"North Carolina Small Business Enterprise, through eVP. Replaced the state HUB program, which was eliminated in July 2026 — HUB certifications are no longer recognized on state contracts. NCSBE qualifies on company size, location and income, not on who owns it."},
+  {id:"p3-clt",p:3,t:"Check eligibility for Charlotte SBE",tags:[["t-free","Free"]],why:"The City of Charlotte's own small business certification. Separate rules covering size, significant presence in the region, and personal net worth. Worth checking whether a Gaston County business qualifies."},
+  {id:"p3-wosb",p:3,t:"Apply for WOSB / EDWOSB through SBA",tags:[["t-free","Free"],["t-key","The important one"]],why:"<b>This is one free application, not two choices.</b> EDWOSB is the higher tier of the same certification — every EDWOSB is automatically also a WOSB. The “ED” part just adds the personal financial test.<br><br>It matters because SBA sorts industries into two buckets, and <b>janitorial services (NAICS 561720) sits in the restricted bucket</b> — the one where only the economically disadvantaged tier can win the set-aside. So for cleaning specifically, plain WOSB does not open the door. EDWOSB does.<br><br>Apply free at certifications.sba.gov. Requires an active SAM registration first. Never pay a consultant for this."},
+  {id:"p3-8a",p:3,t:"Ask the APEX counselor about 8(a)",tags:[["t-free","Free"],["t-key","Rules just changed"]],why:"The 8(a) program is a <b>nine-year</b> federal business development program with access to sole-source contracts — potentially more valuable than EDWOSB. But <b>the rules changed on September 10, 2026.</b> SBA eliminated the automatic presumption that someone is socially disadvantaged based on race, and now requires applicants to show evidence of group discrimination and personal material harm. SBA has also specifically told its staff to stop using written “social disadvantage narratives.”<br><br>This is nine days old, so do not rely on anything written before then — including older guides online. Ask the counselor what the new evidence standard actually requires now."},
+  {id:"p3-corp",p:3,t:"Decide on WBENC or NMSDC — probably later",tags:[["t-cost","$270–$350+"]],why:"Private corporate certifications for supplier diversity programs, not government ones. They cost real money. <b>Only buy one when a specific named company tells you they source through that network</b> — never speculatively to decorate a website."},
+
+  // ---- Phase 4 ----
+  {id:"p4-capstmt",p:4,t:"Finish the one-page capability statement",tags:[["t-free","Free"],["t-key","Asked for constantly"]],why:"When a purchasing office or contractor says “send me something,” this is what they mean. One page: legal name, what you do, your codes, counties served, business type, registration numbers once issued, one contact. A draft already exists on the website's government page with placeholders where the UEI and CAGE will go. <b>Anything unverified on it is worse than leaving it off</b> — one wrong claim and a buyer discards the whole page."},
+  {id:"p4-commercial",p:4,t:"Win two or three private commercial accounts",tags:[["t-key","Funds everything else"]],why:"Small offices, churches, dental and medical admin suites, property managers, small manufacturers. They pay in days rather than months, set no wage floor, and give you the <b>performance record every public buyer will ask for</b>. This is the step that makes all the government registration worth having."},
+  {id:"p4-numbers",p:4,t:"Measure your real numbers on those first jobs",tags:[["t-key","Before you bid anything"]],why:"Actual hours per building, actual supply cost, actual drive time, actual profit left over. Until this is measured, every bid is a guess — and a wrong guess locked into a multi-year contract is very hard to escape."},
+  {id:"p4-primes",p:4,t:"Get on prime contractors' subcontractor lists",tags:[["t-key","Fastest real path"]],why:"Large cleaning and facility-management companies holding regional contracts need local subcontractors, and those above roughly $750,000 in federal work generally must plan for subcontracting to small and women-owned firms. Ask for the <b>Small Business Liaison Officer</b>. This path needs no certification and no SAM registration — which makes it the quickest route to a first paying job."},
+  {id:"p4-sources",p:4,t:"Answer sources-sought notices",tags:[["t-free","Free"]],why:"Before an agency formally buys something, it often posts asking which companies could do the work. Responding costs almost nothing, puts your name in front of the buyer early, and can influence how the eventual contract is set aside. Worth answering even when you would not win the final award."}
+];
+
+(function(){
+  var state = {}, remote = null, byId = {};
+  ITEMS.forEach(function(it){ byId[it.id] = it; });
+
+  function render(){
+    [0,1,2,3,4].forEach(function(p){
+      var ul = document.querySelector('.items[data-phase="'+p+'"]');
+      if(!ul || ul.dataset.built) return;
+      ITEMS.filter(function(i){return i.p===p;}).forEach(function(it){
+        var li = document.createElement('li');
+        li.className = 'item'; li.id = 'li-'+it.id;
+        var cb = document.createElement('input');
+        cb.type='checkbox'; cb.id='cb-'+it.id;
+        cb.addEventListener('change', function(){ toggle(it.id, cb.checked); });
+        var body = document.createElement('div'); body.className='ibody';
+        var lab = document.createElement('label');
+        lab.className='ttl'; lab.setAttribute('for','cb-'+it.id); lab.textContent=it.t;
+        body.appendChild(lab);
+        if(it.tags && it.tags.length){
+          var tg=document.createElement('div'); tg.className='tags';
+          it.tags.forEach(function(t){
+            var s=document.createElement('span'); s.className='tag '+t[0]; s.textContent=t[1]; tg.appendChild(s);
+          });
+          body.appendChild(tg);
+        }
+        if(it.why){ var w=document.createElement('p'); w.className='why'; w.innerHTML=it.why; body.appendChild(w); }
+        li.appendChild(cb); li.appendChild(body); ul.appendChild(li);
+      });
+      ul.dataset.built='1';
+    });
+    paint();
+  }
+
+  function paint(){
+    var done=0;
+    ITEMS.forEach(function(it){
+      var on=!!state[it.id];
+      if(on) done++;
+      var cb=document.getElementById('cb-'+it.id), li=document.getElementById('li-'+it.id);
+      if(cb) cb.checked=on;
+      if(li) li.classList.toggle('done',on);
+    });
+    var pct = ITEMS.length ? Math.round(done/ITEMS.length*100) : 0;
+    document.getElementById('pbar').style.width = pct+'%';
+    document.getElementById('pcount').textContent = done+' of '+ITEMS.length+' done';
+  }
+
+  function local(){
+    try{ return JSON.parse(localStorage.getItem('gc-checklist')||'{}'); }catch(e){ return {}; }
+  }
+  function saveLocal(){
+    try{ localStorage.setItem('gc-checklist', JSON.stringify(state)); }catch(e){}
+  }
+
+  function toggle(id,on){
+    state[id]=on; paint();
+    if(remote){
+      remote.doc('items/'+id).set({done:on, at:Date.now()}).catch(function(){
+        note('Saved on this device only — that change did not sync.');
+        saveLocal();
+      });
+    } else {
+      saveLocal();
+    }
+  }
+
+  function note(msg){ document.getElementById('syncnote').textContent = msg; }
+
+  state = local();
+  render();
+  note('Saved on this device.');
+
+  if(window.claude && typeof window.claude.use === 'function'){
+    window.claude.use('db').then(function(db){
+      if(!db) return;
+      remote = db;
+      db.collection('items').onSnapshot(function(docs){
+        var next={};
+        (docs||[]).forEach(function(d){
+          var id = d.id || (d.ref && d.ref.id);
+          var data = d.data ? (typeof d.data==='function'? d.data(): d.data) : d;
+          if(id && data && data.done) next[id]=true;
+        });
+        state = next; paint();
+        note('Shared — both of you see the same progress.');
+      }, function(){ note('Saved on this device only.'); });
+    }).catch(function(){});
+  }
+})();
+</script>
+</body>
+</html>

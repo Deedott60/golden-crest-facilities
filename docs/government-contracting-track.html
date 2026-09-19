@@ -1,0 +1,454 @@
+<title>Government Contracting Track</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Serif:wght@400;500;600&display=swap">
+
+<style>
+:root{
+  --paper:#f8faf9;
+  --card:#ffffff;
+  --ink:#14202a;
+  --body:#2c3a42;
+  --soft:#5d6d73;
+  --faint:#8b9a9d;
+  --rule:#d9e3e0;
+  --rule-soft:#eaf0ee;
+  --teal:#0f6f66;
+  --teal-deep:#0b544d;
+  --teal-wash:#e6f1ee;
+  --amber:#8a5b13;
+  --amber-wash:#f8f0e0;
+  --free:#1f6b46;
+  --free-wash:#e6f1ea;
+  --no:#8c3b2e;
+  --no-wash:#f7e9e6;
+  --serif:"IBM Plex Serif",Georgia,"Times New Roman",serif;
+  --sans:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#0f1619;--card:#161f23;--ink:#eef4f2;--body:#c3d0cd;--soft:#93a4a4;--faint:#6d7d7e;
+    --rule:#2a3639;--rule-soft:#1e292c;--teal:#5cc9b9;--teal-deep:#8adcce;--teal-wash:#12312e;
+    --amber:#d8a556;--amber-wash:#2d2415;--free:#6fc796;--free-wash:#122a1e;
+    --no:#e08a78;--no-wash:#2e1a16;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0f1619;--card:#161f23;--ink:#eef4f2;--body:#c3d0cd;--soft:#93a4a4;--faint:#6d7d7e;
+  --rule:#2a3639;--rule-soft:#1e292c;--teal:#5cc9b9;--teal-deep:#8adcce;--teal-wash:#12312e;
+  --amber:#d8a556;--amber-wash:#2d2415;--free:#6fc796;--free-wash:#122a1e;
+  --no:#e08a78;--no-wash:#2e1a16;
+}
+
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--body);font-family:var(--sans);font-size:17px;line-height:1.65;-webkit-text-size-adjust:100%}
+.wrap{width:min(760px,calc(100% - 44px));margin:0 auto}
+h1,h2,h3{color:var(--ink);margin:0;text-wrap:balance;font-family:var(--serif)}
+p{margin:0}
+ul,ol,dl{margin:0;padding:0;list-style:none}
+a{color:var(--teal);text-underline-offset:3px}
+:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
+.label{font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--teal)}
+
+.masthead{border-bottom:2px solid var(--ink);padding:56px 0 28px;margin-bottom:44px}
+.masthead .org{font-family:var(--mono);font-size:11.5px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--soft);display:flex;flex-wrap:wrap;gap:6px 14px;margin-bottom:26px}
+h1{font-size:clamp(34px,6.4vw,50px);line-height:1.04;font-weight:600;letter-spacing:-.025em}
+.standfirst{margin-top:22px;font-size:19.5px;line-height:1.6;max-width:62ch}
+.standfirst b{color:var(--ink);font-weight:600}
+.meta{margin-top:26px;padding-top:18px;border-top:1px solid var(--rule-soft);font-family:var(--mono);font-size:11.5px;letter-spacing:.05em;color:var(--faint)}
+
+section{margin-bottom:60px}
+.shead{margin-bottom:26px}
+.shead .label{display:block;margin-bottom:12px}
+h2{font-size:clamp(24px,3.6vw,31px);line-height:1.18;font-weight:600;letter-spacing:-.02em}
+.intro{margin-top:14px;font-size:17px;color:var(--soft);max-width:64ch}
+h3{font-size:18.5px;font-weight:600;line-height:1.3;letter-spacing:-.01em}
+p+p{margin-top:15px}
+.prose{max-width:66ch}
+.prose b{color:var(--ink);font-weight:600}
+
+.seq{counter-reset:step;border-top:1px solid var(--rule)}
+.seq li{counter-increment:step;display:grid;grid-template-columns:44px minmax(0,1fr);gap:0 20px;padding:22px 0;border-bottom:1px solid var(--rule-soft)}
+.seq li::before{content:counter(step,decimal-leading-zero);font-family:var(--mono);font-size:12px;font-weight:600;color:var(--teal);padding-top:3px;letter-spacing:.04em}
+.seq h3{margin-bottom:5px}
+.seq p{font-size:15.5px;color:var(--soft);line-height:1.6}
+.dep{display:inline-block;margin-top:10px;font-family:var(--mono);font-size:11px;letter-spacing:.06em;color:var(--faint)}
+.dep b{color:var(--body);font-weight:500}
+
+.tablewrap{overflow-x:auto;border:1px solid var(--rule);border-radius:3px;background:var(--card)}
+table{width:100%;border-collapse:collapse;font-size:15px;min-width:540px}
+caption{text-align:left;font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--soft);padding:16px 20px;border-bottom:1px solid var(--rule);background:var(--rule-soft)}
+th,td{text-align:left;vertical-align:top;padding:16px 20px;border-bottom:1px solid var(--rule-soft)}
+thead th{font-family:var(--mono);font-size:10.5px;font-weight:500;letter-spacing:.11em;text-transform:uppercase;color:var(--faint)}
+tbody tr:last-child th,tbody tr:last-child td{border-bottom:0}
+tbody th{font-weight:600;color:var(--ink);font-family:var(--sans);font-size:15.5px}
+tbody th small{display:block;font-weight:400;font-size:13px;color:var(--soft);margin-top:4px}
+td{color:var(--soft);font-size:14.5px}
+.cost{font-family:var(--mono);font-size:13px;font-weight:600;white-space:nowrap;font-variant-numeric:tabular-nums}
+.cost.zero{color:var(--free)}
+.cost.paid{color:var(--amber)}
+.yes{color:var(--free);font-weight:600}
+.nope{color:var(--no);font-weight:600}
+
+.roles{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);border-radius:3px}
+.role{background:var(--card);padding:26px 24px}
+.role .who{font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--teal);display:block;margin-bottom:11px}
+.role h3{margin-bottom:9px}
+.role p{font-size:15px;color:var(--soft);line-height:1.62}
+.role .not{display:block;margin-top:13px;padding-top:12px;border-top:1px solid var(--rule-soft);font-size:14px;color:var(--body)}
+.role .not b{color:var(--ink);font-weight:600}
+
+.note{background:var(--teal-wash);border-left:3px solid var(--teal);padding:22px 24px;border-radius:0 3px 3px 0;margin-top:26px}
+.note.warn{background:var(--amber-wash);border-left-color:var(--amber)}
+.note .label{color:var(--teal-deep);display:block;margin-bottom:10px}
+.note.warn .label{color:var(--amber)}
+.note p{font-size:15.5px;line-height:1.65;color:var(--body)}
+.note p+p{margin-top:12px}
+.note b{color:var(--ink);font-weight:600}
+
+.defs{border-top:1px solid var(--rule)}
+.defs>div{padding:22px 0;border-bottom:1px solid var(--rule-soft)}
+.defs dt{display:flex;flex-wrap:wrap;align-items:baseline;gap:10px;margin-bottom:9px}
+.defs dt strong{font-family:var(--serif);font-size:18.5px;font-weight:600;color:var(--ink)}
+.defs dd{margin:0;font-size:15.5px;color:var(--soft);line-height:1.62;max-width:64ch}
+.defs dd+dd{margin-top:9px}
+.defs dd b{color:var(--ink);font-weight:600}
+.tag{font-family:var(--mono);font-size:10px;font-weight:500;letter-spacing:.09em;text-transform:uppercase;padding:3px 9px;border-radius:2px;white-space:nowrap}
+.tag.free{background:var(--free-wash);color:var(--free)}
+.tag.paid{background:var(--amber-wash);color:var(--amber)}
+.tag.key{background:var(--teal-wash);color:var(--teal-deep)}
+
+.thresh{display:grid;gap:14px}
+.tline{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px 20px;align-items:baseline;padding:18px 20px;background:var(--card);border:1px solid var(--rule);border-radius:3px}
+.tline h3{font-size:16.5px;font-family:var(--sans);font-weight:600}
+.tline .amt{font-family:var(--mono);font-size:14px;font-weight:600;color:var(--teal);white-space:nowrap;font-variant-numeric:tabular-nums}
+.tline p{grid-column:1/-1;font-size:14.5px;color:var(--soft);line-height:1.6;margin-top:2px}
+
+.decide{border-top:2px solid var(--ink)}
+.decide li{display:grid;grid-template-columns:26px minmax(0,1fr);gap:0 16px;padding:19px 0;border-bottom:1px solid var(--rule-soft)}
+.decide li::before{content:"";width:15px;height:15px;margin-top:5px;border:1.5px solid var(--faint);border-radius:2px}
+.decide strong{display:block;color:var(--ink);font-weight:600;font-size:16.5px;margin-bottom:4px}
+.decide span{display:block;font-size:14.5px;color:var(--soft);line-height:1.6}
+
+footer{margin-top:20px;padding:30px 0 60px;border-top:1px solid var(--rule);font-size:14px;color:var(--faint);line-height:1.7}
+footer p+p{margin-top:12px}
+footer b{color:var(--soft);font-weight:500}
+
+@media (max-width:620px){
+  body{font-size:16.5px}
+  .wrap{width:calc(100% - 34px)}
+  .masthead{padding-top:38px}
+  .seq li{grid-template-columns:32px minmax(0,1fr);gap:0 14px}
+  .tline{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+@media print{body{background:#fff;color:#000;font-size:11pt}.note,.tline,.role,.tablewrap{break-inside:avoid}}
+</style>
+
+<div class="wrap">
+
+<header class="masthead">
+  <p class="org"><span>Golden Crest Facilities</span><span>Working briefing</span></p>
+  <h1>The Government Contracting Track</h1>
+  <p class="standfirst">Why public and institutional contracts are the destination, why they are <b>not</b> where the first dollar comes from, and the three things that quietly kill new cleaning contractors before certification ever matters.</p>
+  <p class="meta">Figures verified August 2026 &middot; Read before deciding anything in the last section</p>
+</header>
+
+<section>
+  <div class="shead">
+    <span class="label">The reasoning</span>
+    <h2>Why this route, and not advertising.</h2>
+  </div>
+  <div class="prose">
+    <p>Residential and small-commercial cleaning is one of the most crowded local markets there is. Winning there means outspending established companies on advertising and review platforms, month after month, to buy jobs one at a time. We do not have that budget, and buying our way in would burn through everything before we had one stable account.</p>
+    <p>Public agencies, school systems, colleges, housing authorities, and large facility contractors buy cleaning a completely different way. They buy through a defined process: you register in their system, you get notified when they need something, you respond, they award it. Nobody outbids you with ad spend, because there are no ads.</p>
+    <p>The barrier is not money &mdash; it is knowing the process and having paperwork in order. <b>That is the one barrier a brand-new company with two owners can actually clear.</b></p>
+  </div>
+  <div class="note">
+    <span class="label">Realistic expectations</span>
+    <p>This is slower than advertising. There is no contract in week one. The realistic first win is a <b>subcontract under a larger cleaning company</b> or <b>one small building</b> &mdash; not a county-wide contract. Everything here is about being in position so that when something small appears, we are eligible and organized enough to take it.</p>
+  </div>
+</section>
+
+<section>
+  <div class="shead">
+    <span class="label">Read this one twice</span>
+    <h2>Where being women-owned actually helps.</h2>
+    <p class="intro">This is the part that gets confused most, and it changes where we spend effort. Being a women-owned business is <em>not</em> a general advantage everywhere. It matters enormously in two places and almost nowhere else.</p>
+  </div>
+  <div class="tablewrap">
+    <table>
+      <caption>Does women-owned status give an edge?</caption>
+      <thead>
+        <tr><th scope="col">Who is buying</th><th scope="col">Edge?</th><th scope="col">What actually decides it</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Federal agencies<small>Via SAM.gov</small></th>
+          <td class="yes">Yes &mdash; big</td>
+          <td>Federal set-asides can restrict a contract so <em>only</em> certified women-owned firms may bid. This is where certification pays off.</td>
+        </tr>
+        <tr>
+          <th scope="row">Large prime contractors<small>Companies holding big contracts</small></th>
+          <td class="yes">Yes &mdash; big</td>
+          <td>Primes have goals for subcontracting to small and women-owned firms. Our status helps them hit a number they are measured on.</td>
+        </tr>
+        <tr>
+          <th scope="row">Large corporations<small>Supplier diversity programs</small></th>
+          <td class="yes">Sometimes</td>
+          <td>Private diversity programs. This is the only place a paid certification like WBENC is ever worth buying.</td>
+        </tr>
+        <tr>
+          <th scope="row">State of North Carolina<small>Via NC eVP</small></th>
+          <td class="nope">No</td>
+          <td>NC eliminated the HUB program in July 2026. The replacement, NCSBE, is race- and gender-neutral &mdash; it qualifies on company size and location only.</td>
+        </tr>
+        <tr>
+          <th scope="row">Gaston County, cities, school system, college</th>
+          <td class="nope">Generally no</td>
+          <td>Local buying is mostly lowest responsible bidder. Being women-owned is not a formal advantage. Being registered, local, responsive, and correctly priced is.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="note warn">
+    <span class="label">What this means in practice</span>
+    <p>The certifications are worth getting, but they will <b>not</b> win us work at Gaston County Schools or the City of Gastonia. Those we win by being registered, showing up, and bidding sensibly.</p>
+    <p>The certifications are aimed at <b>federal contracts</b> and at <b>getting on a prime contractor's subcontractor list.</b> That is why the plan runs on two tracks at once: register locally to get working, and certify federally to get access to a bigger pool later.</p>
+  </div>
+</section>
+
+<section>
+  <div class="shead">
+    <span class="label">Read before anything else</span>
+    <h2>Three things that kill new cleaning contractors.</h2>
+    <p class="intro">None of these are in most business plans, including the earlier draft of this one. Each is capable of ending the company on a contract we <em>won</em>.</p>
+  </div>
+
+  <div class="note warn">
+    <span class="label">01 &mdash; Much federal custodial work cannot be bid at all</span>
+    <p>A large share of federal building cleaning is a <b>mandatory source</b> under the AbilityOne program, which reserves that work for nonprofits employing people who are blind or severely disabled. When custodial services at a facility are on the AbilityOne Procurement List, the agency has no choice &mdash; it must buy from the designated nonprofit, and it is awarded without competition.</p>
+    <p>No certification changes this. Not EDWOSB, not small business, not anything. If a building's cleaning is on that list, we cannot bid on it and neither can anyone else. <b>This caps how much federal janitorial work is realistically reachable</b>, and it is the single strongest argument for not making federal contracting our primary revenue plan.</p>
+    <p>Ask the APEX counselor directly: which federal facilities in this region are <em>not</em> AbilityOne-covered? That one question will save months.</p>
+  </div>
+
+  <div class="note warn">
+    <span class="label">02 &mdash; Federal work forces the wage rate, and it is not the market rate</span>
+    <p>Most federal service contracts fall under the Service Contract Act. On those contracts we do not set pay &mdash; the Department of Labor publishes a wage determination for janitors in our county, and we must pay at least that base rate <b>plus a health &amp; welfare fringe benefit of $5.92 per hour</b>, on top of wages, as of August 2026.</p>
+    <p>That fringe alone is roughly <b>$12,000 per year for one full-time cleaner</b>, before base wages, payroll taxes, or insurance. A company that bids federal work at commercial pricing loses money on every hour worked and only finds out at the first payroll audit.</p>
+    <p><b>This flows down to subcontractors.</b> If a prime hires us onto an SCA-covered contract, we owe those wages too. Any subcontract quote has to be built from the wage determination, not from what we would charge a private office.</p>
+  </div>
+
+  <div class="note warn">
+    <span class="label">03 &mdash; Getting paid takes 30 to 60 days. Payroll is weekly.</span>
+    <p>This is what actually bankrupts small cleaning contractors, and it happens after they win. Government and institutional buyers commonly pay 30 to 60 days after invoice. Cleaners get paid every week or two, and supplies are bought up front.</p>
+    <p>On a modest recurring contract, that gap can mean <b>carrying six to ten weeks of payroll out of pocket</b> before the first check arrives. Win two contracts at once and the gap doubles. The work is profitable on paper and still sinks the company.</p>
+    <p>Before signing anything: know the payment terms, know how many weeks of payroll we can cover, and size the first contract to what we can actually float.</p>
+  </div>
+
+  <div class="note">
+    <span class="label">What this changes</span>
+    <p>Government contracting stays the goal &mdash; it is still the one market where we are not outspent on advertising. But it is <b>the moat, not the starting revenue.</b> The first paying customers should be private commercial accounts, because those pay faster, set no wage floor, and build the performance record every public buyer will ask for.</p>
+  </div>
+</section>
+
+<section>
+  <div class="shead">
+    <span class="label">Clearing up the confusion</span>
+    <h2>WOSB and EDWOSB are not two choices.</h2>
+    <p class="intro">I stated this badly the first time. Here it is correctly.</p>
+  </div>
+  <div class="prose">
+    <p><b>It is one program and one free application to the SBA.</b> You do not pick between them. EDWOSB is the higher tier of the same certification. Every EDWOSB is automatically also a WOSB &mdash; the "ED" part just adds a personal financial test on top.</p>
+    <p><b>WOSB</b> &mdash; Women-Owned Small Business. At least 51% owned <em>and controlled</em> by women who are U.S. citizens.</p>
+    <p><b>EDWOSB</b> &mdash; the same thing, plus each qualifying owner is under these personal limits: net worth below $850,000, three-year average adjusted gross income of $400,000 or less, and total assets of $6.5 million or less.</p>
+    <p>Here is why it matters for us specifically. SBA sorts industries into two buckets. Some industries allow any certified women-owned firm to compete for the set-aside. Others are restricted to the economically disadvantaged tier only. <b>Janitorial services (NAICS 561720) is in the restricted bucket.</b></p>
+    <p>So for cleaning set-asides, a plain WOSB certification does not make us eligible &mdash; <b>EDWOSB does.</b> That is the whole reason it keeps coming up. And because EDWOSB includes WOSB status automatically, getting the higher tier covers both; there is no downside to it other than the paperwork.</p>
+  </div>
+  <div class="note warn">
+    <span class="label">The real decision here</span>
+    <p>EDWOSB requires disclosing <b>personal</b> financial information &mdash; net worth, tax returns, personal assets &mdash; to the federal government, for each qualifying owner. Plain WOSB does not.</p>
+    <p>That is a personal decision, not a business formality. Both of you should agree you are comfortable before anything is submitted. Have the APEX counselor confirm the current designation for 561720 against our situation before building the plan around it.</p>
+  </div>
+</section>
+
+<section>
+  <div class="shead">
+    <span class="label">How work finds us</span>
+    <h2>What a set-aside is, and how notifications work.</h2>
+  </div>
+  <div class="prose">
+    <p><b>A set-aside</b> is a contract the government has reserved for a category of business. If a job is set aside for EDWOSB, then only certified EDWOSB firms may bid &mdash; every large company is legally excluded. That is the entire value of certification: it shrinks the field from hundreds of competitors to a handful.</p>
+    <p><b>Notifications work by code, not by guessing.</b> When we register, we attach our industry code (561720, janitorial). Every system then lets us save a search or join a notification list filtered to that code and our area. From then on, matching opportunities arrive by email &mdash; we are not checking websites daily.</p>
+    <p>One important limit: <b>set-asides are a federal mechanism.</b> When Gaston County Schools posts a cleaning bid, there is no women-owned set-aside on it. We get notified because we are on their vendor list, and we compete on price and capability like everyone else.</p>
+  </div>
+</section>
+
+<section>
+  <div class="shead">
+    <span class="label">Where to register</span>
+    <h2>Our actual buyers, closest first.</h2>
+    <p class="intro">We are in Mount Holly, Gaston County. The realistic service area is Gaston County and the near edge of Mecklenburg &mdash; not the whole Charlotte metro. Travel time is unpaid time.</p>
+  </div>
+  <div class="tablewrap">
+    <table>
+      <caption>Local and regional &mdash; start here</caption>
+      <thead>
+        <tr><th scope="col">Buyer</th><th scope="col">Where to register</th><th scope="col">Cost</th></tr>
+      </thead>
+      <tbody>
+        <tr><th scope="row">Gaston County government<small>County buildings and departments</small></th><td>Bid postings and vendor notification on the county site.</td><td class="cost zero">$0</td></tr>
+        <tr><th scope="row">Gaston County Schools<small>Many buildings &mdash; our best-shaped local buyer</small></th><td>Registers vendors through Public Purchase, plus their own vendor application packet.</td><td class="cost zero">$0</td></tr>
+        <tr><th scope="row">Gaston College<small>Dallas and Belmont campuses</small></th><td>Requires a vendor number through NC eVP &mdash; the state portal covers it.</td><td class="cost zero">$0</td></tr>
+        <tr><th scope="row">City of Gastonia<small>Largest city in the county</small></th><td>City bid and contract opportunities page.</td><td class="cost zero">$0</td></tr>
+        <tr><th scope="row">Mount Holly, Belmont, Cramerton, Lowell, Stanley, Dallas, Bessemer City<small>Small towns, small buildings, low competition</small></th><td>Each town runs its own list. Call the town clerk or finance office directly &mdash; at this size a phone call works better than a portal.</td><td class="cost zero">$0</td></tr>
+        <tr><th scope="row">Housing authorities<small>Gastonia and surrounding</small></th><td>Register directly with each authority.</td><td class="cost zero">$0</td></tr>
+        <tr><th scope="row">City of Charlotte &amp; Mecklenburg County<small>Near edge only &mdash; west Charlotte</small></th><td>Charlotte supplier registration is required before they can pay us at all. Charlotte also has its own small-business certification worth checking eligibility for.</td><td class="cost zero">$0</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="tablewrap" style="margin-top:22px">
+    <table>
+      <caption>State and federal &mdash; do after formation</caption>
+      <thead>
+        <tr><th scope="col">System</th><th scope="col">What it reaches</th><th scope="col">Cost</th></tr>
+      </thead>
+      <tbody>
+        <tr><th scope="row">NC eVP<small>Electronic Vendor Portal</small></th><td>All NC state agencies, universities, and community colleges including Gaston College. Also the door to NCSBE certification.</td><td class="cost zero">$0</td></tr>
+        <tr><th scope="row">SAM.gov<small>Issues the UEI and CAGE code</small></th><td>Every federal agency. Must be renewed every 365 days or it goes inactive.</td><td class="cost zero">$0</td></tr>
+        <tr><th scope="row">SBA certification<small>WOSB / EDWOSB</small></th><td>Federal set-aside eligibility. Applied for free at the SBA's certification site after SAM is active.</td><td class="cost zero">$0</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="note">
+    <span class="label">Two notes on geography</span>
+    <p><b>South Carolina is close but separate.</b> York County &mdash; Rock Hill, Fort Mill, Clover &mdash; is a short drive, but South Carolina runs its own vendor registration system. Worth doing later, not at the start.</p>
+    <p><b>Skip the far side of the metro.</b> Concord, Huntersville, and Kannapolis are the wrong direction through Charlotte traffic. A crew that spends ninety minutes driving is losing money on the job before it starts.</p>
+  </div>
+
+  <div class="note">
+    <span class="label">Everything above is free</span>
+    <p>SAM.gov registration, the UEI, the CAGE code, and the SBA certifications cost <b>nothing</b>. Anyone charging a fee to "get you registered" or "get you certified" is selling something you can do yourself with a free counselor's help. Some are outright scams. This is the most common way new government contractors lose money.</p>
+  </div>
+</section>
+
+<section>
+  <div class="shead">
+    <span class="label">The order matters</span>
+    <h2>The sequence, revised.</h2>
+    <p class="intro">Each step unlocks the next. But note what comes at step 6: <b>paying private customers before federal registration.</b> That is deliberate. Revenue, a performance record, and real knowledge of our own labor costs are what make every later step possible.</p>
+  </div>
+  <ol class="seq">
+    <li><div><h3>Agree the terms between the two of you</h3><p>Legal name, ownership split, who runs daily operations, who can sign and spend, what each contributes, and what happens if one of you leaves.</p><span class="dep">Unlocks &rarr; <b>everything else</b></span></div></li>
+    <li><div><h3>Form the LLC and sign an operating agreement</h3><p>Articles of Organization with the NC Secretary of State. The operating agreement is the internal rulebook &mdash; and later, the document proving women own and control the company.</p><span class="dep">Requires &rarr; <b>step 1</b></span></div></li>
+    <li><div><h3>EIN, bank account, one consistent address</h3><p>Free EIN from the IRS, a dedicated business account, and one address, phone, and email used identically everywhere. Mismatched records are the top cause of rejected registrations.</p><span class="dep">Requires &rarr; <b>formed LLC</b></span></div></li>
+    <li><div><h3>Bind insurance</h3><p>General liability, and workers' compensation once it applies. Nobody lets a cleaning crew into a building without a certificate of insurance. Get quotes before promising anything to anyone.</p><span class="dep">Requires &rarr; <b>legal entity</b></span></div></li>
+    <li><div><h3>Book the free APEX Accelerator counselor</h3><p>Do this now &mdash; you do not have to wait for the steps above to get on their calendar. They review the plan before mistakes get baked in.</p><span class="dep">Requires &rarr; <b>nothing. Book it today.</b></span></div></li>
+    <li><div><h3>Register with local public buyers</h3><p>Gaston County, Gaston County Schools, the City of Gastonia, and the small towns. Free, fast, and these are the public jobs a new company can actually win &mdash; no certification required.</p><span class="dep">Requires &rarr; <b>LLC + EIN + bank + address</b></span></div></li>
+    <li><div><h3>Win two or three private commercial accounts</h3><p>Small offices, churches, dental and medical admin suites, property managers, small manufacturers. They pay in days rather than months, set no wage floor, and give us the performance record every public buyer asks for. <b>This step funds everything after it.</b></p><span class="dep">Requires &rarr; <b>insurance in force</b></span></div></li>
+    <li><div><h3>Learn our real numbers on those accounts</h3><p>Actual hours per building, actual supply cost, actual drive time, actual margin. Until this is measured, every bid is a guess &mdash; and a wrong guess on a multi-year contract is locked in.</p><span class="dep">Requires &rarr; <b>real jobs completed</b></span></div></li>
+    <li><div><h3>Approach primes for subcontract work</h3><p>Find the companies already holding regional cleaning contracts and get on their subcontractor lists. Price these from the wage determination, not from our commercial rate.</p><span class="dep">Requires &rarr; <b>a performance record</b></span></div></li>
+    <li><div><h3>SAM.gov and NC eVP registration</h3><p>Now worth the effort, because we can answer the questions a federal buyer asks: what have you cleaned, for whom, and can you staff it.</p><span class="dep">Requires &rarr; <b>steps 1&ndash;4</b></span></div></li>
+    <li><div><h3>Apply for WOSB / EDWOSB certification</h3><p>Requires an active SAM registration first. Certification comes last because it multiplies an existing business &mdash; it does not start one. Chasing it early is wasted effort.</p><span class="dep">Requires &rarr; <b>active SAM</b></span></div></li>
+  </ol>
+</section>
+
+<section>
+  <div class="shead">
+    <span class="label">The people</span>
+    <h2>Who you actually talk to.</h2>
+    <p class="intro">Four roles, commonly confused. Only one can award a contract, and it is not the one who helps us.</p>
+  </div>
+  <div class="roles">
+    <article class="role">
+      <span class="who">Our free advisor &mdash; call first</span>
+      <h3>APEX Accelerator Procurement Counselor</h3>
+      <p>APEX Accelerators are federally funded to help small businesses get into government contracting at no cost. A Procurement Counselor walks us through registrations, reviews our capability statement, explains solicitations, and advises on certification. In North Carolina, the SBTDC Government Contracting Assistance Program does the same work.</p>
+      <span class="not"><b>They do not:</b> award contracts, negotiate for us, or find us work. A coach, not a broker.</span>
+    </article>
+    <article class="role">
+      <span class="who">The only one who can award</span>
+      <h3>Contracting Officer</h3>
+      <p>The government employee with legal authority to sign a contract and bind the agency. On any solicitation, this is the named contact. Everything formal goes through them, in writing, by their deadline.</p>
+      <span class="not"><b>Remember:</b> only a Contracting Officer can commit an agency. Nobody else's encouragement is an award.</span>
+    </article>
+    <article class="role">
+      <span class="who">The door into an agency</span>
+      <h3>Small Business Specialist / OSDBU</h3>
+      <p>Most federal agencies have an Office of Small and Disadvantaged Business Utilization or a Small Business Specialist whose job is helping small firms find their way into that agency's buying process. They will take an introductory meeting and tell you what that agency actually buys.</p>
+      <span class="not"><b>Note:</b> a liaison office, not a purchasing office. They open doors, they do not award work.</span>
+    </article>
+    <article class="role">
+      <span class="who">Our most realistic first call</span>
+      <h3>Small Business Liaison Officer (SBLO)</h3>
+      <p>At large contractors, not the government. Companies holding federal contracts above roughly $750,000 generally must plan for subcontracting to small and women-owned firms, and someone is responsible for finding those subcontractors. That is the SBLO.</p>
+      <span class="not"><b>Why this matters most:</b> subcontracting needs no certification and no SAM registration. Fastest realistic path to a first paying job and a first performance record.</span>
+    </article>
+  </div>
+</section>
+
+<section>
+  <div class="shead">
+    <span class="label">The one document</span>
+    <h2>The capability statement.</h2>
+    <p class="intro">One page. The resume of the business, and the thing every buyer asks for first.</p>
+  </div>
+  <div class="prose">
+    <p>When a purchasing office or a large contractor says "send me something," this is what they mean. Not a brochure, not a sales letter &mdash; a single page a buyer scans in twenty seconds to decide whether we are worth a conversation.</p>
+    <p>It carries the legal name, what we do, our industry codes, the counties we serve, our business type, our registration numbers once issued, and one contact. Nothing else. <b>A capability statement with anything unverified on it is worse than none at all</b> &mdash; a buyer who catches one wrong claim throws out the whole page.</p>
+  </div>
+  <div class="note">
+    <span class="label">Already drafted</span>
+    <p>A draft exists on the website's government page. It shows placeholder markers where the UEI, CAGE, and tax ID will go, because <b>those numbers do not exist yet.</b> They get filled in the day they are issued and not one day before.</p>
+  </div>
+</section>
+
+<section>
+  <div class="shead">
+    <span class="label">The money side</span>
+    <h2>How work actually gets placed.</h2>
+    <p class="intro">These figures explain why small jobs are the entry point &mdash; small purchases carry far less process, so a new vendor can actually win them.</p>
+  </div>
+  <div class="thresh">
+    <div class="tline">
+      <h3>Micro-purchase</h3><span class="amt">generally $15,000</span>
+      <p>Below this, a federal buyer can place work with a qualified supplier without running a competition, if the price is reasonable. Catch: recurring cleaning labor is often covered by service-contract wage rules carrying a much lower $2,500 threshold. State and local buyers set their own informal limits.</p>
+    </div>
+    <div class="tline">
+      <h3>Simplified acquisition</h3><span class="amt">up to $350,000</span>
+      <p>Quote-based buying for single buildings and small routes. Small-business consideration commonly applies in this range. Realistic target band for us once registered.</p>
+    </div>
+    <div class="tline">
+      <h3>Subcontracting plan threshold</h3><span class="amt">about $750,000</span>
+      <p>Contractors holding federal contracts above roughly this amount generally must plan for subcontracting to small and women-owned businesses. This obligation is why an SBLO will take our call.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="shead">
+    <span class="label">Tomorrow</span>
+    <h2>Decide these before anything gets filed.</h2>
+    <p class="intro">No registration can start until these are settled. Several have legal consequences later, particularly for certification.</p>
+  </div>
+  <ul class="decide">
+    <li><div><strong>The legal business name</strong><span>Everything downstream must match it exactly &mdash; bank, EIN, insurance, every registration. Changing it later means redoing all of them.</span></div></li>
+    <li><div><strong>Ownership percentages</strong><span>Must total at least 51% women-owned for any of the certifications to be possible.</span></div></li>
+    <li><div><strong>Who manages day-to-day operations</strong><span>Not a formality. Certification requires that qualifying women genuinely control daily decisions and long-term direction &mdash; in the operating agreement and in practice.</span></div></li>
+    <li><div><strong>Who can sign contracts and spend money</strong><span>Write it down now, before there is money or a disagreement.</span></div></li>
+    <li><div><strong>What happens in a dispute, or if one of you leaves</strong><span>A 50/50 company can deadlock permanently with no tie-breaker. Decide the resolution method and buyout terms while you still agree.</span></div></li>
+    <li><div><strong>Whether to pursue EDWOSB</strong><span>Requires personal financial disclosure to the federal government. Both of you should agree before anything is submitted.</span></div></li>
+    <li><div><strong>Check current employers' policies</strong><span>Outside-business, conflict-of-interest, and non-solicitation rules &mdash; before using any work experience in marketing or approaching any related customer.</span></div></li>
+    <li><div><strong>How far you will actually drive</strong><span>Travel time is unpaid time. The service radius decides which registrations are worth doing and which jobs are worth bidding.</span></div></li>
+  </ul>
+</section>
+
+<footer>
+  <p><b>About this document.</b> A working briefing for Golden Crest Facilities. Dollar thresholds, certification requirements, and program status were verified against federal and North Carolina sources in August 2026. Rules and figures change &mdash; confirm current details with an APEX Accelerator counselor before relying on them for a decision. Individual town and housing-authority registration processes should be confirmed by phone, as small jurisdictions handle these informally.</p>
+  <p><b>Current status.</b> Golden Crest Facilities is not yet formed. It holds no SAM registration, UEI, CAGE code, insurance, or certification of any kind. Nothing here should be read as a claim that any of it is already in place.</p>
+</footer>
+
+</div>
